@@ -1,0 +1,62 @@
+[
+  {
+    "source": "Open-Meteo Weather API",
+    "status": "OK",
+    "code": 200,
+    "latency_ms": 685,
+    "size_bytes": 1047,
+    "licence": "CC BY 4.0",
+    "auth": "None",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=27.3&longitude=88.6&hourly=precipitation,soil_moisture_0_to_1cm&forecast_days=1"
+  },
+  {
+    "source": "AWS Terrarium DEM Tiles",
+    "status": "OK",
+    "code": 200,
+    "latency_ms": 841,
+    "size_bytes": 48670,
+    "licence": "Open Data / Mapzen / CC-BY",
+    "auth": "None",
+    "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6059/3424.png"
+  },
+  {
+    "source": "Esri World Imagery Basemap",
+    "status": "OK",
+    "code": 200,
+    "latency_ms": 87,
+    "size_bytes": 20544,
+    "licence": "Esri Master Agreement",
+    "auth": "None",
+    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/13/3424/6059"
+  },
+  {
+    "source": "USGS Earthquake Realtime Feed",
+    "status": "OK",
+    "code": 200,
+    "latency_ms": 514,
+    "size_bytes": 141443,
+    "licence": "Public Domain",
+    "auth": "None",
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+  },
+  {
+    "source": "OpenStreetMap Nominatim",
+    "status": "OK",
+    "code": 200,
+    "latency_ms": 583,
+    "size_bytes": 444,
+    "licence": "ODbL",
+    "auth": "User-Agent header",
+    "url": "https://nominatim.openstreetmap.org/search?q=Gangtok&format=json&limit=1"
+  },
+  {
+    "source": "Planetary Computer STAC",
+    "status": "OK",
+    "code": 200,
+    "latency_ms": 628,
+    "size_bytes": 2135,
+    "licence": "CDLA-Permissive",
+    "auth": "None",
+    "url": "https://planetarycomputer.microsoft.com/api/stac/v1"
+  }
+]
