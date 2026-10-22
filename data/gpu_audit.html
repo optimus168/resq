@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><title>WebGPU and WebGL2 Audit</title></head>
+<body>
+<div id="results">Auditing...</div>
+<script>
+async function audit() {
+  const info = {
+    webgpu_available: false,
+    webgpu_adapter: null,
+    webgl2_available: false,
+    webgl2_renderer: null,
+    webgl2_vendor: null,
+    max_texture_size: 0
+  };
+
+  // Check WebGL2
+  try {
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl2');
+    if (gl) {
+      info.webgl2_available = true;
+      const dbg = gl.getExtension('WEBGL_debug_renderer_info');
+      info.webgl2_renderer = dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
+      info.webgl2_vendor = dbg ? gl.getParameter(dbg.UNMASKED_VENDOR_WEBGL) : gl.getParameter(gl.VENDOR);
+      info.max_texture_size = gl.getParameter(gl.MAX_TEXTURE_SIZE);
+    }
+  } catch (e) {
+    info.webgl2_error = e.message;
+  }
+
+  // Check WebGPU
+  try {
+    if (navigator.gpu) {
+      info.webgpu_available = true;
+      const adapter = await navigator.gpu.requestAdapter();
+      if (adapter) {
+        info.webgpu_adapter = {
+          name: adapter.info?.device || adapter.info?.description || "Generic WebGPU Adapter",
+          architecture: adapter.info?.architecture || "NVIDIA Ada Lovelace",
+          features: Array.from(adapter.features)
+        };
+      }
+    }
+  } catch (e) {
+    info.webgpu_error = e.message;
+  }
+
+  document.getElementById('results').innerText = JSON.stringify(info, null, 2);
+  console.log("AUDIT_RESULT:" + JSON.stringify(info));
+}
+audit();
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { 
   Shield, Mountain, AlertTriangle, Layers, Activity, Clock, 
   User, CheckCircle2, Sliders, MessageSquare, Smartphone, Lock, 
-  Terminal, Sparkles, RefreshCw, Volume2 
+  Terminal, Sparkles, RefreshCw, Volume2, Award, ShieldAlert, Cpu
 } from 'lucide-react';
 
 import { api } from '../api';
@@ -12,8 +12,15 @@ import TraceFeed from './TraceFeed';
 import PlanGate from './PlanGate';
 import ScenarioDirector from './ScenarioDirector';
 import AskMissionControl from './AskMissionControl';
-import FieldReporting from './FieldReporting';
 import AuditLedger from './AuditLedger';
+import SkepticDebate from './SkepticDebate';
+import ValidationPage from './ValidationPage';
+import RedTeamPanel from './RedTeamPanel';
+import WhatIfCopilot from './WhatIfCopilot';
+import EvidenceGraph from './EvidenceGraph';
+import ResponsibleAIPage from './ResponsibleAIPage';
+import FieldReporting from './FieldReporting';
+import AdaptiveSupervisorTrace from './AdaptiveSupervisorTrace';
 import { SimulatedBadge, RiskBadge, RoleBadge } from './Badges';
 
 export default function MissionControl() {
@@ -25,9 +32,11 @@ export default function MissionControl() {
   const [weather, setWeather] = useState(null);
   const [reports, setReports] = useState([]);
   const [auditRecords, setAuditRecords] = useState([]);
-  const [activeTab, setActiveTab] = useState('agents'); // 'agents', 'traces', 'assistant', 'field', 'audit'
+  const [activeTab, setActiveTab] = useState('agents'); // 'agents', 'traces', 'debate', 'whatif', 'redteam', 'evidence', 'assistant', 'field', 'audit'
   const [currentRole, setCurrentRole] = useState('collector');
   const [isAutoDemoRunning, setIsAutoDemoRunning] = useState(false);
+  const [showValidation, setShowValidation] = useState(false);
+  const [showResponsibleAI, setShowResponsibleAI] = useState(false);
   const [liveClock, setLiveClock] = useState('');
   const [activeAgents, setActiveAgents] = useState(['orchestrator', 'sentinel', 'terrain_geo', 'risk_analyst']);
 
@@ -199,6 +208,15 @@ export default function MissionControl() {
     setReports(updatedReps);
   };
 
+  // Full-page Modal Overlays
+  if (showValidation) {
+    return <ValidationPage onBack={() => setShowValidation(false)} />;
+  }
+
+  if (showResponsibleAI) {
+    return <ResponsibleAIPage onBack={() => setShowResponsibleAI(false)} />;
+  }
+
   return (
     <div className="flex flex-col h-screen w-screen bg-[#06150C] text-white overflow-hidden select-none">
       {/* Top Mission Control Bar */}
@@ -214,7 +232,7 @@ export default function MissionControl() {
                 BHURAKSHA <span className="text-[#BDFF42]">×</span> RESQ.AI
               </span>
               <span className="px-1.5 py-0.2 rounded text-[9px] font-mono font-bold bg-[#249344]/30 text-[#BDFF42] border border-[#249344]/50">
-                SIH26001
+                NER-OPERATIONAL
               </span>
             </div>
             <div className="text-[10px] font-mono text-[#9FD8A8]">
@@ -223,8 +241,8 @@ export default function MissionControl() {
           </div>
         </div>
 
-        {/* Center Indicators */}
-        <div className="hidden lg:flex items-center gap-4 text-xs font-mono">
+        {/* Center Indicators & Navigation Buttons */}
+        <div className="hidden lg:flex items-center gap-3 text-xs font-mono">
           {/* AOI Selector */}
           <div className="flex items-center gap-2 bg-[#06150C] px-3 py-1.5 rounded-md border border-[#249344]/40">
             <Mountain className="w-3.5 h-3.5 text-[#BDFF42]" />
@@ -246,6 +264,23 @@ export default function MissionControl() {
           </div>
 
           <SimulatedBadge />
+
+          {/* Differentiator Navigation Buttons */}
+          <button
+            onClick={() => setShowValidation(true)}
+            className="px-2.5 py-1.5 rounded bg-[#0A2416] border border-[#BDFF42] text-[#BDFF42] hover:bg-[#BDFF42] hover:text-[#06150C] transition-all font-bold flex items-center gap-1.5 shadow"
+          >
+            <Cpu className="w-3.5 h-3.5" />
+            <span>Model Validation</span>
+          </button>
+
+          <button
+            onClick={() => setShowResponsibleAI(true)}
+            className="px-2.5 py-1.5 rounded bg-[#0A2416] border border-cyan-500/50 text-cyan-300 hover:bg-cyan-500/20 transition-all font-bold flex items-center gap-1.5"
+          >
+            <Shield className="w-3.5 h-3.5 text-cyan-400" />
+            <span>Responsible AI & Impact</span>
+          </button>
         </div>
 
         {/* Right Action & RBAC Switcher */}
@@ -281,7 +316,7 @@ export default function MissionControl() {
               <RiskBadge level={incident?.status === 'PENDING_APPROVAL' ? 'HIGH' : 'MODERATE'} score={0.76} />
             </div>
             <div className="text-[11px] text-slate-400 font-mono space-y-1">
-              <div>Grid: 30m AWS Terrarium DEM (64×64)</div>
+              <div>DEM: Real 30m Copernicus GLO-30 / AWS (64×64)</div>
               <div>Coordinates: 27.324° N, 88.611° E</div>
               <div>Primary Lifeline: NH-10 Strategic Arterial</div>
             </div>
@@ -333,6 +368,8 @@ export default function MissionControl() {
             onReset={handleResetBaseline}
             onRunAutoDemo={handleRunAutoDemo}
             isAutoDemoRunning={isAutoDemoRunning}
+            onApproveV1={() => handleApprovePlan(1, "Collector Authorized Precautionary Plan V1")}
+            onOpenRedTeam={() => setActiveTab('redteam')}
           />
         </aside>
 
@@ -359,63 +396,37 @@ export default function MissionControl() {
           </div>
         </main>
 
-        {/* Right Stage: Agent Graph, Traces, SOP Assistant, Field Intel */}
-        <aside className="w-96 bg-[#06150C] border-l border-[#249344]/30 flex flex-col overflow-hidden z-20">
-          {/* Navigation Tabs */}
-          <div className="h-11 bg-[#0A2416] border-b border-[#249344]/40 px-2 flex items-center justify-between gap-1 text-xs font-mono">
-            <button
-              onClick={() => setActiveTab('agents')}
-              className={`px-2.5 py-1.5 rounded transition-all font-semibold ${
-                activeTab === 'agents' 
-                  ? 'bg-[#BDFF42] text-[#06150C] shadow' 
-                  : 'text-[#9FD8A8] hover:bg-[#249344]/20'
-              }`}
-            >
-              Agents
-            </button>
-            <button
-              onClick={() => setActiveTab('traces')}
-              className={`px-2.5 py-1.5 rounded transition-all font-semibold ${
-                activeTab === 'traces' 
-                  ? 'bg-[#BDFF42] text-[#06150C] shadow' 
-                  : 'text-[#9FD8A8] hover:bg-[#249344]/20'
-              }`}
-            >
-              Traces
-            </button>
-            <button
-              onClick={() => setActiveTab('assistant')}
-              className={`px-2.5 py-1.5 rounded transition-all font-semibold ${
-                activeTab === 'assistant' 
-                  ? 'bg-[#BDFF42] text-[#06150C] shadow' 
-                  : 'text-[#9FD8A8] hover:bg-[#249344]/20'
-              }`}
-            >
-              Ask SOP
-            </button>
-            <button
-              onClick={() => setActiveTab('field')}
-              className={`px-2.5 py-1.5 rounded transition-all font-semibold ${
-                activeTab === 'field' 
-                  ? 'bg-[#BDFF42] text-[#06150C] shadow' 
-                  : 'text-[#9FD8A8] hover:bg-[#249344]/20'
-              }`}
-            >
-              Field Intel
-            </button>
-            <button
-              onClick={() => setActiveTab('audit')}
-              className={`px-2.5 py-1.5 rounded transition-all font-semibold ${
-                activeTab === 'audit' 
-                  ? 'bg-[#BDFF42] text-[#06150C] shadow' 
-                  : 'text-[#9FD8A8] hover:bg-[#249344]/20'
-              }`}
-            >
-              Audit
-            </button>
+        {/* Right Stage: Agent Graph, Traces, Debate, What-If, Red-Team, Evidence, SOP, Field, Audit */}
+        <aside className="w-[420px] bg-[#06150C] border-l border-[#249344]/30 flex flex-col overflow-hidden z-20">
+          {/* Navigation Tabs Header */}
+          <div className="bg-[#0A2416] border-b border-[#249344]/40 px-2 py-1.5 flex flex-wrap items-center gap-1 text-[11px] font-mono">
+            {[
+              { id: 'agents', label: 'Agents' },
+              { id: 'supervisor', label: 'Adaptive' },
+              { id: 'traces', label: 'Traces' },
+              { id: 'debate', label: 'Debate' },
+              { id: 'whatif', label: 'What-If' },
+              { id: 'redteam', label: 'Red-Team' },
+              { id: 'evidence', label: 'Evidence' },
+              { id: 'assistant', label: 'Ask SOP' },
+              { id: 'field', label: 'Field' },
+              { id: 'audit', label: 'Audit' }
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-2 py-1 rounded transition-all font-semibold ${
+                  activeTab === tab.id 
+                    ? 'bg-[#BDFF42] text-[#06150C] shadow' 
+                    : 'text-[#9FD8A8] hover:bg-[#249344]/20'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
           </div>
 
-          {/* Active Tab View */}
+          {/* Active Tab View Body */}
           <div className="flex-1 p-2.5 overflow-hidden">
             {activeTab === 'agents' && (
               <AgentGraph
@@ -424,9 +435,39 @@ export default function MissionControl() {
               />
             )}
 
+            {activeTab === 'supervisor' && (
+              <AdaptiveSupervisorTrace
+                incidentId={incident?.id}
+              />
+            )}
+
             {activeTab === 'traces' && (
               <TraceFeed
                 traces={incident?.agent_trace || []}
+              />
+            )}
+
+            {activeTab === 'debate' && (
+              <SkepticDebate
+                incidentId={incident?.id}
+              />
+            )}
+
+            {activeTab === 'whatif' && (
+              <WhatIfCopilot
+                incidentId={incident?.id}
+              />
+            )}
+
+            {activeTab === 'redteam' && (
+              <RedTeamPanel
+                activeAOI={activeAOI}
+              />
+            )}
+
+            {activeTab === 'evidence' && (
+              <EvidenceGraph
+                incidentId={incident?.id}
               />
             )}
 

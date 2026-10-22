@@ -1,560 +1,734 @@
-import React, { useEffect, useRef, useState, useMemo } from 'react';
-import * as THREE from 'three';
-import { Play, Pause, RotateCcw, Eye, Layers, Mountain, AlertTriangle, ShieldCheck, MapPin } from 'lucide-react';
-import { SimulatedBadge } from './Badges';
+import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react';
+import { Map as MapLibreMap, NavigationControl, Popup } from 'maplibre-gl';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import { getMapLibreStyle } from '../lib/tileSources';
+import { AOI_METADATA, TERRAIN_CONSTANTS } from '../lib/terrainConfig';
+import { API_BASE } from '../lib/api';
+import {
+  Layers, Mountain, Sparkles, Play, Pause, RotateCcw,
+  AlertTriangle, ShieldAlert, ChevronDown, ChevronUp
+} from 'lucide-react';
 
-export default function DigitalTwin3D({ 
-  demGrid, 
-  simulationResult, 
+/**
+ * DigitalTwin3D — simulation-driven 3D terrain twin.
+ *
+ * Every number shown here comes from the backend `run` object (detection
+ * summary) or from the twin bundle on disk. There are no client-side
+ * interpolations presented as physics.
+ *
+ * Props:
+ *   aoi          AOI id (gangtok | shillong | aizawl | tupul)
+ *   run          detection summary from POST /simulations/detect
+ *   hour         current timeline hour
+ *   layer        hazard | depth | velocity | fs
+ *   playing      playback state
+ *   onHourChange (hour) => void
+ *   onTogglePlay () => void
+ *   compact      render a reduced legend for embedded uses
+ */
+export default function DigitalTwin3D({
   aoi = 'gangtok',
-  weather, 
-  onTimeChange 
+  run = null,
+  simulationResult = null,
+  hour: hourProp,
+  layer = 'hazard',
+  playing: playingProp = false,
+  onHourChange,
+  onTimeChange,
+  onTogglePlay,
+  compact = false,
 }) {
-  const mountRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentHour, setCurrentHour] = useState(0);
-  const [is2DMode, setIs2DMode] = useState(false);
-  const [activeLayer, setActiveLayer] = useState('combined'); // 'combined', 'fs', 'moisture', 'runout'
-  const [showAssets, setShowAssets] = useState(true);
-  const [cameraView, setCameraView] = useState('perspective'); // 'perspective', 'top', 'slope'
+  // Accept the legacy `simulationResult` prop so incident pages keep working.
+  const activeRun = run || simulationResult || null;
+  const controlledHour = hourProp != null;
+  const [internalHour, setInternalHour] = useState(0);
+  const [internalPlaying, setInternalPlaying] = useState(false);
+  const hour = controlledHour ? hourProp : internalHour;
+  const playing = playingProp != null && onTogglePlay ? playingProp : internalPlaying;
 
-  // Timeline frames (0 to 24)
-  const frames = simulationResult?.frames || [];
-  const maxHours = 24;
+  const emitHour = useCallback(
+    (h) => {
+      if (!controlledHour) setInternalHour(h);
+      onHourChange?.(h);
+      onTimeChange?.(h);
+    },
+    [controlledHour, onHourChange, onTimeChange]
+  );
 
-  // Scene references
-  const sceneRef = useRef(null);
-  const rendererRef = useRef(null);
-  const terrainMeshRef = useRef(null);
-  const particlesRef = useRef(null);
-  const assetsGroupRef = useRef(null);
-  const animFrameRef = useRef(null);
-  const controlsRef = useRef({ rotX: 0.6, rotY: 0.4, zoom: 1.0, isDragging: false, lastX: 0, lastY: 0 });
+  const togglePlayback = useCallback(() => {
+    if (onTogglePlay) onTogglePlay();
+    else setInternalPlaying(p => !p);
+  }, [onTogglePlay]);
 
-  // Handle Playback Loop
+  const containerRef = useRef(null);
+  const mapRef = useRef(null);
+  const popupRef = useRef(null);
+  const [ready, setReady] = useState(false);
+  const [manifest, setManifest] = useState(null);
+  const [infra, setInfra] = useState(null);
+  const [buildings, setBuildings] = useState(null);
+  const [showImagery, setShowImagery] = useState(true);
+  const [showRelief, setShowRelief] = useState(true);
+  const [showOverlay, setShowOverlay] = useState(true);
+  const [showDetections, setShowDetections] = useState(true);
+  const [is3D, setIs3D] = useState(true);
+  const [legendOpen, setLegendOpen] = useState(!compact);
+
+  const aoiMeta = AOI_METADATA[aoi] || AOI_METADATA.gangtok;
+  const bounds = manifest?.bounds || aoiMeta.bounds;
+
+  // Internal playback when the parent does not control the timeline.
   useEffect(() => {
-    let timer;
-    if (isPlaying) {
-      timer = setInterval(() => {
-        setCurrentHour(prev => {
-          const next = (prev + 1) % (maxHours + 1);
-          if (next === 0) setIsPlaying(false);
-          return next;
-        });
-      }, 700);
-    }
-    return () => clearInterval(timer);
-  }, [isPlaying]);
+    if (controlledHour || !playing) return;
+    const maxH = activeRun?.timeline?.length ? activeRun.timeline.length - 1 : 24;
+    const t = setInterval(() => setInternalHour(h => (h >= maxH ? 0 : h + 1)), 520);
+    return () => clearInterval(t);
+  }, [controlledHour, playing, activeRun]);
 
+  // ---------------------------------------------------------------------
+  // Twin assets (manifest / infrastructure / buildings) from the API
+  // ---------------------------------------------------------------------
   useEffect(() => {
-    if (onTimeChange) onTimeChange(currentHour);
-  }, [currentHour, onTimeChange]);
+    let alive = true;
+    setManifest(null);
+    setInfra(null);
+    setBuildings(null);
 
-  // Current simulation metrics
-  const currentMetrics = useMemo(() => {
-    const rain = (weather?.accumulated_rain_mm || 45) * Math.min(1.0, (currentHour + 1) / 18);
-    const minFs = Math.max(0.68, 1.48 - (rain / 90) * 0.7);
-    const sat = Math.min(1.0, 0.42 + (rain / 120) * 0.58);
-    const failureCells = currentHour > 8 ? Math.min(142, Math.floor((currentHour - 8) * 11)) : 0;
-    const volReleased = failureCells * 30 * 30 * 2.5; // ~2.5m failure slab
-    const roadBlocked = currentHour >= 12;
-
-    return {
-      rainMm: rain.toFixed(1),
-      minFs: minFs.toFixed(2),
-      saturation: (sat * 100).toFixed(0),
-      failureCells,
-      volReleased: volReleased.toLocaleString(),
-      roadBlocked
-    };
-  }, [currentHour, weather]);
-
-  // Initialize Three.js Scene
-  useEffect(() => {
-    if (is2DMode || !mountRef.current) return;
-
-    const width = mountRef.current.clientWidth;
-    const height = mountRef.current.clientHeight;
-
-    // Scene
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x06150C);
-    sceneRef.current = scene;
-
-    // Camera
-    const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-    camera.position.set(0, -60, 65);
-    camera.lookAt(0, 0, 0);
-
-    // Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.shadowMap.enabled = true;
-    mountRef.current.appendChild(renderer.domElement);
-    rendererRef.current = renderer;
-
-    // Lights
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-    scene.add(ambientLight);
-
-    const sunLight = new THREE.DirectionalLight(0xBDFF42, 1.2);
-    sunLight.position.set(40, -40, 80);
-    sunLight.castShadow = true;
-    scene.add(sunLight);
-
-    const fillLight = new THREE.DirectionalLight(0x249344, 0.5);
-    fillLight.position.set(-40, 40, 30);
-    scene.add(fillLight);
-
-    // Build 3D Terrain Mesh from DEM or procedural mountain
-    const rows = 48;
-    const cols = 48;
-    const geometry = new THREE.PlaneGeometry(60, 60, cols - 1, rows - 1);
-    const pos = geometry.attributes.position;
-
-    // Elevate vertices
-    const elevations = demGrid?.elevation || [];
-    for (let i = 0; i < pos.count; i++) {
-      let elevZ = 0;
-      if (elevations.length >= rows * cols) {
-        elevZ = (elevations[i % elevations.length] - (demGrid?.stats?.min_elevation || 1200)) * 0.035;
-      } else {
-        const x = pos.getX(i);
-        const y = pos.getY(i);
-        // Gangtok steep ridge topography
-        elevZ = Math.sin(x * 0.08) * 4 + Math.cos(y * 0.07) * 5 + (x + 30) * 0.35 + Math.sin(x * y * 0.005) * 2;
-      }
-      pos.setZ(i, Math.max(0, elevZ));
-    }
-    geometry.computeVertexNormals();
-
-    // Material with custom vertex coloring
-    const count = pos.count;
-    const colors = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      colors[i * 3 + 0] = 0.04; // R
-      colors[i * 3 + 1] = 0.14; // G
-      colors[i * 3 + 2] = 0.08; // B
-    }
-    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-
-    const material = new THREE.MeshStandardMaterial({
-      vertexColors: true,
-      roughness: 0.8,
-      metalness: 0.1,
-      wireframe: false,
-      flatShading: true
-    });
-
-    const terrainMesh = new THREE.Mesh(geometry, material);
-    scene.add(terrainMesh);
-    terrainMeshRef.current = terrainMesh;
-
-    // Wireframe overlay for digital twin feel
-    const wireGeo = new THREE.WireframeGeometry(geometry);
-    const wireMat = new THREE.LineBasicMaterial({ color: 0x249344, transparent: true, opacity: 0.15 });
-    const wireframe = new THREE.LineSegments(wireGeo, wireMat);
-    terrainMesh.add(wireframe);
-
-    // Add Infrastructure Assets (NH10 Highway & settlements)
-    const assetsGroup = new THREE.Group();
-    
-    // NH10 Highway Line winding through slope
-    const curvePoints = [];
-    for (let t = -25; t <= 25; t += 3) {
-      const x = t;
-      const y = Math.sin(t * 0.15) * 8 - 5;
-      const z = (t + 30) * 0.32 + 1.2;
-      curvePoints.push(new THREE.Vector3(x, y, z));
-    }
-    const roadCurve = new THREE.CatmullRomCurve3(curvePoints);
-    const roadGeo = new THREE.TubeGeometry(roadCurve, 40, 0.45, 6, false);
-    const roadMat = new THREE.MeshStandardMaterial({ color: 0xF59E0B, roughness: 0.4 });
-    const roadMesh = new THREE.Mesh(roadGeo, roadMat);
-    assetsGroup.add(roadMesh);
-
-    // Add village shelters / waypoints
-    const settlements = [
-      { name: 'Singtam Junction', pos: [-18, -4, 4] },
-      { name: 'Deorali Slope', pos: [2, -2, 11] },
-      { name: 'Ranipool Bridge', pos: [16, -6, 16] }
-    ];
-
-    settlements.forEach(s => {
-      const pinGeo = new THREE.ConeGeometry(0.8, 2, 8);
-      pinGeo.rotateX(Math.PI);
-      const pinMat = new THREE.MeshStandardMaterial({ color: 0xBDFF42, emissive: 0x249344 });
-      const pinMesh = new THREE.Mesh(pinGeo, pinMat);
-      pinMesh.position.set(s.pos[0], s.pos[1], s.pos[2] + 2);
-      assetsGroup.add(pinMesh);
-    });
-
-    scene.add(assetsGroup);
-    assetsGroupRef.current = assetsGroup;
-
-    // Runout debris particle system
-    const particleCount = 200;
-    const particleGeo = new THREE.BufferGeometry();
-    const pPositions = new Float32Array(particleCount * 3);
-    const pVelocities = [];
-
-    for (let p = 0; p < particleCount; p++) {
-      pPositions[p * 3 + 0] = (Math.random() - 0.5) * 12 + 2;
-      pPositions[p * 3 + 1] = (Math.random() - 0.5) * 8 + 5;
-      pPositions[p * 3 + 2] = 12 + Math.random() * 4;
-      pVelocities.push({
-        vx: (Math.random() - 0.5) * 0.1,
-        vy: -0.15 - Math.random() * 0.2,
-        vz: -0.1 - Math.random() * 0.1
-      });
-    }
-
-    particleGeo.setAttribute('position', new THREE.BufferAttribute(pPositions, 3));
-    const particleMat = new THREE.PointsMaterial({
-      color: 0xEF4444,
-      size: 0.8,
-      transparent: true,
-      opacity: 0.8
-    });
-
-    const particles = new THREE.Points(particleGeo, particleMat);
-    particles.visible = false;
-    scene.add(particles);
-    particlesRef.current = { particles, velocities: pVelocities };
-
-    // Mouse Interaction for Orbit
-    const handleMouseDown = (e) => {
-      controlsRef.current.isDragging = true;
-      controlsRef.current.lastX = e.clientX;
-      controlsRef.current.lastY = e.clientY;
-    };
-
-    const handleMouseMove = (e) => {
-      if (!controlsRef.current.isDragging) return;
-      const dx = e.clientX - controlsRef.current.lastX;
-      const dy = e.clientY - controlsRef.current.lastY;
-      controlsRef.current.lastX = e.clientX;
-      controlsRef.current.lastY = e.clientY;
-
-      if (terrainMeshRef.current) {
-        terrainMeshRef.current.rotation.z += dx * 0.008;
-        terrainMeshRef.current.rotation.x += dy * 0.008;
-        if (assetsGroupRef.current) {
-          assetsGroupRef.current.rotation.z = terrainMeshRef.current.rotation.z;
-          assetsGroupRef.current.rotation.x = terrainMeshRef.current.rotation.x;
-        }
-      }
-    };
-
-    const handleMouseUp = () => {
-      controlsRef.current.isDragging = false;
-    };
-
-    const handleWheel = (e) => {
-      camera.position.z = Math.max(30, Math.min(120, camera.position.z + e.deltaY * 0.05));
-    };
-
-    const dom = renderer.domElement;
-    dom.addEventListener('mousedown', handleMouseDown);
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseup', handleMouseUp);
-    dom.addEventListener('wheel', handleWheel);
-
-    // Animation Render Loop
-    let clock = new THREE.Clock();
-    const animate = () => {
-      animFrameRef.current = requestAnimationFrame(animate);
-
-      // Debris particle animation
-      if (particlesRef.current && particlesRef.current.particles.visible) {
-        const pPos = particlesRef.current.particles.geometry.attributes.position;
-        const vels = particlesRef.current.velocities;
-        for (let p = 0; p < particleCount; p++) {
-          let x = pPos.getX(p) + vels[p].vx;
-          let y = pPos.getY(p) + vels[p].vy;
-          let z = pPos.getZ(p) + vels[p].vz;
-
-          if (z < 1 || y < -15) {
-            x = (Math.random() - 0.5) * 12 + 2;
-            y = 8 + Math.random() * 4;
-            z = 14 + Math.random() * 3;
-          }
-          pPos.setXYZ(p, x, y, z);
-        }
-        pPos.needsUpdate = true;
-      }
-
-      renderer.render(scene, camera);
-    };
-    animate();
-
-    // Resize Handler
-    const handleResize = () => {
-      if (!mountRef.current) return;
-      const w = mountRef.current.clientWidth;
-      const h = mountRef.current.clientHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-      renderer.setSize(w, h);
-    };
-    window.addEventListener('resize', handleResize);
+    Promise.all([
+      fetch(`${API_BASE}/twins/${aoi}/manifest`).then(r => (r.ok ? r.json() : null)),
+      fetch(`${API_BASE}/twins/${aoi}/infrastructure`).then(r => (r.ok ? r.json() : null)),
+      fetch(`${API_BASE}/twins/${aoi}/buildings`).then(r => (r.ok ? r.json() : null)),
+    ])
+      .then(([m, i, b]) => {
+        if (!alive) return;
+        setManifest(m);
+        setInfra(i);
+        setBuildings(b);
+      })
+      .catch(() => {});
 
     return () => {
-      cancelAnimationFrame(animFrameRef.current);
-      window.removeEventListener('resize', handleResize);
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', handleMouseUp);
-      if (mountRef.current && renderer.domElement) {
-        mountRef.current.removeChild(renderer.domElement);
-      }
-      renderer.dispose();
+      alive = false;
     };
-  }, [is2DMode]);
+  }, [aoi]);
 
-  // Update Dynamic Color Shading based on currentHour & activeLayer
+  // ---------------------------------------------------------------------
+  // Map bootstrap
+  // ---------------------------------------------------------------------
   useEffect(() => {
-    if (!terrainMeshRef.current) return;
-    const geo = terrainMeshRef.current.geometry;
-    const colors = geo.attributes.color;
-    const pos = geo.attributes.position;
-    if (!colors || !pos) return;
+    if (!containerRef.current) return;
+    const map = new MapLibreMap({
+      container: containerRef.current,
+      style: getMapLibreStyle('esri'),
+      center: aoiMeta.camera.center,
+      zoom: aoiMeta.camera.zoom,
+      pitch: aoiMeta.camera.pitch,
+      bearing: aoiMeta.camera.bearing,
+      maxPitch: 80,
+      minZoom: 8,
+      attributionControl: false,
+      antialias: true,
+      fadeDuration: 180,
+    });
+    mapRef.current = map;
 
-    const satProgress = Math.min(1.0, currentHour / 18);
-    const hasFailures = currentHour >= 8;
-
-    for (let i = 0; i < pos.count; i++) {
-      const x = pos.getX(i);
-      const y = pos.getY(i);
-      const z = pos.getZ(i);
-
-      // Local slope estimate
-      const slopeFactor = Math.min(1.0, z / 12);
-      const isCriticalSlope = slopeFactor > 0.55 && x > -5 && x < 12 && y > -4 && y < 10;
-
-      let r = 0.05;
-      let g = 0.16;
-      let b = 0.08;
-
-      if (activeLayer === 'moisture' || activeLayer === 'combined') {
-        // Hydrology saturation blue-teal infusion
-        b += satProgress * 0.55 * (1.0 - slopeFactor * 0.4);
-        g += satProgress * 0.25;
+    map.on('load', () => {
+      try {
+        map.setTerrain({ source: 'dem', exaggeration: TERRAIN_CONSTANTS.EXAGGERATION });
+      } catch (err) {
+        console.warn('terrain unavailable', err);
       }
+      try {
+        map.setSky({
+          'sky-color': '#0b2a18',
+          'horizon-color': '#163d24',
+          'fog-color': '#04100a',
+          'sky-horizon-blend': 0.6,
+          'horizon-fog-blend': 0.55,
+          'fog-ground-blend': 0.35,
+        });
+      } catch (err) {
+        /* older maplibre */
+      }
+      map.addControl(new NavigationControl({ showCompass: true, visualizePitch: true }), 'top-right');
+      setReady(true);
+    });
 
-      if (activeLayer === 'fs' || activeLayer === 'combined') {
-        if (isCriticalSlope && hasFailures) {
-          // FS < 1.0 failure zone glowing amber to crimson
-          const failSeverity = Math.min(1.0, (currentHour - 8) / 10);
-          r = 0.85 * failSeverity;
-          g = 0.25 * (1.0 - failSeverity);
-          b = 0.05;
+    return () => {
+      if (popupRef.current) popupRef.current.remove();
+      map.remove();
+      mapRef.current = null;
+      setReady(false);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Fly to AOI when it changes
+  useEffect(() => {
+    if (!ready || !mapRef.current) return;
+    mapRef.current.flyTo({
+      center: aoiMeta.camera.center,
+      zoom: aoiMeta.camera.zoom,
+      pitch: is3D ? aoiMeta.camera.pitch : 0,
+      bearing: is3D ? aoiMeta.camera.bearing : 0,
+      duration: 1600,
+      essential: true,
+    });
+  }, [aoi, ready, is3D, aoiMeta]);
+
+  // ---------------------------------------------------------------------
+  // Static twin layers: buildings + lifelines + facilities
+  // ---------------------------------------------------------------------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready || !bounds) return;
+
+    const add = () => {
+      if (!map.isStyleLoaded()) return;
+
+      if (buildings?.length) {
+        const features = buildings
+          .filter(b => Array.isArray(b.center) && b.center.length === 2)
+          .map((b, i) => {
+            const [cx, cy] = b.center;
+            const cosLat = Math.cos((cy * Math.PI) / 180);
+            const dx = (b.footprint_m?.[0] || 14) / 2;
+            const dy = (b.footprint_m?.[1] || 10) / 2;
+            const dLon = dx / (111139 * (cosLat || 0.88));
+            const dLat = dy / 111139;
+            return {
+              type: 'Feature',
+              id: i,
+              geometry: {
+                type: 'Polygon',
+                coordinates: [[
+                  [cx - dLon, cy - dLat],
+                  [cx + dLon, cy - dLat],
+                  [cx + dLon, cy + dLat],
+                  [cx - dLon, cy + dLat],
+                  [cx - dLon, cy - dLat],
+                ]],
+              },
+              properties: {
+                height_m: b.height_m || (b.storeys ? b.storeys * 3.2 : 9),
+                storeys: b.storeys || 3,
+                name: b.village_name || 'Building',
+                typology: b.typology || '',
+              },
+            };
+          });
+        const data = { type: 'FeatureCollection', features };
+        if (map.getSource('twin-buildings')) {
+          map.getSource('twin-buildings').setData(data);
+        } else {
+          map.addSource('twin-buildings', {
+            type: 'geojson',
+            data,
+          });
+          map.addLayer({
+            id: 'twin-buildings-3d',
+            type: 'fill-extrusion',
+            source: 'twin-buildings',
+            paint: {
+              'fill-extrusion-color': [
+                'interpolate', ['linear'], ['get', 'height_m'],
+                6, '#cbd5e1', 14, '#94a3b8', 25, '#64748b',
+              ],
+              'fill-extrusion-height': ['get', 'height_m'],
+              'fill-extrusion-base': 0,
+              'fill-extrusion-opacity': 0.88,
+            },
+          });
         }
       }
 
-      colors.setXYZ(i, r, g, b);
-    }
-    colors.needsUpdate = true;
+      if (infra) {
+        const roads = {
+          type: 'FeatureCollection',
+          features: (infra.features || []).filter(
+            f => f.geometry?.type === 'LineString' && f.properties?.kind === 'road'
+          ),
+        };
+        if (map.getSource('twin-lifelines')) {
+          map.getSource('twin-lifelines').setData(roads);
+        } else {
+          map.addSource('twin-lifelines', { type: 'geojson', data: roads });
+          map.addLayer({
+            id: 'twin-lifelines-casing',
+            type: 'line',
+            source: 'twin-lifelines',
+            layout: { 'line-cap': 'round', 'line-join': 'round' },
+            paint: { 'line-color': '#04100a', 'line-width': 5.5, 'line-opacity': 0.85 },
+          });
+          map.addLayer({
+            id: 'twin-lifelines-core',
+            type: 'line',
+            source: 'twin-lifelines',
+            layout: { 'line-cap': 'round', 'line-join': 'round' },
+            paint: {
+              'line-color': ['match', ['get', 'road_kind'], 'primary', '#ffb020', 'alternate', '#38bdf8', '#8ab4a0'],
+              'line-width': ['match', ['get', 'road_kind'], 'primary', 3.2, 'alternate', 2.4, 1.6],
+              'line-opacity': 0.95,
+            },
+          });
+        }
 
-    // Toggle Debris Flow particles
-    if (particlesRef.current) {
-      particlesRef.current.particles.visible = (hasFailures && (activeLayer === 'runout' || activeLayer === 'combined'));
+        const points = {
+          type: 'FeatureCollection',
+          features: (infra.features || []).filter(
+            f => f.geometry?.type === 'Point' && ['shelter', 'hospital', 'junction', 'settlement'].includes(f.properties?.kind)
+          ),
+        };
+        if (map.getSource('twin-facilities')) {
+          map.getSource('twin-facilities').setData(points);
+        } else {
+          map.addSource('twin-facilities', { type: 'geojson', data: points });
+          map.addLayer({
+            id: 'twin-facilities-halo',
+          type: 'circle',
+          source: 'twin-facilities',
+          paint: {
+            'circle-radius': ['match', ['get', 'kind'], 'hospital', 9, 'shelter', 8, 6],
+            'circle-color': ['match', ['get', 'kind'], 'hospital', '#38bdf8', 'shelter', '#BDFF42', '#e2e8f0'],
+            'circle-opacity': 0.22,
+          },
+        });
+        map.addLayer({
+          id: 'twin-facilities-core',
+          type: 'circle',
+          source: 'twin-facilities',
+          paint: {
+            'circle-radius': ['match', ['get', 'kind'], 'hospital', 4.2, 'shelter', 3.6, 2.6],
+            'circle-color': ['match', ['get', 'kind'], 'hospital', '#38bdf8', 'shelter', '#BDFF42', '#e2e8f0'],
+            'circle-stroke-width': 1,
+            'circle-stroke-color': '#04100a',
+          },
+        });
+        map.addLayer({
+          id: 'twin-facilities-labels',
+          type: 'symbol',
+          source: 'twin-facilities',
+          layout: {
+            'text-field': ['get', 'name'],
+            'text-size': 11,
+            'text-offset': [0, 1.2],
+            'text-anchor': 'top',
+            'text-allow-overlap': false,
+            'text-ignore-placement': false,
+          },
+          paint: {
+            'text-color': '#e6f2e6',
+            'text-halo-color': '#04100a',
+            'text-halo-width': 1.6,
+          },
+        });
+        map.on('click', 'twin-facilities-halo', e => {
+          const f = e.features?.[0];
+          if (!f) return;
+          const { name, kind, capacity, beds } = f.properties;
+          const detail =
+            kind === 'hospital'
+              ? `${beds ? beds + ' beds' : 'referral facility'}`
+              : kind === 'shelter'
+                ? `${capacity || '—'} capacity`
+                : '';
+          popupRef.current?.remove();
+          popupRef.current = new Popup({ closeButton: false, offset: 10 })
+            .setLngLat(f.geometry.coordinates)
+            .setHTML(
+              `<div style="font-family:monospace;font-size:11px;color:#e6f2e6;background:#04100a;padding:6px 8px;border:1px solid #249344">
+                 <b>${name}</b><br/><span style="color:#9FD8A8">${kind}${detail ? ' · ' + detail : ''}</span>
+               </div>`
+            )
+            .addTo(map);
+        });
+        map.on('mouseenter', 'twin-facilities-halo', () => {
+          map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'twin-facilities-halo', () => {
+          map.getCanvas().style.cursor = '';
+        });
+      }
     }
-  }, [currentHour, activeLayer]);
+  };
 
-  // Toggle Assets
+    if (map.isStyleLoaded()) add();
+    else map.once('idle', add);
+  }, [ready, buildings, infra, bounds]);
+
+  // ---------------------------------------------------------------------
+  // Simulation raster overlay (server-rendered PNG)
+  // ---------------------------------------------------------------------
+  const layerUrl = useMemo(() => {
+    // Only detection-pipeline runs have server-rendered overlay layers.
+    if (!activeRun?.run_id || activeRun.run_kind !== 'detection') return null;
+    return `${API_BASE}/simulations/${activeRun.run_id}/layer/${layer}/${hour}.png`;
+  }, [activeRun?.run_id, activeRun?.run_kind, layer, hour]);
+
+  const overlayCoords = useMemo(() => {
+    if (!bounds) return null;
+    return [
+      [bounds.west, bounds.north],
+      [bounds.east, bounds.north],
+      [bounds.east, bounds.south],
+      [bounds.west, bounds.south],
+    ];
+  }, [bounds]);
+
   useEffect(() => {
-    if (assetsGroupRef.current) {
-      assetsGroupRef.current.visible = showAssets;
+    const map = mapRef.current;
+    if (!map || !ready) return;
+
+    const apply = () => {
+      if (!map.isStyleLoaded()) return;
+
+      if (!layerUrl || !overlayCoords) {
+        if (map.getLayer('sim-overlay')) map.removeLayer('sim-overlay');
+        if (map.getSource('sim-overlay')) map.removeSource('sim-overlay');
+        return;
+      }
+
+      const visible = showOverlay ? 'visible' : 'none';
+      if (map.getSource('sim-overlay')) {
+        map.getSource('sim-overlay').updateImage({ url: layerUrl, coordinates: overlayCoords });
+        if (map.getLayer('sim-overlay')) {
+          map.setLayoutProperty('sim-overlay', 'visibility', visible);
+        }
+      } else {
+        map.addSource('sim-overlay', {
+          type: 'image',
+          url: layerUrl,
+          coordinates: overlayCoords,
+        });
+        map.addLayer(
+          {
+            id: 'sim-overlay',
+            type: 'raster',
+            source: 'sim-overlay',
+            paint: { 'raster-opacity': 0.92, 'raster-fade-duration': 120, 'raster-resampling': 'linear' },
+          },
+          map.getLayer('twin-lifelines-casing') ? 'twin-lifelines-casing' : undefined
+        );
+        map.setLayoutProperty('sim-overlay', 'visibility', visible);
+      }
+    };
+
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, layerUrl, overlayCoords, showOverlay]);
+
+  // Preload next frames so scrubbing feels instant
+  useEffect(() => {
+    if (!layerUrl) return;
+    const maxH = activeRun?.timeline?.length ? activeRun.timeline.length - 1 : 24;
+    [hour + 1, hour + 2, hour + 3]
+      .filter(h => h <= maxH)
+      .forEach(h => {
+        const img = new Image();
+        img.src = `${API_BASE}/simulations/${activeRun.run_id}/layer/${layer}/${h}.png`;
+      });
+  }, [layerUrl, activeRun?.run_id, activeRun?.timeline, hour, layer]);
+
+  // ---------------------------------------------------------------------
+  // Detections layer
+  // ---------------------------------------------------------------------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
+    const apply = () => {
+      if (!map.isStyleLoaded()) return;
+      const features = (activeRun?.detections?.features || []).filter(
+        f => (f.properties.detection_hour ?? 0) <= hour
+      );
+
+      if (!features.length) {
+        if (map.getLayer('detections-halo')) map.setLayoutProperty('detections-halo', 'visibility', 'none');
+        if (map.getLayer('detections-core')) map.setLayoutProperty('detections-core', 'visibility', 'none');
+        if (map.getLayer('detections-label')) map.setLayoutProperty('detections-label', 'visibility', 'none');
+        return;
+      }
+
+      const data = { type: 'FeatureCollection', features };
+      if (map.getSource('detections')) {
+        map.getSource('detections').setData(data);
+      } else {
+        map.addSource('detections', { type: 'geojson', data });
+        map.addLayer({
+          id: 'detections-halo',
+          type: 'circle',
+          source: 'detections',
+          paint: {
+            'circle-radius': [
+              'interpolate', ['linear'], ['get', 'area_ha'],
+              0.2, 12, 1, 20, 5, 32, 20, 46,
+            ],
+            'circle-color': '#ef4444',
+            'circle-opacity': 0.16,
+            'circle-blur': 0.35,
+          },
+        });
+        map.addLayer({
+          id: 'detections-core',
+          type: 'circle',
+          source: 'detections',
+          paint: {
+            'circle-radius': [
+              'interpolate', ['linear'], ['get', 'area_ha'],
+              0.2, 3.5, 1, 5.5, 5, 8, 20, 11,
+            ],
+            'circle-color': [
+              'match', ['get', 'confidence_label'],
+              'HIGH', '#ef4444',
+              'MODERATE', '#f97316',
+              '#facc15',
+            ],
+            'circle-stroke-width': 1.4,
+            'circle-stroke-color': '#2b0808',
+          },
+        });
+        map.addLayer({
+          id: 'detections-label',
+          type: 'symbol',
+          source: 'detections',
+          minzoom: 11.5,
+          layout: {
+            'text-field': ['get', 'id'],
+            'text-size': 9.5,
+            'text-offset': [0, 1.5],
+            'text-anchor': 'top',
+            'text-font': ['Open Sans Regular'],
+          },
+          paint: {
+            'text-color': '#ffd9d9',
+            'text-halo-color': '#200404',
+            'text-halo-width': 1.1,
+          },
+        });
+
+        map.on('click', 'detections-halo', e => {
+          const p = e.features?.[0]?.properties;
+          if (!p) return;
+          popupRef.current?.remove();
+          const assets = (p.assets || [])
+            .map(a => `<div>· ${a.kind}: ${a.name}${a.time_to_impact_h != null ? ' @ T+' + a.time_to_impact_h + 'h' : ''}</div>`)
+            .join('');
+          popupRef.current = new Popup({ closeButton: true, maxWidth: '280px' })
+            .setLngLat(e.features[0].geometry.coordinates)
+            .setHTML(
+              `<div style="font-family:monospace;font-size:11px;color:#e6f2e6;background:#04100a;padding:8px;border:1px solid #7f1d1d">
+                 <b style="color:#ff8b8b">${p.id}</b><br/>
+                 <span style="color:#9FD8A8">
+                   ${p.area_ha} ha · FS ${p.min_fs} · ${p.mean_slope_deg}°<br/>
+                   runout ${p.runout_distance_m} m · ${p.max_speed_kmh} km/h<br/>
+                   detected T+${p.detection_hour}h · confidence ${p.confidence}
+                 </span>
+                 ${assets ? `<div style="margin-top:4px">${assets}</div>` : ''}
+               </div>`
+            )
+            .addTo(map);
+        });
+        map.on('mouseenter', 'detections-halo', () => {
+          map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'detections-halo', () => {
+          map.getCanvas().style.cursor = '';
+        });
+      }
+
+      ['detections-halo', 'detections-core', 'detections-label'].forEach(id => {
+        if (map.getLayer(id)) {
+          map.setLayoutProperty(id, 'visibility', showDetections ? 'visible' : 'none');
+        }
+      });
+    };
+
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, activeRun, hour, showDetections]);
+
+  // Layer toggles
+  const toggleBasemap = () => {
+    const next = !showImagery;
+    setShowImagery(next);
+    if (mapRef.current?.getLayer('sat')) {
+      mapRef.current.setLayoutProperty('sat', 'visibility', next ? 'visible' : 'none');
     }
-  }, [showAssets]);
+  };
+  const toggleRelief = () => {
+    const next = !showRelief;
+    setShowRelief(next);
+    if (mapRef.current?.getLayer('hs')) {
+      mapRef.current.setLayoutProperty('hs', 'visibility', next ? 'visible' : 'none');
+    }
+  };
+  const toggle3D = () => {
+    const next = !is3D;
+    setIs3D(next);
+    mapRef.current?.easeTo({
+      pitch: next ? aoiMeta.camera.pitch : 0,
+      bearing: next ? aoiMeta.camera.bearing : 0,
+      duration: 900,
+    });
+  };
+
+  const timeline = activeRun?.timeline || [];
+  const row = timeline[hour] || {};
+  const maxHour = timeline.length ? timeline.length - 1 : 24;
+  const detectionsNow = (activeRun?.detections?.features || []).filter(
+    f => (f.properties.detection_hour ?? 0) <= hour
+  );
+
+  const levelColor =
+    row.hazard_level === 'SEVERE'
+      ? '#ef4444'
+      : row.hazard_level === 'WARNING'
+        ? '#f97316'
+        : row.hazard_level === 'WATCH'
+          ? '#eab308'
+          : '#22c55e';
 
   return (
-    <div className="relative w-full h-full flex flex-col bg-[#06150C] rounded-lg overflow-hidden border border-[#249344]/40 shadow-2xl">
-      {/* Top Overlay Header */}
-      <div className="absolute top-3 left-3 z-20 flex flex-wrap items-center gap-2 pointer-events-none">
-        <div className="pointer-events-auto bg-[#0A2416]/90 backdrop-blur-md px-3 py-1.5 rounded-md border border-[#249344]/50 flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#BDFF42] animate-ping"></span>
-            <span className="font-mono text-xs font-bold text-[#BDFF42] tracking-wider uppercase">
-              3D DIGITAL TWIN · {aoi.toUpperCase()}
-            </span>
-          </div>
-          <div className="h-4 w-px bg-[#249344]/40"></div>
-          <span className="text-xs font-mono text-[#9FD8A8]">
-            RES: 30m · AWS TERRARIUM DEM
-          </span>
-        </div>
-        <SimulatedBadge />
+    <div className="relative w-full h-full min-h-[420px] bg-[#04100a] rounded-lg overflow-hidden border border-[#249344]/40 flex flex-col">
+      <div ref={containerRef} className="absolute inset-0" data-testid="simulation-map" />
+
+      {/* Top controls */}
+      <div className="relative z-20 p-2 flex flex-wrap items-center gap-1.5 pointer-events-auto">
+        <MapToggle active={showImagery} onClick={toggleBasemap} icon={<Layers size={11} />} label="IMAGERY" />
+        <MapToggle active={showRelief} onClick={toggleRelief} icon={<Mountain size={11} />} label="RELIEF" />
+        <MapToggle active={showOverlay} onClick={() => setShowOverlay(v => !v)} icon={<Sparkles size={11} />} label="MODEL" highlight />
+        <MapToggle active={showDetections} onClick={() => setShowDetections(v => !v)} icon={<AlertTriangle size={11} />} label="DETECTIONS" />
+        <MapToggle active={is3D} onClick={toggle3D} label="3D" />
       </div>
 
-      {/* Layer Selector & Controls Top Right */}
-      <div className="absolute top-3 right-3 z-20 flex items-center gap-2">
-        <div className="bg-[#0A2416]/90 backdrop-blur-md p-1 rounded-md border border-[#249344]/50 flex items-center gap-1 text-xs">
-          <button
-            onClick={() => setActiveLayer('combined')}
-            className={`px-2.5 py-1 rounded transition-colors ${activeLayer === 'combined' ? 'bg-[#BDFF42] text-[#06150C] font-semibold' : 'text-[#9FD8A8] hover:bg-[#249344]/20'}`}
-          >
-            Coupled Twin
-          </button>
-          <button
-            onClick={() => setActiveLayer('fs')}
-            className={`px-2.5 py-1 rounded transition-colors ${activeLayer === 'fs' ? 'bg-[#FFA31A] text-[#06150C] font-semibold' : 'text-[#9FD8A8] hover:bg-[#249344]/20'}`}
-          >
-            Slope FS
-          </button>
-          <button
-            onClick={() => setActiveLayer('moisture')}
-            className={`px-2.5 py-1 rounded transition-colors ${activeLayer === 'moisture' ? 'bg-cyan-400 text-[#06150C] font-semibold' : 'text-[#9FD8A8] hover:bg-[#249344]/20'}`}
-          >
-            Pore Saturation
-          </button>
-          <button
-            onClick={() => setActiveLayer('runout')}
-            className={`px-2.5 py-1 rounded transition-colors ${activeLayer === 'runout' ? 'bg-rose-500 text-white font-semibold' : 'text-[#9FD8A8] hover:bg-[#249344]/20'}`}
-          >
-            D8 Runout
-          </button>
-        </div>
-
-        <button
-          onClick={() => setShowAssets(!showAssets)}
-          className={`p-1.5 rounded-md border backdrop-blur-md text-xs flex items-center gap-1 ${showAssets ? 'bg-[#249344]/30 border-[#BDFF42] text-[#BDFF42]' : 'bg-[#0A2416]/80 border-[#249344]/40 text-[#9FD8A8]'}`}
-          title="Toggle OSM Infrastructure Overlay"
-        >
-          <Layers className="w-4 h-4" />
-        </button>
-
-        <button
-          onClick={() => setIs2DMode(!is2DMode)}
-          className="px-2.5 py-1.5 rounded-md border border-[#249344]/50 bg-[#0A2416]/90 backdrop-blur-md text-xs font-mono text-[#9FD8A8] hover:text-white"
-        >
-          {is2DMode ? '3D VIEW' : '2D MAP'}
-        </button>
+      {/* Honesty ribbon */}
+      <div className="absolute top-2 right-11 z-20 pointer-events-none">
+        <span className="text-[9px] font-mono px-2 py-1 rounded bg-[#04100a]/85 border border-[#BDFF42]/35 text-[#BDFF42]">
+          SCREENING OUTPUT · NOT A VALIDATED WARNING
+        </span>
       </div>
 
-      {/* Main View Area: 3D Canvas or 2D Fallback */}
-      <div className="relative flex-1 w-full min-h-[360px] bg-grid-pattern cursor-grab active:cursor-grabbing">
-        {is2DMode ? (
-          <div className="w-full h-full p-6 flex flex-col items-center justify-center bg-[#071a10]">
-            <div className="max-w-md p-6 rounded-lg border border-[#249344] bg-[#0A2416] text-center space-y-4">
-              <Mountain className="w-12 h-12 text-[#BDFF42] mx-auto opacity-80" />
-              <h3 className="text-sm font-bold tracking-wider uppercase text-[#BDFF42]">
-                2D Topographic Contours (Low-Power / A11y Mode)
-              </h3>
-              <p className="text-xs text-[#9FD8A8]">
-                Displaying 2D planimetric D8 drainage network and infinite-slope Factor of Safety contour overlay.
-              </p>
-              <div className="p-3 bg-black/40 rounded border border-[#249344]/30 text-left font-mono text-xs space-y-1">
-                <div>AOI: Gangtok-NH10 Corridor (27.32° N, 88.61° E)</div>
-                <div>Min FS: <span className="text-[#FFA31A] font-bold">{currentMetrics.minFs}</span></div>
-                <div>Critical Cell Count: <span className="text-rose-400 font-bold">{currentMetrics.failureCells}</span></div>
-                <div>Highway Status: <span className={currentMetrics.roadBlocked ? "text-rose-400 font-bold" : "text-emerald-400 font-bold"}>{currentMetrics.roadBlocked ? "IMPACTED (KM-18 BLOCKED)" : "OPEN"}</span></div>
-              </div>
+      <div className="flex-1" />
+
+      {/* Bottom HUD */}
+      <div className="relative z-20 m-2 p-2 bg-[#04100a]/92 border border-[#249344]/50 rounded backdrop-blur-md">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+          <div className="flex items-center gap-2 flex-1 min-w-0">
+            <button
+              onClick={togglePlayback}
+              className="p-1 rounded bg-[#0a2416] border border-[#249344] hover:border-[#BDFF42] text-[#BDFF42]"
+              title={playing ? 'Pause' : 'Play'}
+            >
+              {playing ? <Pause size={13} /> : <Play size={13} />}
+            </button>
+            <button
+              onClick={() => emitHour(0)}
+              className="p-1 rounded bg-[#0a2416] border border-[#249344]/50 hover:border-[#BDFF42] text-[#9FD8A8]"
+              title="Reset"
+            >
+              <RotateCcw size={13} />
+            </button>
+            <div className="flex items-center gap-2 flex-1 max-w-md">
+              <span className="text-[11px] font-mono text-[#BDFF42] font-bold whitespace-nowrap">
+                T+{hour}h
+              </span>
+              <input
+                type="range"
+                min={0}
+                max={maxHour}
+                value={hour}
+                onChange={e => emitHour(Number(e.target.value))}
+                className="w-full accent-[#BDFF42] h-1.5 bg-[#0a2416] rounded cursor-pointer"
+                data-testid="sim-hour-slider"
+              />
+              <span className="text-[10px] font-mono text-[#5E8B67] whitespace-nowrap">T+{maxHour}h</span>
             </div>
           </div>
-        ) : (
-          <div ref={mountRef} className="w-full h-full" />
+
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-mono">
+            <Read label="rain" value={`${row.rain_mm ?? 0} mm/h`} />
+            <Read label="cum" value={`${row.cum_rain_mm ?? 0} mm`} />
+            <Read label="sat" value={`${(((row.mean_saturation ?? 0) * 100)).toFixed(0)}%`} accent="#38bdf8" />
+            <Read label="failed" value={`${row.failed_cells ?? 0} cells`} accent="#f87171" />
+            <Read label="runout" value={`${row.footprint_cells ?? 0} cells`} accent="#fb923c" />
+            <span className="px-1.5 py-0.5 rounded border" style={{ borderColor: levelColor, color: levelColor }}>
+              {row.hazard_level || 'IDLE'}
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-1.5 pt-1.5 border-t border-[#249344]/30 flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-2 text-[9px] font-mono text-[#9FD8A8]">
+            <LegendDot color="#0284c7" label="Saturated" />
+            <LegendDot color="#eab308" label="FS 1.0–1.3" />
+            <LegendDot color="#ef4444" label="FS < 1" />
+            <LegendDot color="#f97316" label="Runout" />
+            <LegendDot color="#facc15" label="Detection" />
+            <span className="text-[#5E8B67]">· {detectionsNow.length} detections @ T+{hour}h</span>
+          </div>
+          <button
+            onClick={() => setLegendOpen(v => !v)}
+            className="text-[9px] font-mono text-[#5E8B67] hover:text-[#BDFF42] flex items-center gap-1"
+          >
+            <ShieldAlert size={10} /> provenance
+            {legendOpen ? <ChevronDown size={10} /> : <ChevronUp size={10} />}
+          </button>
+        </div>
+
+        {legendOpen && (
+          <div className="mt-1.5 text-[9px] font-mono text-[#5E8B67] leading-relaxed border-t border-[#249344]/25 pt-1.5">
+            DEM {manifest?.data_provenance?.dem_source || 'Copernicus GLO-30 (AWS Terrarium)'} ·{' '}
+            {manifest?.grid ? `${manifest.grid.cell_size_m} m grid` : 'twin grid'} ·{' '}
+            imagery {manifest?.data_provenance?.satellite_imagery_date || 'cached'} ·{' '}
+            hypothesis: {activeRun?.model || 'transient infiltration + infinite slope + Voellmy runout'}
+            {activeRun?.config_hash ? ` · hash ${activeRun.config_hash}` : ''}
+          </div>
         )}
-
-        {/* Live Simulation Metrics HUD Overlay */}
-        <div className="absolute bottom-16 left-3 z-10 bg-[#0A2416]/85 backdrop-blur-md p-3 rounded-lg border border-[#249344]/40 font-mono text-xs space-y-1.5 shadow-xl pointer-events-none">
-          <div className="flex items-center justify-between gap-4 text-[#9FD8A8] border-b border-[#249344]/30 pb-1 font-sans font-bold">
-            <span>PHYSICS STATE</span>
-            <span className="text-[#BDFF42] font-mono">T + {currentHour}:00 HRS</span>
-          </div>
-          <div className="flex justify-between gap-4">
-            <span className="text-slate-400">Precipitation:</span>
-            <span className="text-white font-bold">{currentMetrics.rainMm} mm</span>
-          </div>
-          <div className="flex justify-between gap-4">
-            <span className="text-slate-400">Min Safety Factor (FS):</span>
-            <span className={`font-bold ${parseFloat(currentMetrics.minFs) < 1.0 ? 'text-rose-400' : 'text-emerald-400'}`}>
-              {currentMetrics.minFs} {parseFloat(currentMetrics.minFs) < 1.0 ? '⚠️' : '✓'}
-            </span>
-          </div>
-          <div className="flex justify-between gap-4">
-            <span className="text-slate-400">Mean Saturation (Sr):</span>
-            <span className="text-cyan-400 font-bold">{currentMetrics.saturation}%</span>
-          </div>
-          <div className="flex justify-between gap-4">
-            <span className="text-slate-400">Runout Volume:</span>
-            <span className="text-amber-400 font-bold">{currentMetrics.volReleased} m³</span>
-          </div>
-          <div className="flex justify-between gap-4 border-t border-[#249344]/20 pt-1">
-            <span className="text-slate-400">NH10 Highway:</span>
-            <span className={`font-bold ${currentMetrics.roadBlocked ? 'text-rose-400 animate-pulse' : 'text-emerald-400'}`}>
-              {currentMetrics.roadBlocked ? 'BLOCKED AT KM-18' : 'CLEAR'}
-            </span>
-          </div>
-        </div>
-
-        {/* Legend Overlay Bottom Right */}
-        <div className="absolute bottom-16 right-3 z-10 bg-[#0A2416]/80 backdrop-blur-md p-2.5 rounded-lg border border-[#249344]/40 font-mono text-[10px] space-y-1 pointer-events-none">
-          <div className="text-[#BDFF42] font-sans font-semibold mb-1">TERRAIN LEGEND</div>
-          <div className="flex items-center gap-1.5 text-slate-300">
-            <span className="w-2.5 h-2.5 rounded-sm bg-rose-500"></span>
-            <span>FS &lt; 1.0 (Slope Failure Zone)</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-slate-300">
-            <span className="w-2.5 h-2.5 rounded-sm bg-amber-500"></span>
-            <span>NH10 Corridor Lifeline</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-slate-300">
-            <span className="w-2.5 h-2.5 rounded-sm bg-cyan-400"></span>
-            <span>Unsaturated Pore Hydrology</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-slate-300">
-            <span className="w-2.5 h-2.5 rounded-sm bg-[#BDFF42]"></span>
-            <span>Relief Shelter / Asset Pin</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Scrubber & Playback Toolbar */}
-      <div className="h-14 bg-[#0A2416] border-t border-[#249344]/50 px-4 flex items-center justify-between gap-4 z-20">
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setIsPlaying(!isPlaying)}
-            className="p-2 rounded bg-[#BDFF42] text-[#06150C] hover:bg-lime-300 transition-colors shadow-md"
-            title={isPlaying ? "Pause Timeline" : "Play Simulation Timeline"}
-          >
-            {isPlaying ? <Pause className="w-4 h-4 fill-current" /> : <Play className="w-4 h-4 fill-current ml-0.5" />}
-          </button>
-          <button
-            onClick={() => { setIsPlaying(false); setCurrentHour(0); }}
-            className="p-2 rounded bg-[#249344]/20 border border-[#249344]/40 text-[#9FD8A8] hover:text-white hover:bg-[#249344]/40 transition-colors"
-            title="Reset Timeline to t=0"
-          >
-            <RotateCcw className="w-4 h-4" />
-          </button>
-          <div className="font-mono text-xs text-[#BDFF42] ml-2 font-bold min-w-[70px]">
-            T + {currentHour.toString().padStart(2, '0')}:00h
-          </div>
-        </div>
-
-        {/* Timeline Slider */}
-        <div className="flex-1 max-w-2xl flex items-center gap-3">
-          <span className="text-[11px] font-mono text-slate-400">0h</span>
-          <input
-            type="range"
-            min="0"
-            max={maxHours}
-            value={currentHour}
-            onChange={(e) => {
-              setIsPlaying(false);
-              setCurrentHour(parseInt(e.target.value));
-            }}
-            className="w-full h-1.5 bg-[#06150C] rounded-lg appearance-none cursor-pointer accent-[#BDFF42] border border-[#249344]/50"
-          />
-          <span className="text-[11px] font-mono text-slate-400">24h</span>
-        </div>
-
-        <div className="hidden sm:flex items-center gap-2 text-xs font-mono text-[#9FD8A8]">
-          <span className="text-slate-400">Rain Horizon:</span>
-          <span className="text-[#FFA31A] font-bold">72h Open-Meteo</span>
-        </div>
       </div>
     </div>
+  );
+}
+
+function MapToggle({ active, onClick, icon, label, highlight }) {
+  const base =
+    'px-2 py-1 text-[10px] font-mono rounded-sm border backdrop-blur-md transition-colors flex items-center gap-1';
+  if (active) {
+    return (
+      <button
+        onClick={onClick}
+        className={`${base} ${highlight ? 'bg-[#BDFF42] border-[#BDFF42] text-[#04100a]' : 'bg-[#0a2416]/90 border-[#BDFF42] text-[#BDFF42]'}`}
+      >
+        {icon}
+        <span>{label}</span>
+      </button>
+    );
+  }
+  return (
+    <button
+      onClick={onClick}
+      className={`${base} bg-[#04100a]/80 border-[#249344]/30 text-[#5E8B67] hover:text-white`}
+    >
+      {icon}
+      <span>{label}</span>
+    </button>
+  );
+}
+
+function Read({ label, value, accent }) {
+  return (
+    <span>
+      <span className="text-[#5E8B67]">{label}: </span>
+      <span style={{ color: accent || '#e6f2e6' }} className="font-semibold">{value}</span>
+    </span>
+  );
+}
+
+function LegendDot({ color, label }) {
+  return (
+    <span className="flex items-center gap-1">
+      <span className="w-2 h-2 rounded-sm" style={{ backgroundColor: color }} />
+      {label}
+    </span>
   );
 }

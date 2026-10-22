@@ -68,7 +68,11 @@ async def test_aoi_api_endpoints():
         res_list = await ac.get("/api/v1/aois")
         assert res_list.status_code == 200
         aois = res_list.json()
-        assert len(aois) == 4
+        # 4 NER operational AOIs + 2 generality demos (Wayanad, Joshimath)
+        assert len(aois) == 6
+        ids = {a["id"] for a in aois}
+        assert {"gangtok", "shillong", "aizawl", "tupul"} <= ids
+        assert {"wayanad", "joshimath"} <= ids
         assert any(a["id"] == "gangtok" for a in aois)
         
         res_gtk = await ac.get("/api/v1/aois/gangtok")

@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "aoi_id": "joshimath",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.55,
+            30.54
+          ],
+          [
+            79.566,
+            30.557
+          ],
+          [
+            79.58,
+            30.575
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-nh58",
+        "name": "NH-58 Badrinath National Highway",
+        "kind": "road",
+        "road_kind": "primary",
+        "surface": "asphalt",
+        "width_m": 8.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.565,
+          30.556
+        ]
+      },
+      "properties": {
+        "id": "cp-josh-h",
+        "name": "Joshimath Sub-Divisional Hospital",
+        "lon": 79.565,
+        "lat": 30.556,
+        "kind": "hospital",
+        "beds": 80,
+        "feature_type": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.57,
+          30.56
+        ]
+      },
+      "properties": {
+        "id": "cp-josh-s",
+        "name": "TCP Joshimath Relief Camp",
+        "lon": 79.57,
+        "lat": 30.56,
+        "kind": "shelter",
+        "capacity": 1000,
+        "feature_type": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.566,
+          30.557
+        ]
+      },
+      "properties": {
+        "id": "v-jos",
+        "name": "Joshimath Town",
+        "lat": 30.557,
+        "lon": 79.566,
+        "pop": 23000,
+        "bldg_density": "high",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.56,
+          30.552
+        ]
+      },
+      "properties": {
+        "id": "v-sun",
+        "name": "Sunil Ward",
+        "lat": 30.552,
+        "lon": 79.56,
+        "pop": 3200,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    }
+  ]
+}

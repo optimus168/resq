@@ -37,6 +37,22 @@ async def get_current_user(request: Request) -> dict:
         
     return user
 
+async def get_current_user_optional(request: Request) -> dict | None:
+    token = request.cookies.get("access_token")
+    auth_header = request.headers.get("Authorization", "")
+    if auth_header.startswith("Bearer "):
+        token = auth_header[7:].strip()
+        
+    if not token:
+        return None
+        
+    try:
+        payload = decode_token(token)
+        user = await db.fetch_one("SELECT id, email, name, role FROM users WHERE id = ?", (payload["sub"],))
+        return user
+    except Exception:
+        return None
+
 def require_roles(*allowed_roles: str):
     async def role_guard(current_user: dict = Depends(get_current_user)) -> dict:
         if current_user["role"] not in allowed_roles:

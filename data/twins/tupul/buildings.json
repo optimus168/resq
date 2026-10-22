@@ -1,0 +1,2092 @@
+[
+  {
+    "id": "bldg-v-tcamp-001",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.607136,
+      24.870454
+    ],
+    "u": 0.5412,
+    "v": 0.2004,
+    "ground_elevation_m": 792.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.8,
+      10.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-002",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.614799,
+      24.85939
+    ],
+    "u": 0.6284,
+    "v": 0.3391,
+    "ground_elevation_m": 393.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.2,
+      10.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-003",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.611643,
+      24.867576
+    ],
+    "u": 0.5925,
+    "v": 0.2365,
+    "ground_elevation_m": 646.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.5,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-004",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.605604,
+      24.871706
+    ],
+    "u": 0.5238,
+    "v": 0.1847,
+    "ground_elevation_m": 885.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.3,
+      13.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-005",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.616581,
+      24.866824
+    ],
+    "u": 0.6487,
+    "v": 0.2459,
+    "ground_elevation_m": 586.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.1,
+      14.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-006",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.608152,
+      24.877014
+    ],
+    "u": 0.5528,
+    "v": 0.1181,
+    "ground_elevation_m": 735.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.7,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-007",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.608778,
+      24.871386
+    ],
+    "u": 0.5599,
+    "v": 0.1887,
+    "ground_elevation_m": 793.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.7,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-008",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.615928,
+      24.865731
+    ],
+    "u": 0.6412,
+    "v": 0.2596,
+    "ground_elevation_m": 515.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.7,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-009",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.606433,
+      24.867651
+    ],
+    "u": 0.5332,
+    "v": 0.2355,
+    "ground_elevation_m": 594.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.9,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-010",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.608184,
+      24.870222
+    ],
+    "u": 0.5531,
+    "v": 0.2033,
+    "ground_elevation_m": 785.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-011",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.606066,
+      24.871478
+    ],
+    "u": 0.529,
+    "v": 0.1876,
+    "ground_elevation_m": 862.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      18.0,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-012",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.611134,
+      24.864268
+    ],
+    "u": 0.5867,
+    "v": 0.278,
+    "ground_elevation_m": 465.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.6,
+      15.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-013",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.611425,
+      24.86606
+    ],
+    "u": 0.59,
+    "v": 0.2555,
+    "ground_elevation_m": 557.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.3,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-014",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.606008,
+      24.867271
+    ],
+    "u": 0.5284,
+    "v": 0.2403,
+    "ground_elevation_m": 612.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.5,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-015",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.613581,
+      24.856679
+    ],
+    "u": 0.6145,
+    "v": 0.3731,
+    "ground_elevation_m": 362.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.2,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-016",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.609541,
+      24.866366
+    ],
+    "u": 0.5686,
+    "v": 0.2517,
+    "ground_elevation_m": 544.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.5,
+      12.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-017",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.612763,
+      24.867133
+    ],
+    "u": 0.6052,
+    "v": 0.242,
+    "ground_elevation_m": 625.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.3,
+      10.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-018",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.608343,
+      24.86433
+    ],
+    "u": 0.5549,
+    "v": 0.2772,
+    "ground_elevation_m": 459.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      10.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-019",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.616316,
+      24.871658
+    ],
+    "u": 0.6456,
+    "v": 0.1853,
+    "ground_elevation_m": 503.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.2,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-020",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.613489,
+      24.870024
+    ],
+    "u": 0.6135,
+    "v": 0.2058,
+    "ground_elevation_m": 599.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.5,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tcamp-021",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.610419,
+      24.870445
+    ],
+    "u": 0.5785,
+    "v": 0.2005,
+    "ground_elevation_m": 754.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.9,
+      8.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-022",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.611094,
+      24.866308
+    ],
+    "u": 0.5862,
+    "v": 0.2524,
+    "ground_elevation_m": 557.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.1,
+      10.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-023",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.612157,
+      24.864114
+    ],
+    "u": 0.5983,
+    "v": 0.2799,
+    "ground_elevation_m": 456.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.4,
+      12.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-024",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.609721,
+      24.870915
+    ],
+    "u": 0.5706,
+    "v": 0.1946,
+    "ground_elevation_m": 752.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.9,
+      12.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tcamp-025",
+    "village_id": "v-tcamp",
+    "village_name": "Tupul Rail Project Camp",
+    "center": [
+      93.61311,
+      24.871447
+    ],
+    "u": 0.6092,
+    "v": 0.1879,
+    "ground_elevation_m": 619.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.2,
+      13.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-001",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.61436,
+      24.859846
+    ],
+    "u": 0.6234,
+    "v": 0.3334,
+    "ground_elevation_m": 354.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.6,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-002",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.616745,
+      24.857557
+    ],
+    "u": 0.6505,
+    "v": 0.3621,
+    "ground_elevation_m": 439.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.6,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-003",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.619137,
+      24.851413
+    ],
+    "u": 0.6777,
+    "v": 0.4391,
+    "ground_elevation_m": 462.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.1,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-004",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.609635,
+      24.859412
+    ],
+    "u": 0.5696,
+    "v": 0.3388,
+    "ground_elevation_m": 340.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.0,
+      14.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-005",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.615662,
+      24.862239
+    ],
+    "u": 0.6382,
+    "v": 0.3034,
+    "ground_elevation_m": 327.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.2,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-006",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.611763,
+      24.856898
+    ],
+    "u": 0.5938,
+    "v": 0.3704,
+    "ground_elevation_m": 318.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.0,
+      10.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-007",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.612759,
+      24.858827
+    ],
+    "u": 0.6052,
+    "v": 0.3462,
+    "ground_elevation_m": 321.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.9,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-008",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.614139,
+      24.860374
+    ],
+    "u": 0.6209,
+    "v": 0.3268,
+    "ground_elevation_m": 327.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.1,
+      15.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-009",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.616307,
+      24.850977
+    ],
+    "u": 0.6455,
+    "v": 0.4446,
+    "ground_elevation_m": 483.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.6,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-010",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.613126,
+      24.850449
+    ],
+    "u": 0.6093,
+    "v": 0.4512,
+    "ground_elevation_m": 485.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.9,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-011",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.612208,
+      24.854852
+    ],
+    "u": 0.5989,
+    "v": 0.396,
+    "ground_elevation_m": 374.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.9,
+      10.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-012",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.624016,
+      24.859776
+    ],
+    "u": 0.7333,
+    "v": 0.3343,
+    "ground_elevation_m": 336.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.4,
+      13.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-013",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.615885,
+      24.854157
+    ],
+    "u": 0.6407,
+    "v": 0.4047,
+    "ground_elevation_m": 434.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.5,
+      16.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-014",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617575,
+      24.855242
+    ],
+    "u": 0.66,
+    "v": 0.3911,
+    "ground_elevation_m": 484.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.3,
+      8.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-015",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617716,
+      24.854504
+    ],
+    "u": 0.6616,
+    "v": 0.4004,
+    "ground_elevation_m": 469.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.5,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-016",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.620279,
+      24.854463
+    ],
+    "u": 0.6907,
+    "v": 0.4009,
+    "ground_elevation_m": 494.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.5,
+      12.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-017",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.614001,
+      24.858149
+    ],
+    "u": 0.6193,
+    "v": 0.3547,
+    "ground_elevation_m": 350.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.9,
+      12.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-018",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.608305,
+      24.86603
+    ],
+    "u": 0.5545,
+    "v": 0.2559,
+    "ground_elevation_m": 548.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-019",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.620425,
+      24.85273
+    ],
+    "u": 0.6924,
+    "v": 0.4226,
+    "ground_elevation_m": 480.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.7,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-020",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.606363,
+      24.860533
+    ],
+    "u": 0.5324,
+    "v": 0.3248,
+    "ground_elevation_m": 347.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.4,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-021",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.621584,
+      24.857904
+    ],
+    "u": 0.7056,
+    "v": 0.3578,
+    "ground_elevation_m": 408.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.1,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-022",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.623819,
+      24.856041
+    ],
+    "u": 0.731,
+    "v": 0.3811,
+    "ground_elevation_m": 397.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.7,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-023",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.613783,
+      24.856069
+    ],
+    "u": 0.6168,
+    "v": 0.3808,
+    "ground_elevation_m": 382.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.2,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-024",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.618019,
+      24.856895
+    ],
+    "u": 0.665,
+    "v": 0.3704,
+    "ground_elevation_m": 463.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.7,
+      8.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-025",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.616172,
+      24.858403
+    ],
+    "u": 0.644,
+    "v": 0.3515,
+    "ground_elevation_m": 403.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.2,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-026",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.615965,
+      24.853323
+    ],
+    "u": 0.6416,
+    "v": 0.4152,
+    "ground_elevation_m": 436.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.3,
+      12.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-027",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.622021,
+      24.859966
+    ],
+    "u": 0.7106,
+    "v": 0.3319,
+    "ground_elevation_m": 345.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.8,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-028",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.612381,
+      24.855154
+    ],
+    "u": 0.6009,
+    "v": 0.3922,
+    "ground_elevation_m": 375.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.7,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-029",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.610789,
+      24.84877
+    ],
+    "u": 0.5828,
+    "v": 0.4723,
+    "ground_elevation_m": 502.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.1,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-030",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.612952,
+      24.858515
+    ],
+    "u": 0.6074,
+    "v": 0.3501,
+    "ground_elevation_m": 318.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-031",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617413,
+      24.853625
+    ],
+    "u": 0.6581,
+    "v": 0.4114,
+    "ground_elevation_m": 461.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.6,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-032",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617794,
+      24.855735
+    ],
+    "u": 0.6625,
+    "v": 0.3849,
+    "ground_elevation_m": 485.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.0,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-033",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.61097,
+      24.855311
+    ],
+    "u": 0.5848,
+    "v": 0.3903,
+    "ground_elevation_m": 342.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.5,
+      12.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-034",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.620556,
+      24.8583
+    ],
+    "u": 0.6939,
+    "v": 0.3528,
+    "ground_elevation_m": 403.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.6,
+      13.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-035",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.616488,
+      24.853836
+    ],
+    "u": 0.6476,
+    "v": 0.4088,
+    "ground_elevation_m": 441.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.5,
+      9.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-036",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617168,
+      24.855282
+    ],
+    "u": 0.6553,
+    "v": 0.3906,
+    "ground_elevation_m": 477.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.2,
+      8.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-037",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.615376,
+      24.85348
+    ],
+    "u": 0.6349,
+    "v": 0.4132,
+    "ground_elevation_m": 424.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.4,
+      12.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-038",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617303,
+      24.853752
+    ],
+    "u": 0.6569,
+    "v": 0.4098,
+    "ground_elevation_m": 459.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.9,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-039",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.621917,
+      24.85571
+    ],
+    "u": 0.7094,
+    "v": 0.3853,
+    "ground_elevation_m": 416.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.9,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-040",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.610859,
+      24.859204
+    ],
+    "u": 0.5835,
+    "v": 0.3415,
+    "ground_elevation_m": 332.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.1,
+      10.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-041",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.619167,
+      24.854996
+    ],
+    "u": 0.6781,
+    "v": 0.3942,
+    "ground_elevation_m": 489.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.7,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-042",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.611118,
+      24.856538
+    ],
+    "u": 0.5865,
+    "v": 0.3749,
+    "ground_elevation_m": 319.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.7,
+      9.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-043",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.620388,
+      24.858932
+    ],
+    "u": 0.692,
+    "v": 0.3449,
+    "ground_elevation_m": 399.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.4,
+      11.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-044",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.608947,
+      24.854058
+    ],
+    "u": 0.5618,
+    "v": 0.406,
+    "ground_elevation_m": 419.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.2,
+      9.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-045",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.618754,
+      24.856788
+    ],
+    "u": 0.6734,
+    "v": 0.3717,
+    "ground_elevation_m": 458.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.0,
+      15.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-046",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.612591,
+      24.860066
+    ],
+    "u": 0.6033,
+    "v": 0.3306,
+    "ground_elevation_m": 319.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.8,
+      9.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-047",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.611915,
+      24.852458
+    ],
+    "u": 0.5956,
+    "v": 0.426,
+    "ground_elevation_m": 414.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.1,
+      11.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-048",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.618176,
+      24.854795
+    ],
+    "u": 0.6668,
+    "v": 0.3967,
+    "ground_elevation_m": 476.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-049",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.618354,
+      24.856011
+    ],
+    "u": 0.6688,
+    "v": 0.3815,
+    "ground_elevation_m": 482.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.6,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-050",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.618239,
+      24.857539
+    ],
+    "u": 0.6675,
+    "v": 0.3623,
+    "ground_elevation_m": 451.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.2,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-051",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.618039,
+      24.854717
+    ],
+    "u": 0.6652,
+    "v": 0.3977,
+    "ground_elevation_m": 473.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.9,
+      12.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-052",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617957,
+      24.857956
+    ],
+    "u": 0.6643,
+    "v": 0.3571,
+    "ground_elevation_m": 442.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-053",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.61413,
+      24.85564
+    ],
+    "u": 0.6208,
+    "v": 0.3861,
+    "ground_elevation_m": 424.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.5,
+      14.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-054",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.616638,
+      24.854012
+    ],
+    "u": 0.6493,
+    "v": 0.4066,
+    "ground_elevation_m": 444.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.8,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-055",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.610075,
+      24.858059
+    ],
+    "u": 0.5746,
+    "v": 0.3558,
+    "ground_elevation_m": 323.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.7,
+      14.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-056",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.618322,
+      24.853717
+    ],
+    "u": 0.6685,
+    "v": 0.4102,
+    "ground_elevation_m": 475.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      18.0,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-057",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617498,
+      24.847889
+    ],
+    "u": 0.6591,
+    "v": 0.4833,
+    "ground_elevation_m": 524.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.5,
+      13.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-058",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.619181,
+      24.856157
+    ],
+    "u": 0.6782,
+    "v": 0.3796,
+    "ground_elevation_m": 456.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.5,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-059",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.611864,
+      24.85058
+    ],
+    "u": 0.595,
+    "v": 0.4496,
+    "ground_elevation_m": 469.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.7,
+      11.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-060",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.623998,
+      24.860805
+    ],
+    "u": 0.733,
+    "v": 0.3214,
+    "ground_elevation_m": 328.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.8,
+      12.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-mar-001",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.593547,
+      24.879132
+    ],
+    "u": 0.3866,
+    "v": 0.0916,
+    "ground_elevation_m": 1193.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.7,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-002",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.599214,
+      24.88482
+    ],
+    "u": 0.4511,
+    "v": 0.0203,
+    "ground_elevation_m": 1126.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.1,
+      13.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-003",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.596896,
+      24.882416
+    ],
+    "u": 0.4247,
+    "v": 0.0504,
+    "ground_elevation_m": 1169.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.3,
+      11.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-004",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.604224,
+      24.877378
+    ],
+    "u": 0.5081,
+    "v": 0.1136,
+    "ground_elevation_m": 845.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.8,
+      10.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-mar-005",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.597494,
+      24.878987
+    ],
+    "u": 0.4315,
+    "v": 0.0934,
+    "ground_elevation_m": 1183.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-006",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.602314,
+      24.874739
+    ],
+    "u": 0.4863,
+    "v": 0.1467,
+    "ground_elevation_m": 976.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      12.5,
+      9.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-mar-007",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.596072,
+      24.874744
+    ],
+    "u": 0.4153,
+    "v": 0.1466,
+    "ground_elevation_m": 901.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.5,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-008",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.599417,
+      24.879141
+    ],
+    "u": 0.4534,
+    "v": 0.0915,
+    "ground_elevation_m": 1078.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.9,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-009",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.599247,
+      24.882069
+    ],
+    "u": 0.4514,
+    "v": 0.0548,
+    "ground_elevation_m": 1109.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.6,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-010",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.604875,
+      24.878182
+    ],
+    "u": 0.5155,
+    "v": 0.1035,
+    "ground_elevation_m": 828.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      18.0,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-011",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.596279,
+      24.880821
+    ],
+    "u": 0.4177,
+    "v": 0.0704,
+    "ground_elevation_m": 1194.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.7,
+      9.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-012",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.597341,
+      24.872285
+    ],
+    "u": 0.4297,
+    "v": 0.1774,
+    "ground_elevation_m": 783.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.6,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-013",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.600066,
+      24.880255
+    ],
+    "u": 0.4607,
+    "v": 0.0775,
+    "ground_elevation_m": 1064.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.4,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-014",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.602744,
+      24.874254
+    ],
+    "u": 0.4912,
+    "v": 0.1527,
+    "ground_elevation_m": 977.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.2,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-015",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.59412,
+      24.880248
+    ],
+    "u": 0.3931,
+    "v": 0.0776,
+    "ground_elevation_m": 1210.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.3,
+      8.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-mar-016",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.601982,
+      24.88304
+    ],
+    "u": 0.4825,
+    "v": 0.0426,
+    "ground_elevation_m": 1024.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.4,
+      12.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-mar-017",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.589401,
+      24.877803
+    ],
+    "u": 0.3394,
+    "v": 0.1083,
+    "ground_elevation_m": 1066.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.8,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-018",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.60123,
+      24.87762
+    ],
+    "u": 0.474,
+    "v": 0.1105,
+    "ground_elevation_m": 998.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-019",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.591925,
+      24.87822
+    ],
+    "u": 0.3681,
+    "v": 0.103,
+    "ground_elevation_m": 1144.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.9,
+      13.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-020",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.606941,
+      24.879603
+    ],
+    "u": 0.539,
+    "v": 0.0857,
+    "ground_elevation_m": 792.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.5,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-021",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.603688,
+      24.880185
+    ],
+    "u": 0.502,
+    "v": 0.0784,
+    "ground_elevation_m": 887.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.9,
+      14.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-022",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.605362,
+      24.879286
+    ],
+    "u": 0.521,
+    "v": 0.0897,
+    "ground_elevation_m": 839.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.2,
+      10.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-mar-023",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.598244,
+      24.878908
+    ],
+    "u": 0.44,
+    "v": 0.0944,
+    "ground_elevation_m": 1159.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.8,
+      15.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-mar-024",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.594231,
+      24.875472
+    ],
+    "u": 0.3944,
+    "v": 0.1375,
+    "ground_elevation_m": 977.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.9,
+      12.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-mar-025",
+    "village_id": "v-mar",
+    "village_name": "Marangching",
+    "center": [
+      93.59833,
+      24.878917
+    ],
+    "u": 0.441,
+    "v": 0.0943,
+    "ground_elevation_m": 1148.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.3,
+      13.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  }
+]

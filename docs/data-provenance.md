@@ -1,6 +1,6 @@
 # Data Provenance and Source Register
 
-**Project:** RESQ.AI × BhuRaksha (SIH26001)  
+**Project:** RESQ.AI × BhuRaksha (National Landslide Framework)  
 **Verification Date:** 2026-10-18  
 **Integrity Rule:** Every external endpoint in this register has been probed with actual HTTP requests and measured for latency, response code, and payload structure.
 
@@ -27,7 +27,7 @@
 | **NASA GPM IMERG** | `NEEDS_KEY` | Requires NASA Earthdata login and token generation. | Supported via adapter interface; fallback to Open-Meteo ECMWF/GFS precipitation. |
 | **GSI Bhukosh (Geological Survey of India)** | `BLOCKED` | Indian government portal requiring manual captcha login; no open programmatic REST API. | Documented historical records ingested into local catalogue with explicit source attribution. |
 | **IMD Automatic Weather Stations (AWS)** | `UNAVAILABLE` | Gridded real-time AWS API is restricted to authorized state departments. | Open-Meteo high-resolution model precipitation serves as primary live feed. |
-| **Geotechnical Piezometers / Inclinometers** | `SIMULATED` | Physical hardware is not deployed in hackathon setting. | **Mandatory Labeling:** Telemetry labeled `SIMULATED: true` in UI and API; physical noise model with pore-pressure ratio $r_u$ and tilt velocity. |
+| **Geotechnical Piezometers / Inclinometers** | `SIMULATED` | Physical hardware is not deployed in pre-pilot staging setting. | **Mandatory Labeling:** Telemetry labeled `SIMULATED: true` in UI and API; physical noise model with pore-pressure ratio $r_u$ and tilt velocity. |
 | **Sentinel-1 InSAR Ground Deformation** | `SIMULATED / PRECOMPUTED` | Interferometric synthetic aperture radar processing requires heavy compute (ISCE2/SNAP) and days of baseline acquisitions. | Precomputed simulated line-of-sight deformation layers labeled clearly as demo overlays. |
 
 ---

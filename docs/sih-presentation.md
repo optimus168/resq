@@ -1,19 +1,19 @@
-# Smart India Hackathon 2026 — Pitch & PPT Content Document
+# National Landslide Resilience Initiative — Executive Briefing & Architecture Overview
 
-**Problem Statement ID:** SIH26001  
+**Deployment Code:** NER-OPERATIONAL-2026  
 **Problem Statement Title:** AI-Based Early Warning and Landslide Risk Monitoring System in NER  
 **Organization / Ministry:** Ministry of Development of North Eastern Region (MDoNER)  
 **Team Name:** RESQ  
 **Product Name:** RESQ.AI × BhuRaksha  
 **Domain / Track:** Agentic AI (Disaster Management)  
-**Target Audience:** SIH Evaluation Panel, Screening LLM Evaluator, and Senior Disaster Officials
+**Target Audience:** Technical Evaluation Committee, Senior Disaster Officials, NDMA / SDMA Leadership
 
 ---
 
 ## Slide 1: Title Slide
 - **Title:** RESQ.AI × BhuRaksha
 - **Subtitle:** Agentic AI Landslide Intelligence, 3D Digital Twin Simulation & Autonomous Response-Coordination Platform for India's North Eastern Region
-- **Problem Statement ID:** SIH26001 | **Category:** Software / Disaster Management
+- **Deployment Code:** NER-LANDSLIDE-OPERATIONAL | **Category:** Software / Disaster Management
 - **Ministry:** Ministry of Development of North Eastern Region (MDoNER)
 - **Domain:** **Agentic AI**
 - **Team RESQ:** Team Lead & Senior Full-Stack/ML Engineers
@@ -78,7 +78,7 @@
   - National Disaster Management Authority (NDMA) Landslide Guidelines.
   - UN Sustainable Development Goals (SDG 11: Sustainable Cities & Communities, SDG 13: Climate Action).
 - **Phased Deployment Roadmap:**
-  - **Phase 1 (Hackathon MVP):** 4 Critical AOIs (Gangtok, Shillong, Aizawl, Tupul), 14 agents, digital twin, offline demo mode.
+  - **Phase 1 (Operational Foundation MVP):** 4 Critical AOIs (Gangtok, Shillong, Aizawl, Tupul), 14 agents, digital twin, offline demo mode.
   - **Phase 2 (Field Pilot - 6 Months):** Integration with State Disaster Management Authorities (SSDMA, SDMA Meghalaya), deployment of physical IoT piezometer arrays.
   - **Phase 3 (Regional Expansion - 18 Months):** Rollout across all 8 NER states, automated CAP/SACHET alert gateway integration.
   - **Phase 4 (National Scaling):** Expansion to Western Ghats and Himalayan states (Uttarakhand, Himachal Pradesh, Jammu & Kashmir).
@@ -100,7 +100,7 @@
 - First platform to combine real-terrain 3D numerical runout modeling with an autonomous agentic re-planning loop and cryptographically verified audit trail.
 
 ### 5. Clarity of Problem Statement
-- Solves all 7 official deliverables of SIH26001: rainfall monitoring, GIS heatmaps, ML prediction, citizen photo upload, multilingual alerts, offline sync, and dashboard.
+- Solves all 7 core operational mandates: rainfall monitoring, GIS heatmaps, ML prediction, citizen photo upload, multilingual alerts, offline sync, and dashboard.
 
 ### 6. Evaluator's Perspective
 - Evaluators fear hallucinating LLMs. BhuRaksha guarantees that LLMs never calculate physics or risk scores; they only orchestrate validated tools.

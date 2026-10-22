@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "aoi_id": "tupul",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            93.64,
+            24.84
+          ],
+          [
+            93.62,
+            24.856
+          ],
+          [
+            93.61,
+            24.869
+          ],
+          [
+            93.59,
+            24.88
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-nh37",
+        "name": "NH37 Imphal\u2013Jiribam Lifeline",
+        "kind": "road",
+        "road_kind": "primary",
+        "surface": "asphalt",
+        "width_m": 8.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            93.62,
+            24.856
+          ],
+          [
+            93.595,
+            24.845
+          ],
+          [
+            93.58,
+            24.86
+          ],
+          [
+            93.59,
+            24.88
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-khp",
+        "name": "Noney\u2013Khoupum Valley Link",
+        "kind": "road",
+        "road_kind": "alternate",
+        "surface": "paved",
+        "width_m": 6.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.618,
+          24.854
+        ]
+      },
+      "properties": {
+        "id": "cp-hss",
+        "name": "Noney High School Shelter",
+        "lon": 93.618,
+        "lat": 24.854,
+        "kind": "shelter",
+        "capacity": 600,
+        "feature_type": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.619,
+          24.8555
+        ]
+      },
+      "properties": {
+        "id": "cp-chc",
+        "name": "CHC Noney Health Center",
+        "lon": 93.619,
+        "lat": 24.8555,
+        "kind": "hospital",
+        "beds": 120,
+        "feature_type": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.612,
+          24.869
+        ]
+      },
+      "properties": {
+        "id": "v-tcamp",
+        "name": "Tupul Rail Project Camp",
+        "lat": 24.869,
+        "lon": 93.612,
+        "pop": 300,
+        "bldg_density": "low",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.616,
+          24.856
+        ]
+      },
+      "properties": {
+        "id": "v-non",
+        "name": "Noney Town",
+        "lat": 24.856,
+        "lon": 93.616,
+        "pop": 3000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.6,
+          24.878
+        ]
+      },
+      "properties": {
+        "id": "v-mar",
+        "name": "Marangching",
+        "lat": 24.878,
+        "lon": 93.6,
+        "pop": 500,
+        "bldg_density": "low",
+        "feature_type": "settlement"
+      }
+    }
+  ]
+}

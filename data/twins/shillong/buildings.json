@@ -1,0 +1,4980 @@
+[
+  {
+    "id": "bldg-v-pb-001",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.888039,
+      25.577341
+    ],
+    "u": 0.4817,
+    "v": 0.3098,
+    "ground_elevation_m": 1475.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.9,
+      14.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-002",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.879149,
+      25.580301
+    ],
+    "u": 0.3805,
+    "v": 0.2724,
+    "ground_elevation_m": 1483.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.0,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-003",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883735,
+      25.57161
+    ],
+    "u": 0.4327,
+    "v": 0.3821,
+    "ground_elevation_m": 1506.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.2,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-004",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.890971,
+      25.579151
+    ],
+    "u": 0.515,
+    "v": 0.2869,
+    "ground_elevation_m": 1468.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.4,
+      10.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-005",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.885751,
+      25.578444
+    ],
+    "u": 0.4557,
+    "v": 0.2959,
+    "ground_elevation_m": 1468.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.4,
+      12.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-006",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886749,
+      25.575833
+    ],
+    "u": 0.467,
+    "v": 0.3288,
+    "ground_elevation_m": 1488.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.2,
+      10.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-007",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.892553,
+      25.577515
+    ],
+    "u": 0.5331,
+    "v": 0.3076,
+    "ground_elevation_m": 1453.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.8,
+      9.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-008",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.888306,
+      25.575194
+    ],
+    "u": 0.4847,
+    "v": 0.3369,
+    "ground_elevation_m": 1499.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.8,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-009",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882477,
+      25.57628
+    ],
+    "u": 0.4184,
+    "v": 0.3232,
+    "ground_elevation_m": 1489.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.4,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-010",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881879,
+      25.57815
+    ],
+    "u": 0.4116,
+    "v": 0.2996,
+    "ground_elevation_m": 1477.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.4,
+      9.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-011",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880739,
+      25.582332
+    ],
+    "u": 0.3986,
+    "v": 0.2468,
+    "ground_elevation_m": 1457.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.8,
+      11.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-012",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.885035,
+      25.572453
+    ],
+    "u": 0.4475,
+    "v": 0.3714,
+    "ground_elevation_m": 1509.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.1,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-013",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.878634,
+      25.578153
+    ],
+    "u": 0.3747,
+    "v": 0.2995,
+    "ground_elevation_m": 1474.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.5,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-014",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88086,
+      25.576131
+    ],
+    "u": 0.4,
+    "v": 0.325,
+    "ground_elevation_m": 1481.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.9,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-015",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881541,
+      25.574489
+    ],
+    "u": 0.4078,
+    "v": 0.3457,
+    "ground_elevation_m": 1482.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.7,
+      9.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-016",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.889505,
+      25.577563
+    ],
+    "u": 0.4984,
+    "v": 0.307,
+    "ground_elevation_m": 1474.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      14.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-017",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886379,
+      25.575043
+    ],
+    "u": 0.4628,
+    "v": 0.3388,
+    "ground_elevation_m": 1489.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.3,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-018",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883921,
+      25.577658
+    ],
+    "u": 0.4348,
+    "v": 0.3058,
+    "ground_elevation_m": 1476.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.9,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-019",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884931,
+      25.574862
+    ],
+    "u": 0.4463,
+    "v": 0.341,
+    "ground_elevation_m": 1495.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.4,
+      15.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-020",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.885492,
+      25.580608
+    ],
+    "u": 0.4527,
+    "v": 0.2686,
+    "ground_elevation_m": 1463.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.6,
+      12.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-021",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880603,
+      25.573296
+    ],
+    "u": 0.3971,
+    "v": 0.3608,
+    "ground_elevation_m": 1502.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.1,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-022",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88645,
+      25.577103
+    ],
+    "u": 0.4636,
+    "v": 0.3128,
+    "ground_elevation_m": 1482.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.0,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-023",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882037,
+      25.572222
+    ],
+    "u": 0.4134,
+    "v": 0.3743,
+    "ground_elevation_m": 1502.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.3,
+      15.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-024",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88833,
+      25.57619
+    ],
+    "u": 0.485,
+    "v": 0.3243,
+    "ground_elevation_m": 1489.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.8,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-025",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886433,
+      25.56932
+    ],
+    "u": 0.4634,
+    "v": 0.4109,
+    "ground_elevation_m": 1495.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.7,
+      9.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-026",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886828,
+      25.58032
+    ],
+    "u": 0.4679,
+    "v": 0.2722,
+    "ground_elevation_m": 1441.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.6,
+      14.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-027",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88497,
+      25.574893
+    ],
+    "u": 0.4468,
+    "v": 0.3406,
+    "ground_elevation_m": 1495.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.1,
+      14.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-028",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883218,
+      25.577415
+    ],
+    "u": 0.4268,
+    "v": 0.3088,
+    "ground_elevation_m": 1476.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.1,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-029",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88401,
+      25.573841
+    ],
+    "u": 0.4358,
+    "v": 0.3539,
+    "ground_elevation_m": 1493.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.3,
+      15.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-030",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884167,
+      25.579032
+    ],
+    "u": 0.4376,
+    "v": 0.2884,
+    "ground_elevation_m": 1470.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.6,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-031",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880312,
+      25.571027
+    ],
+    "u": 0.3938,
+    "v": 0.3894,
+    "ground_elevation_m": 1511.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.7,
+      13.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-032",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.873489,
+      25.577917
+    ],
+    "u": 0.3161,
+    "v": 0.3025,
+    "ground_elevation_m": 1476.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.8,
+      13.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-033",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883936,
+      25.574572
+    ],
+    "u": 0.435,
+    "v": 0.3447,
+    "ground_elevation_m": 1488.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.8,
+      12.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-034",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886801,
+      25.570993
+    ],
+    "u": 0.4676,
+    "v": 0.3898,
+    "ground_elevation_m": 1505.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.5,
+      9.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-035",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88522,
+      25.576451
+    ],
+    "u": 0.4496,
+    "v": 0.321,
+    "ground_elevation_m": 1496.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.2,
+      8.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-036",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.885516,
+      25.580896
+    ],
+    "u": 0.453,
+    "v": 0.2649,
+    "ground_elevation_m": 1458.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.3,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-037",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886573,
+      25.577345
+    ],
+    "u": 0.465,
+    "v": 0.3097,
+    "ground_elevation_m": 1479.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.7,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-038",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884164,
+      25.574891
+    ],
+    "u": 0.4376,
+    "v": 0.3407,
+    "ground_elevation_m": 1490.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      15.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-039",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880106,
+      25.576254
+    ],
+    "u": 0.3914,
+    "v": 0.3235,
+    "ground_elevation_m": 1473.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.5,
+      10.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-040",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884749,
+      25.579368
+    ],
+    "u": 0.4443,
+    "v": 0.2842,
+    "ground_elevation_m": 1463.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.7,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-041",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884432,
+      25.573055
+    ],
+    "u": 0.4407,
+    "v": 0.3638,
+    "ground_elevation_m": 1498.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.7,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-042",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883375,
+      25.572471
+    ],
+    "u": 0.4286,
+    "v": 0.3712,
+    "ground_elevation_m": 1494.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.1,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-043",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882201,
+      25.573684
+    ],
+    "u": 0.4153,
+    "v": 0.3559,
+    "ground_elevation_m": 1491.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.1,
+      9.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-044",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.87761,
+      25.574532
+    ],
+    "u": 0.363,
+    "v": 0.3452,
+    "ground_elevation_m": 1501.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.5,
+      10.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-045",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.87785,
+      25.582141
+    ],
+    "u": 0.3658,
+    "v": 0.2492,
+    "ground_elevation_m": 1473.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.1,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-046",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88919,
+      25.575364
+    ],
+    "u": 0.4948,
+    "v": 0.3347,
+    "ground_elevation_m": 1507.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.3,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-047",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.879133,
+      25.579424
+    ],
+    "u": 0.3804,
+    "v": 0.2835,
+    "ground_elevation_m": 1474.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.2,
+      13.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-048",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.878166,
+      25.573497
+    ],
+    "u": 0.3694,
+    "v": 0.3583,
+    "ground_elevation_m": 1499.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.3,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-049",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88222,
+      25.572855
+    ],
+    "u": 0.4155,
+    "v": 0.3664,
+    "ground_elevation_m": 1498.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.0,
+      9.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-050",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.879877,
+      25.56863
+    ],
+    "u": 0.3888,
+    "v": 0.4196,
+    "ground_elevation_m": 1512.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.0,
+      8.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-051",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883991,
+      25.572532
+    ],
+    "u": 0.4356,
+    "v": 0.3704,
+    "ground_elevation_m": 1502.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.4,
+      9.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-052",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886825,
+      25.576355
+    ],
+    "u": 0.4679,
+    "v": 0.3222,
+    "ground_elevation_m": 1485.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.7,
+      13.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-053",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884576,
+      25.570886
+    ],
+    "u": 0.4423,
+    "v": 0.3912,
+    "ground_elevation_m": 1511.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-054",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882525,
+      25.573489
+    ],
+    "u": 0.419,
+    "v": 0.3584,
+    "ground_elevation_m": 1495.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.0,
+      13.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-055",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881137,
+      25.578996
+    ],
+    "u": 0.4032,
+    "v": 0.2889,
+    "ground_elevation_m": 1467.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.8,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-056",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883856,
+      25.575895
+    ],
+    "u": 0.4341,
+    "v": 0.328,
+    "ground_elevation_m": 1493.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.5,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-057",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884424,
+      25.579076
+    ],
+    "u": 0.4406,
+    "v": 0.2879,
+    "ground_elevation_m": 1467.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.6,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-058",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880536,
+      25.576659
+    ],
+    "u": 0.3963,
+    "v": 0.3184,
+    "ground_elevation_m": 1478.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.6,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-059",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.877538,
+      25.580204
+    ],
+    "u": 0.3622,
+    "v": 0.2737,
+    "ground_elevation_m": 1478.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.7,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-060",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88609,
+      25.574474
+    ],
+    "u": 0.4595,
+    "v": 0.3459,
+    "ground_elevation_m": 1493.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.0,
+      12.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-061",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880841,
+      25.57109
+    ],
+    "u": 0.3998,
+    "v": 0.3886,
+    "ground_elevation_m": 1513.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.8,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-062",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881149,
+      25.572299
+    ],
+    "u": 0.4033,
+    "v": 0.3734,
+    "ground_elevation_m": 1511.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.4,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-063",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.878429,
+      25.570178
+    ],
+    "u": 0.3723,
+    "v": 0.4001,
+    "ground_elevation_m": 1517.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.9,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-064",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881439,
+      25.572616
+    ],
+    "u": 0.4066,
+    "v": 0.3694,
+    "ground_elevation_m": 1503.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.2,
+      12.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-065",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884549,
+      25.570457
+    ],
+    "u": 0.442,
+    "v": 0.3966,
+    "ground_elevation_m": 1511.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.4,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-066",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.878263,
+      25.573175
+    ],
+    "u": 0.3705,
+    "v": 0.3623,
+    "ground_elevation_m": 1496.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.9,
+      15.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-067",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882395,
+      25.572207
+    ],
+    "u": 0.4175,
+    "v": 0.3745,
+    "ground_elevation_m": 1501.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.5,
+      14.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-068",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880977,
+      25.575361
+    ],
+    "u": 0.4013,
+    "v": 0.3347,
+    "ground_elevation_m": 1479.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.6,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-069",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.879976,
+      25.578167
+    ],
+    "u": 0.39,
+    "v": 0.2994,
+    "ground_elevation_m": 1461.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.5,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-070",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.885946,
+      25.570504
+    ],
+    "u": 0.4579,
+    "v": 0.396,
+    "ground_elevation_m": 1501.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-071",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.878476,
+      25.575789
+    ],
+    "u": 0.3729,
+    "v": 0.3293,
+    "ground_elevation_m": 1494.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.0,
+      10.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-072",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882249,
+      25.57438
+    ],
+    "u": 0.4158,
+    "v": 0.3471,
+    "ground_elevation_m": 1482.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.2,
+      13.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-073",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886937,
+      25.580565
+    ],
+    "u": 0.4691,
+    "v": 0.2691,
+    "ground_elevation_m": 1440.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.5,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-074",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884748,
+      25.5775
+    ],
+    "u": 0.4442,
+    "v": 0.3078,
+    "ground_elevation_m": 1479.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-075",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.89027,
+      25.574488
+    ],
+    "u": 0.5071,
+    "v": 0.3458,
+    "ground_elevation_m": 1493.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.1,
+      8.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-076",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.891739,
+      25.570182
+    ],
+    "u": 0.5238,
+    "v": 0.4001,
+    "ground_elevation_m": 1516.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.6,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-077",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881434,
+      25.576544
+    ],
+    "u": 0.4065,
+    "v": 0.3198,
+    "ground_elevation_m": 1485.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.4,
+      9.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-078",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880167,
+      25.578496
+    ],
+    "u": 0.3921,
+    "v": 0.2952,
+    "ground_elevation_m": 1459.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.3,
+      14.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-079",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88798,
+      25.578855
+    ],
+    "u": 0.481,
+    "v": 0.2907,
+    "ground_elevation_m": 1450.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.4,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-080",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.87953,
+      25.576827
+    ],
+    "u": 0.3849,
+    "v": 0.3163,
+    "ground_elevation_m": 1472.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.0,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-081",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883444,
+      25.573456
+    ],
+    "u": 0.4294,
+    "v": 0.3588,
+    "ground_elevation_m": 1493.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.7,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-082",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.879373,
+      25.577374
+    ],
+    "u": 0.3831,
+    "v": 0.3094,
+    "ground_elevation_m": 1473.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.6,
+      14.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-083",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.8813,
+      25.57654
+    ],
+    "u": 0.405,
+    "v": 0.3199,
+    "ground_elevation_m": 1485.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.3,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-084",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.886399,
+      25.579698
+    ],
+    "u": 0.463,
+    "v": 0.2801,
+    "ground_elevation_m": 1446.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.4,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-085",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884538,
+      25.577369
+    ],
+    "u": 0.4419,
+    "v": 0.3094,
+    "ground_elevation_m": 1478.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.0,
+      8.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-086",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88403,
+      25.573414
+    ],
+    "u": 0.4361,
+    "v": 0.3593,
+    "ground_elevation_m": 1497.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.2,
+      10.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-087",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882345,
+      25.572692
+    ],
+    "u": 0.4169,
+    "v": 0.3684,
+    "ground_elevation_m": 1499.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.7,
+      13.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-088",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882965,
+      25.574027
+    ],
+    "u": 0.424,
+    "v": 0.3516,
+    "ground_elevation_m": 1490.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.9,
+      12.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-089",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880215,
+      25.578345
+    ],
+    "u": 0.3927,
+    "v": 0.2971,
+    "ground_elevation_m": 1458.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.3,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-090",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.878883,
+      25.575222
+    ],
+    "u": 0.3775,
+    "v": 0.3365,
+    "ground_elevation_m": 1495.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.6,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-091",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883677,
+      25.573237
+    ],
+    "u": 0.4321,
+    "v": 0.3615,
+    "ground_elevation_m": 1496.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.7,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-092",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881152,
+      25.576076
+    ],
+    "u": 0.4033,
+    "v": 0.3257,
+    "ground_elevation_m": 1485.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.8,
+      14.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-093",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881599,
+      25.576127
+    ],
+    "u": 0.4084,
+    "v": 0.3251,
+    "ground_elevation_m": 1491.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.6,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-094",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883885,
+      25.573336
+    ],
+    "u": 0.4344,
+    "v": 0.3603,
+    "ground_elevation_m": 1497.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.9,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-095",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882189,
+      25.576951
+    ],
+    "u": 0.4151,
+    "v": 0.3147,
+    "ground_elevation_m": 1479.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.4,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-096",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.887881,
+      25.582244
+    ],
+    "u": 0.4799,
+    "v": 0.2479,
+    "ground_elevation_m": 1427.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      13.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-097",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883385,
+      25.571225
+    ],
+    "u": 0.4287,
+    "v": 0.3869,
+    "ground_elevation_m": 1499.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.2,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-098",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.891697,
+      25.577577
+    ],
+    "u": 0.5233,
+    "v": 0.3068,
+    "ground_elevation_m": 1474.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.2,
+      11.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-099",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.879959,
+      25.577008
+    ],
+    "u": 0.3898,
+    "v": 0.314,
+    "ground_elevation_m": 1469.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.4,
+      13.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-100",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.888988,
+      25.579116
+    ],
+    "u": 0.4925,
+    "v": 0.2874,
+    "ground_elevation_m": 1456.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.3,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-101",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881385,
+      25.576298
+    ],
+    "u": 0.406,
+    "v": 0.3229,
+    "ground_elevation_m": 1488.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.3,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-102",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.879813,
+      25.577703
+    ],
+    "u": 0.3881,
+    "v": 0.3052,
+    "ground_elevation_m": 1465.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.7,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-103",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883231,
+      25.574188
+    ],
+    "u": 0.427,
+    "v": 0.3495,
+    "ground_elevation_m": 1488.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.3,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-104",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883901,
+      25.575695
+    ],
+    "u": 0.4346,
+    "v": 0.3305,
+    "ground_elevation_m": 1495.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      12.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-105",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.884632,
+      25.573242
+    ],
+    "u": 0.4429,
+    "v": 0.3615,
+    "ground_elevation_m": 1496.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      15.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-106",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881898,
+      25.575781
+    ],
+    "u": 0.4118,
+    "v": 0.3295,
+    "ground_elevation_m": 1489.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.3,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-107",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.882315,
+      25.576506
+    ],
+    "u": 0.4166,
+    "v": 0.3203,
+    "ground_elevation_m": 1485.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.2,
+      10.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-108",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.88724,
+      25.573698
+    ],
+    "u": 0.4726,
+    "v": 0.3557,
+    "ground_elevation_m": 1496.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.6,
+      15.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-109",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883223,
+      25.573192
+    ],
+    "u": 0.4269,
+    "v": 0.3621,
+    "ground_elevation_m": 1494.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.9,
+      11.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-110",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880307,
+      25.576336
+    ],
+    "u": 0.3937,
+    "v": 0.3225,
+    "ground_elevation_m": 1474.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.5,
+      15.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-111",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883312,
+      25.583521
+    ],
+    "u": 0.4279,
+    "v": 0.2318,
+    "ground_elevation_m": 1447.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.2,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-112",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880445,
+      25.576926
+    ],
+    "u": 0.3953,
+    "v": 0.315,
+    "ground_elevation_m": 1475.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.3,
+      11.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-113",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881183,
+      25.577674
+    ],
+    "u": 0.4037,
+    "v": 0.3056,
+    "ground_elevation_m": 1482.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.1,
+      13.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-114",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.885051,
+      25.574056
+    ],
+    "u": 0.4477,
+    "v": 0.3512,
+    "ground_elevation_m": 1499.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.4,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-115",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.887284,
+      25.581403
+    ],
+    "u": 0.4731,
+    "v": 0.2585,
+    "ground_elevation_m": 1433.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.6,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-116",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.881002,
+      25.579213
+    ],
+    "u": 0.4016,
+    "v": 0.2862,
+    "ground_elevation_m": 1465.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.4,
+      14.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-117",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.888808,
+      25.578541
+    ],
+    "u": 0.4904,
+    "v": 0.2946,
+    "ground_elevation_m": 1450.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.9,
+      15.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-118",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.885458,
+      25.575783
+    ],
+    "u": 0.4523,
+    "v": 0.3294,
+    "ground_elevation_m": 1496.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.6,
+      13.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-pb-119",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.880965,
+      25.571643
+    ],
+    "u": 0.4012,
+    "v": 0.3816,
+    "ground_elevation_m": 1515.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.0,
+      10.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-pb-120",
+    "village_id": "v-pb",
+    "village_name": "Police Bazar",
+    "center": [
+      91.883188,
+      25.576183
+    ],
+    "u": 0.4265,
+    "v": 0.3244,
+    "ground_elevation_m": 1489.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.4,
+      8.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-001",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.89769,
+      25.576923
+    ],
+    "u": 0.5915,
+    "v": 0.315,
+    "ground_elevation_m": 1483.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.5,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-002",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.907785,
+      25.570408
+    ],
+    "u": 0.7064,
+    "v": 0.3972,
+    "ground_elevation_m": 1516.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.4,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-003",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.890812,
+      25.56436
+    ],
+    "u": 0.5132,
+    "v": 0.4735,
+    "ground_elevation_m": 1540.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.7,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-004",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.89354,
+      25.571288
+    ],
+    "u": 0.5443,
+    "v": 0.3861,
+    "ground_elevation_m": 1537.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.7,
+      15.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-005",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.893751,
+      25.577249
+    ],
+    "u": 0.5467,
+    "v": 0.3109,
+    "ground_elevation_m": 1462.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.8,
+      13.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-006",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.901142,
+      25.563804
+    ],
+    "u": 0.6308,
+    "v": 0.4805,
+    "ground_elevation_m": 1560.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.7,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-007",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.89745,
+      25.569672
+    ],
+    "u": 0.5888,
+    "v": 0.4065,
+    "ground_elevation_m": 1534.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.1,
+      10.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-008",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897159,
+      25.573529
+    ],
+    "u": 0.5855,
+    "v": 0.3579,
+    "ground_elevation_m": 1533.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.4,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-009",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.902995,
+      25.572645
+    ],
+    "u": 0.6518,
+    "v": 0.369,
+    "ground_elevation_m": 1502.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.4,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-010",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.89064,
+      25.571894
+    ],
+    "u": 0.5113,
+    "v": 0.3785,
+    "ground_elevation_m": 1489.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.1,
+      14.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-011",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.888189,
+      25.566905
+    ],
+    "u": 0.4834,
+    "v": 0.4414,
+    "ground_elevation_m": 1542.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.4,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-012",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897017,
+      25.57008
+    ],
+    "u": 0.5838,
+    "v": 0.4013,
+    "ground_elevation_m": 1533.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.9,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-013",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.899798,
+      25.56927
+    ],
+    "u": 0.6155,
+    "v": 0.4116,
+    "ground_elevation_m": 1539.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.5,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-014",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.895997,
+      25.569475
+    ],
+    "u": 0.5722,
+    "v": 0.409,
+    "ground_elevation_m": 1532.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.1,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-015",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.896278,
+      25.57002
+    ],
+    "u": 0.5754,
+    "v": 0.4021,
+    "ground_elevation_m": 1531.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.2,
+      15.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-016",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897783,
+      25.569146
+    ],
+    "u": 0.5926,
+    "v": 0.4131,
+    "ground_elevation_m": 1536.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.8,
+      14.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-017",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.894625,
+      25.568429
+    ],
+    "u": 0.5566,
+    "v": 0.4222,
+    "ground_elevation_m": 1538.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.0,
+      9.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-018",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.903311,
+      25.565512
+    ],
+    "u": 0.6554,
+    "v": 0.459,
+    "ground_elevation_m": 1557.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.5,
+      13.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-019",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.902094,
+      25.571704
+    ],
+    "u": 0.6416,
+    "v": 0.3809,
+    "ground_elevation_m": 1503.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.9,
+      11.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-020",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.898183,
+      25.56738
+    ],
+    "u": 0.5971,
+    "v": 0.4354,
+    "ground_elevation_m": 1552.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.6,
+      15.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-021",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.891714,
+      25.570478
+    ],
+    "u": 0.5235,
+    "v": 0.3963,
+    "ground_elevation_m": 1517.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.7,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-022",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.894965,
+      25.570635
+    ],
+    "u": 0.5605,
+    "v": 0.3944,
+    "ground_elevation_m": 1537.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-023",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.892142,
+      25.573079
+    ],
+    "u": 0.5284,
+    "v": 0.3635,
+    "ground_elevation_m": 1489.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.7,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-024",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897757,
+      25.572575
+    ],
+    "u": 0.5923,
+    "v": 0.3699,
+    "ground_elevation_m": 1540.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.7,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-025",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.90122,
+      25.566311
+    ],
+    "u": 0.6317,
+    "v": 0.4489,
+    "ground_elevation_m": 1546.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.1,
+      12.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-026",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897194,
+      25.56856
+    ],
+    "u": 0.5859,
+    "v": 0.4205,
+    "ground_elevation_m": 1539.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.0,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-027",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897399,
+      25.566893
+    ],
+    "u": 0.5882,
+    "v": 0.4415,
+    "ground_elevation_m": 1554.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.4,
+      11.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-028",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.891298,
+      25.568114
+    ],
+    "u": 0.5188,
+    "v": 0.4262,
+    "ground_elevation_m": 1540.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.2,
+      13.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-029",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.895405,
+      25.571128
+    ],
+    "u": 0.5655,
+    "v": 0.3881,
+    "ground_elevation_m": 1539.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.5,
+      12.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-030",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.888585,
+      25.573135
+    ],
+    "u": 0.4879,
+    "v": 0.3628,
+    "ground_elevation_m": 1505.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.6,
+      8.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-031",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897185,
+      25.573867
+    ],
+    "u": 0.5857,
+    "v": 0.3536,
+    "ground_elevation_m": 1532.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.6,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-032",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.896067,
+      25.571515
+    ],
+    "u": 0.573,
+    "v": 0.3833,
+    "ground_elevation_m": 1540.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.2,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-033",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.894974,
+      25.571274
+    ],
+    "u": 0.5606,
+    "v": 0.3863,
+    "ground_elevation_m": 1542.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.9,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-034",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.887294,
+      25.569019
+    ],
+    "u": 0.4732,
+    "v": 0.4147,
+    "ground_elevation_m": 1504.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.7,
+      10.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-035",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.90108,
+      25.565159
+    ],
+    "u": 0.6301,
+    "v": 0.4634,
+    "ground_elevation_m": 1549.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.6,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-036",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.900323,
+      25.571547
+    ],
+    "u": 0.6215,
+    "v": 0.3829,
+    "ground_elevation_m": 1540.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.1,
+      11.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-037",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.893238,
+      25.573673
+    ],
+    "u": 0.5408,
+    "v": 0.356,
+    "ground_elevation_m": 1499.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.3,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-038",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897659,
+      25.570549
+    ],
+    "u": 0.5911,
+    "v": 0.3954,
+    "ground_elevation_m": 1540.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.1,
+      12.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-039",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.895678,
+      25.570544
+    ],
+    "u": 0.5686,
+    "v": 0.3955,
+    "ground_elevation_m": 1533.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.5,
+      15.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-040",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.89507,
+      25.565782
+    ],
+    "u": 0.5617,
+    "v": 0.4556,
+    "ground_elevation_m": 1542.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.6,
+      9.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-041",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.892415,
+      25.574848
+    ],
+    "u": 0.5315,
+    "v": 0.3412,
+    "ground_elevation_m": 1474.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.3,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-042",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.895066,
+      25.5748
+    ],
+    "u": 0.5616,
+    "v": 0.3418,
+    "ground_elevation_m": 1513.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.9,
+      15.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-043",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.899662,
+      25.56853
+    ],
+    "u": 0.6139,
+    "v": 0.4209,
+    "ground_elevation_m": 1543.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.4,
+      15.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-044",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.897156,
+      25.569583
+    ],
+    "u": 0.5854,
+    "v": 0.4076,
+    "ground_elevation_m": 1534.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.1,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-045",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.887607,
+      25.571753
+    ],
+    "u": 0.4768,
+    "v": 0.3802,
+    "ground_elevation_m": 1497.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.7,
+      8.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-046",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.891066,
+      25.573204
+    ],
+    "u": 0.5161,
+    "v": 0.362,
+    "ground_elevation_m": 1489.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.8,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-047",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.892926,
+      25.574187
+    ],
+    "u": 0.5373,
+    "v": 0.3496,
+    "ground_elevation_m": 1483.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.8,
+      9.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-048",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.896754,
+      25.562464
+    ],
+    "u": 0.5808,
+    "v": 0.4974,
+    "ground_elevation_m": 1572.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.4,
+      9.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-049",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.901514,
+      25.567548
+    ],
+    "u": 0.635,
+    "v": 0.4333,
+    "ground_elevation_m": 1534.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.4,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-050",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.894921,
+      25.567328
+    ],
+    "u": 0.56,
+    "v": 0.4361,
+    "ground_elevation_m": 1553.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.7,
+      14.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-051",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.904859,
+      25.570449
+    ],
+    "u": 0.6731,
+    "v": 0.3967,
+    "ground_elevation_m": 1526.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.5,
+      11.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-052",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.898032,
+      25.5698
+    ],
+    "u": 0.5954,
+    "v": 0.4049,
+    "ground_elevation_m": 1540.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.4,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-053",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.901873,
+      25.564577
+    ],
+    "u": 0.6391,
+    "v": 0.4708,
+    "ground_elevation_m": 1552.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.4,
+      8.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-054",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.896281,
+      25.569918
+    ],
+    "u": 0.5755,
+    "v": 0.4034,
+    "ground_elevation_m": 1531.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-055",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.898932,
+      25.566774
+    ],
+    "u": 0.6056,
+    "v": 0.443,
+    "ground_elevation_m": 1554.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.5,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-056",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.896063,
+      25.575821
+    ],
+    "u": 0.573,
+    "v": 0.3289,
+    "ground_elevation_m": 1504.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.3,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-057",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.894296,
+      25.566594
+    ],
+    "u": 0.5529,
+    "v": 0.4453,
+    "ground_elevation_m": 1546.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.6,
+      15.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-lai-058",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.892329,
+      25.56992
+    ],
+    "u": 0.5305,
+    "v": 0.4034,
+    "ground_elevation_m": 1527.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-059",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.89588,
+      25.575377
+    ],
+    "u": 0.5709,
+    "v": 0.3345,
+    "ground_elevation_m": 1512.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.7,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-lai-060",
+    "village_id": "v-lai",
+    "village_name": "Laitumkhrah",
+    "center": [
+      91.898768,
+      25.575453
+    ],
+    "u": 0.6038,
+    "v": 0.3336,
+    "ground_elevation_m": 1517.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.2,
+      8.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-001",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.878835,
+      25.595757
+    ],
+    "u": 0.377,
+    "v": 0.0775,
+    "ground_elevation_m": 1440.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.5,
+      11.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-002",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.878583,
+      25.588359
+    ],
+    "u": 0.3741,
+    "v": 0.1708,
+    "ground_elevation_m": 1459.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.1,
+      13.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-003",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.875225,
+      25.595173
+    ],
+    "u": 0.3359,
+    "v": 0.0849,
+    "ground_elevation_m": 1424.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.1,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-004",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.882671,
+      25.599179
+    ],
+    "u": 0.4206,
+    "v": 0.0344,
+    "ground_elevation_m": 1423.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.6,
+      15.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-005",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.871787,
+      25.595192
+    ],
+    "u": 0.2968,
+    "v": 0.0846,
+    "ground_elevation_m": 1413.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      12.3,
+      10.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-006",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.876761,
+      25.595884
+    ],
+    "u": 0.3534,
+    "v": 0.0759,
+    "ground_elevation_m": 1431.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.4,
+      12.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-007",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.872828,
+      25.596674
+    ],
+    "u": 0.3086,
+    "v": 0.0659,
+    "ground_elevation_m": 1405.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.5,
+      12.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-008",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.873576,
+      25.60042
+    ],
+    "u": 0.3171,
+    "v": 0.0187,
+    "ground_elevation_m": 1376.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.3,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-009",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.882847,
+      25.595419
+    ],
+    "u": 0.4226,
+    "v": 0.0818,
+    "ground_elevation_m": 1450.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.2,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-010",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.86972,
+      25.599149
+    ],
+    "u": 0.2733,
+    "v": 0.0347,
+    "ground_elevation_m": 1399.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.2,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-011",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877399,
+      25.588816
+    ],
+    "u": 0.3606,
+    "v": 0.1651,
+    "ground_elevation_m": 1438.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.3,
+      14.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-012",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.880707,
+      25.589301
+    ],
+    "u": 0.3983,
+    "v": 0.1589,
+    "ground_elevation_m": 1429.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.9,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-013",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.878195,
+      25.599015
+    ],
+    "u": 0.3697,
+    "v": 0.0364,
+    "ground_elevation_m": 1399.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.6,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-014",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.873158,
+      25.590593
+    ],
+    "u": 0.3124,
+    "v": 0.1426,
+    "ground_elevation_m": 1424.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.8,
+      10.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-015",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.875764,
+      25.594763
+    ],
+    "u": 0.342,
+    "v": 0.09,
+    "ground_elevation_m": 1427.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.2,
+      14.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-016",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.875648,
+      25.592537
+    ],
+    "u": 0.3407,
+    "v": 0.1181,
+    "ground_elevation_m": 1443.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.8,
+      8.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-017",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.876185,
+      25.59316
+    ],
+    "u": 0.3468,
+    "v": 0.1103,
+    "ground_elevation_m": 1442.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.9,
+      12.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-018",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.873662,
+      25.592932
+    ],
+    "u": 0.3181,
+    "v": 0.1131,
+    "ground_elevation_m": 1432.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.4,
+      9.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-019",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.872394,
+      25.592217
+    ],
+    "u": 0.3037,
+    "v": 0.1222,
+    "ground_elevation_m": 1431.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      16.3,
+      8.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-020",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.881641,
+      25.594413
+    ],
+    "u": 0.4089,
+    "v": 0.0945,
+    "ground_elevation_m": 1441.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.1,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-022",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.880267,
+      25.598025
+    ],
+    "u": 0.3933,
+    "v": 0.0489,
+    "ground_elevation_m": 1424.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.7,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-023",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.876151,
+      25.598107
+    ],
+    "u": 0.3464,
+    "v": 0.0479,
+    "ground_elevation_m": 1419.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.0,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-024",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.884462,
+      25.590377
+    ],
+    "u": 0.441,
+    "v": 0.1454,
+    "ground_elevation_m": 1427.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.6,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-025",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.874585,
+      25.598033
+    ],
+    "u": 0.3286,
+    "v": 0.0488,
+    "ground_elevation_m": 1412.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.4,
+      9.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-026",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877114,
+      25.595523
+    ],
+    "u": 0.3574,
+    "v": 0.0805,
+    "ground_elevation_m": 1436.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.4,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-027",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.879081,
+      25.587382
+    ],
+    "u": 0.3798,
+    "v": 0.1831,
+    "ground_elevation_m": 1452.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.1,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-028",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.871179,
+      25.591666
+    ],
+    "u": 0.2899,
+    "v": 0.1291,
+    "ground_elevation_m": 1440.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.4,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-030",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.883067,
+      25.592577
+    ],
+    "u": 0.4251,
+    "v": 0.1176,
+    "ground_elevation_m": 1445.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.5,
+      12.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-031",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.869149,
+      25.593516
+    ],
+    "u": 0.2668,
+    "v": 0.1058,
+    "ground_elevation_m": 1416.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.5,
+      9.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-032",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.876414,
+      25.597512
+    ],
+    "u": 0.3494,
+    "v": 0.0554,
+    "ground_elevation_m": 1426.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.4,
+      13.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-033",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877111,
+      25.595089
+    ],
+    "u": 0.3574,
+    "v": 0.0859,
+    "ground_elevation_m": 1435.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.7,
+      11.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-034",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.881919,
+      25.594093
+    ],
+    "u": 0.4121,
+    "v": 0.0985,
+    "ground_elevation_m": 1439.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.2,
+      10.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-035",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.880791,
+      25.589905
+    ],
+    "u": 0.3992,
+    "v": 0.1513,
+    "ground_elevation_m": 1423.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.8,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-036",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.884354,
+      25.59816
+    ],
+    "u": 0.4398,
+    "v": 0.0472,
+    "ground_elevation_m": 1436.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.9,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-037",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.883538,
+      25.598389
+    ],
+    "u": 0.4305,
+    "v": 0.0443,
+    "ground_elevation_m": 1431.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.6,
+      11.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-038",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.879514,
+      25.59674
+    ],
+    "u": 0.3847,
+    "v": 0.0651,
+    "ground_elevation_m": 1431.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      13.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-039",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.875808,
+      25.593568
+    ],
+    "u": 0.3425,
+    "v": 0.1051,
+    "ground_elevation_m": 1435.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-040",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.875454,
+      25.59538
+    ],
+    "u": 0.3385,
+    "v": 0.0823,
+    "ground_elevation_m": 1424.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-042",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.88034,
+      25.59582
+    ],
+    "u": 0.3941,
+    "v": 0.0767,
+    "ground_elevation_m": 1439.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.8,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-043",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.876958,
+      25.597221
+    ],
+    "u": 0.3556,
+    "v": 0.059,
+    "ground_elevation_m": 1423.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.6,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-044",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877627,
+      25.590102
+    ],
+    "u": 0.3632,
+    "v": 0.1488,
+    "ground_elevation_m": 1412.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.4,
+      9.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-045",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877388,
+      25.596844
+    ],
+    "u": 0.3605,
+    "v": 0.0638,
+    "ground_elevation_m": 1419.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.4,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-046",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.878083,
+      25.596036
+    ],
+    "u": 0.3684,
+    "v": 0.074,
+    "ground_elevation_m": 1430.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.7,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-047",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.8795,
+      25.596157
+    ],
+    "u": 0.3845,
+    "v": 0.0725,
+    "ground_elevation_m": 1430.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.7,
+      12.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-048",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.875734,
+      25.598301
+    ],
+    "u": 0.3417,
+    "v": 0.0454,
+    "ground_elevation_m": 1413.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.9,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-049",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877053,
+      25.590781
+    ],
+    "u": 0.3567,
+    "v": 0.1403,
+    "ground_elevation_m": 1410.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.7,
+      11.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-050",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.882316,
+      25.594074
+    ],
+    "u": 0.4166,
+    "v": 0.0987,
+    "ground_elevation_m": 1440.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.0,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-051",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877097,
+      25.594258
+    ],
+    "u": 0.3572,
+    "v": 0.0964,
+    "ground_elevation_m": 1437.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.9,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-052",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.872387,
+      25.597326
+    ],
+    "u": 0.3036,
+    "v": 0.0577,
+    "ground_elevation_m": 1410.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.2,
+      15.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-053",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.884143,
+      25.591214
+    ],
+    "u": 0.4374,
+    "v": 0.1348,
+    "ground_elevation_m": 1429.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.2,
+      9.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-054",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.875617,
+      25.589687
+    ],
+    "u": 0.3404,
+    "v": 0.1541,
+    "ground_elevation_m": 1417.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.7,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-055",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.880881,
+      25.592041
+    ],
+    "u": 0.4002,
+    "v": 0.1244,
+    "ground_elevation_m": 1433.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      12.9,
+      13.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-056",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.873807,
+      25.588571
+    ],
+    "u": 0.3198,
+    "v": 0.1681,
+    "ground_elevation_m": 1426.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.4,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-057",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.877769,
+      25.597905
+    ],
+    "u": 0.3648,
+    "v": 0.0504,
+    "ground_elevation_m": 1410.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.1,
+      15.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-058",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.878447,
+      25.597999
+    ],
+    "u": 0.3725,
+    "v": 0.0492,
+    "ground_elevation_m": 1414.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.1,
+      10.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-maw-059",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.880166,
+      25.594402
+    ],
+    "u": 0.3921,
+    "v": 0.0946,
+    "ground_elevation_m": 1437.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.1,
+      10.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-maw-060",
+    "village_id": "v-maw",
+    "village_name": "Mawlai",
+    "center": [
+      91.885086,
+      25.597701
+    ],
+    "u": 0.4481,
+    "v": 0.053,
+    "ground_elevation_m": 1434.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.6,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-001",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.904815,
+      25.578314
+    ],
+    "u": 0.6726,
+    "v": 0.2975,
+    "ground_elevation_m": 1435.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.0,
+      13.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-002",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.901368,
+      25.578424
+    ],
+    "u": 0.6333,
+    "v": 0.2961,
+    "ground_elevation_m": 1449.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.6,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-003",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.899249,
+      25.585151
+    ],
+    "u": 0.6092,
+    "v": 0.2113,
+    "ground_elevation_m": 1444.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.8,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-004",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.900527,
+      25.581783
+    ],
+    "u": 0.6238,
+    "v": 0.2538,
+    "ground_elevation_m": 1431.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.3,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-005",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.900209,
+      25.578178
+    ],
+    "u": 0.6202,
+    "v": 0.2992,
+    "ground_elevation_m": 1459.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      12.1,
+      14.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-006",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.895299,
+      25.577749
+    ],
+    "u": 0.5643,
+    "v": 0.3046,
+    "ground_elevation_m": 1449.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.2,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-007",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.905649,
+      25.576788
+    ],
+    "u": 0.6821,
+    "v": 0.3167,
+    "ground_elevation_m": 1442.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.7,
+      15.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-008",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.904906,
+      25.581985
+    ],
+    "u": 0.6736,
+    "v": 0.2512,
+    "ground_elevation_m": 1432.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.4,
+      11.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-009",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.903321,
+      25.578871
+    ],
+    "u": 0.6556,
+    "v": 0.2905,
+    "ground_elevation_m": 1432.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.1,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-010",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.90022,
+      25.58358
+    ],
+    "u": 0.6203,
+    "v": 0.2311,
+    "ground_elevation_m": 1444.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.3,
+      10.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-011",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.900282,
+      25.575638
+    ],
+    "u": 0.621,
+    "v": 0.3312,
+    "ground_elevation_m": 1508.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.8,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-012",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.894023,
+      25.579066
+    ],
+    "u": 0.5498,
+    "v": 0.288,
+    "ground_elevation_m": 1428.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.9,
+      12.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-013",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.902359,
+      25.577358
+    ],
+    "u": 0.6446,
+    "v": 0.3096,
+    "ground_elevation_m": 1498.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.6,
+      11.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-014",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.899463,
+      25.582676
+    ],
+    "u": 0.6117,
+    "v": 0.2425,
+    "ground_elevation_m": 1434.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.8,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-015",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.899361,
+      25.575651
+    ],
+    "u": 0.6105,
+    "v": 0.3311,
+    "ground_elevation_m": 1515.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.6,
+      11.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-016",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.895713,
+      25.577185
+    ],
+    "u": 0.569,
+    "v": 0.3117,
+    "ground_elevation_m": 1448.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.7,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-017",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.89502,
+      25.586364
+    ],
+    "u": 0.5611,
+    "v": 0.196,
+    "ground_elevation_m": 1444.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.1,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-018",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.898834,
+      25.579099
+    ],
+    "u": 0.6045,
+    "v": 0.2876,
+    "ground_elevation_m": 1453.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.5,
+      13.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-019",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.900288,
+      25.581367
+    ],
+    "u": 0.6211,
+    "v": 0.259,
+    "ground_elevation_m": 1432.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.1,
+      10.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-non-020",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.899306,
+      25.584487
+    ],
+    "u": 0.6099,
+    "v": 0.2196,
+    "ground_elevation_m": 1443.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.2,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-021",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.898339,
+      25.576651
+    ],
+    "u": 0.5989,
+    "v": 0.3185,
+    "ground_elevation_m": 1492.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.0,
+      10.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-022",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.901124,
+      25.578933
+    ],
+    "u": 0.6306,
+    "v": 0.2897,
+    "ground_elevation_m": 1448.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.9,
+      12.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-023",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.902353,
+      25.578008
+    ],
+    "u": 0.6446,
+    "v": 0.3014,
+    "ground_elevation_m": 1462.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.7,
+      15.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-024",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.899936,
+      25.584372
+    ],
+    "u": 0.6171,
+    "v": 0.2211,
+    "ground_elevation_m": 1449.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.4,
+      13.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-025",
+    "village_id": "v-non",
+    "village_name": "Nongthymmai",
+    "center": [
+      91.902395,
+      25.579349
+    ],
+    "u": 0.645,
+    "v": 0.2844,
+    "ground_elevation_m": 1431.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.3,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  }
+]

@@ -100,6 +100,61 @@ AOIS = {
         "hospitals": [{"id": "h-chc", "name": "CHC Noney", "lat": 24.8555, "lon": 93.6190}],
         "history": [{"date": "2022-06-30", "event": "Tupul railway construction site landslide (major loss of life)", "source": "Public reports"}],
     },
+    "wayanad": {
+        "name": "Wayanad (Chooralmala-Mundakkai)",
+        "state": "Kerala",
+        "district": "Wayanad",
+        "center": [11.517, 76.155],
+        "villages": [
+            {"id": "v-cho", "name": "Chooralmala", "lat": 11.5170, "lon": 76.1550, "pop": 3500},
+            {"id": "v-mun", "name": "Mundakkai", "lat": 11.5050, "lon": 76.1680, "pop": 1200},
+            {"id": "v-att", "name": "Attamala", "lat": 11.5290, "lon": 76.1420, "pop": 900},
+            {"id": "v-mep", "name": "Meppadi", "lat": 11.5510, "lon": 76.1260, "pop": 8000},
+        ],
+        "roads": [
+            {"id": "r-mep", "name": "Chooralmala-Meppadi Lifeline Road", "kind": "primary",
+             "coords": [[76.1260, 11.5510], [76.1350, 11.5400], [76.1450, 11.5280], [76.1550, 11.5170], [76.1680, 11.5050]]},
+            {"id": "r-vyth", "name": "Vythiri-Sultan Bathery alternate", "kind": "alternate",
+             "coords": [[76.1260, 11.5510], [76.1140, 11.5350], [76.1300, 11.5100], [76.1680, 11.5050]]},
+        ],
+        "shelters": [
+            {"id": "s-cho", "name": "Chooralmala Govt LP School", "lat": 11.5185, "lon": 76.1530, "capacity": 800},
+            {"id": "s-mep", "name": "Meppadi Community Hall", "lat": 11.5495, "lon": 76.1275, "capacity": 600},
+        ],
+        "hospitals": [
+            {"id": "h-mep", "name": "Meppadi Community Health Centre", "lat": 11.5510, "lon": 76.1260},
+        ],
+        "history": [
+            {"date": "2024-07-30", "event": "Chooralmala-Mundakkai debris flows; >200 fatalities (Western Ghats benchmark)", "source": "Public reports (KSDMA)"},
+        ],
+    },
+    "joshimath": {
+        "name": "Joshimath Subsidence Corridor",
+        "state": "Uttarakhand",
+        "district": "Chamoli",
+        "center": [30.557, 79.566],
+        "villages": [
+            {"id": "v-jos", "name": "Joshimath Town", "lat": 30.5570, "lon": 79.5660, "pop": 23000},
+            {"id": "v-sun", "name": "Sunil Ward", "lat": 30.5520, "lon": 79.5600, "pop": 3200},
+            {"id": "v-mar", "name": "Marwari", "lat": 30.5620, "lon": 79.5720, "pop": 4100},
+            {"id": "v-ara", "name": "Auli Road settlements", "lat": 30.5350, "lon": 79.5580, "pop": 1400},
+        ],
+        "roads": [
+            {"id": "r-nh7", "name": "NH-07 Badrinath Highway", "kind": "primary",
+             "coords": [[79.5500, 30.5400], [79.5570, 30.5490], [79.5660, 30.5570], [79.5760, 30.5700], [79.5860, 30.5840]]},
+            {"id": "r-auli", "name": "Joshimath-Auli Ropeway Road", "kind": "alternate",
+             "coords": [[79.5660, 30.5570], [79.5600, 30.5450], [79.5560, 30.5350]]},
+        ],
+        "shelters": [
+            {"id": "s-tcp", "name": "TCP Joshimath Relief Camp", "lat": 30.5600, "lon": 79.5700, "capacity": 1000},
+        ],
+        "hospitals": [
+            {"id": "h-jos", "name": "Joshimath Sub-District Hospital", "lat": 30.5560, "lon": 79.5650},
+        ],
+        "history": [
+            {"date": "2023-01", "event": "Joshimath land subsidence; mass evacuation of wards (Garhwal benchmark)", "source": "Public reports (USDMA)"},
+        ],
+    },
 }
 
 def _tile_xy(lat: float, lon: float, z: int) -> tuple[float, float]:

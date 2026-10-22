@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cp-josh-h",
+    "name": "Joshimath Sub-Divisional Hospital",
+    "kind": "hospital",
+    "lon": 79.565,
+    "lat": 30.556,
+    "u": 0.2729,
+    "v": 0.5826,
+    "pixel_col": 139,
+    "pixel_row": 298,
+    "dem_elevation_m": 1838.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-josh-s",
+    "name": "TCP Joshimath Relief Camp",
+    "kind": "shelter",
+    "lon": 79.57,
+    "lat": 30.56,
+    "u": 0.3298,
+    "v": 0.5298,
+    "pixel_col": 169,
+    "pixel_row": 271,
+    "dem_elevation_m": 1626.0,
+    "in_bounds": true
+  }
+]

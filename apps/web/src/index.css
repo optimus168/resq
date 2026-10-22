@@ -54,10 +54,84 @@
   animation: alert-pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Grid Background */
-.bg-grid-pattern {
-  background-size: 24px 24px;
-  background-image: 
+:root {
+
+  --bg: #06150C; --panel: #0A2416; --card: #0D2E1C; --line: #249344; --lime: #BDFF42;
+  --txt: #FFFFFF; --txt2: #9FD8A8; --muted: #5E8B67; --amber: #FFA31A;
+  --low: #22C55E; --mod: #EAB308; --high: #F97316; --imm: #EF4444;
+}
+.light { --bg: #F3F7F1; --panel: #FFFFFF; --card: #EAF2E6; --line: #2E8B4A; --lime: #3E7A00; --txt: #0B1F12; --txt2: #2F5B3A; --muted: #6B8A72; }
+
+.font-display { font-family: 'Barlow Condensed', 'Anton', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; }
+.font-data { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+.panel { background: var(--panel); border: 1px solid rgba(36,147,68,0.35); }
+.card { background: var(--card); border: 1px solid rgba(36,147,68,0.25); }
+.eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.glass { background: rgba(6,21,12,0.72); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(36,147,68,0.4); }
+.grid-bg { background-image: linear-gradient(rgba(36,147,68,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(36,147,68,.08) 1px, transparent 1px); background-size: 32px 32px; }
+
+.hatch-low { background-image: repeating-linear-gradient(45deg, rgba(34,197,94,.35) 0 2px, transparent 2px 7px); }
+.hatch-moderate { background-image: repeating-linear-gradient(45deg, rgba(234,179,8,.4) 0 2px, transparent 2px 5px); }
+.hatch-high { background-image: repeating-linear-gradient(-45deg, rgba(249,115,22,.5) 0 3px, transparent 3px 5px); }
+.hatch-imminent { background-image: repeating-linear-gradient(45deg, rgba(239,68,68,.55) 0 2px, transparent 2px 4px), repeating-linear-gradient(-45deg, rgba(239,68,68,.55) 0 2px, transparent 2px 4px); }
+
+.sim-badge { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .14em; color: var(--amber); border: 1px dashed var(--amber); padding: 1px 6px; text-transform: uppercase; white-space: nowrap; }
+.btn-lime { background: var(--lime); color: #06150C; font-weight: 700; transition: transform .15s, box-shadow .2s, background-color .2s; }
+.btn-lime:hover { transform: translateY(-1px); box-shadow: 0 0 0 3px rgba(189,255,66,.2); }
+.btn-ghost { border: 1px solid rgba(36,147,68,.6); color: var(--txt2); transition: background-color .2s, color .2s, border-color .2s; }
+.btn-ghost:hover { background: rgba(36,147,68,.15); color: var(--txt); border-color: var(--lime); }
+.btn-amber { background: var(--amber); color: #1a0f00; font-weight: 700; transition: transform .15s, box-shadow .2s; }
+.btn-amber:hover { transform: translateY(-1px); box-shadow: 0 0 0 3px rgba(255,163,26,.25); }
+
+@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(189,255,66,.6); } 100% { box-shadow: 0 0 0 10px rgba(189,255,66,0); } }
+.pulse-ring { animation: pulse-ring 1.4s infinite; }
+@keyframes pulse-amber { 0% { box-shadow: 0 0 0 0 rgba(255,163,26,.6); } 100% { box-shadow: 0 0 0 12px rgba(255,163,26,0); } }
+.pulse-amber { animation: pulse-amber 1.6s infinite; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .45s ease-out both; }
+@keyframes scan { from { transform: translateY(-100%); } to { transform: translateY(100%); } }
+@keyframes rain { from { transform: translateY(-20vh); } to { transform: translateY(110vh); } }
+.scroll-thin::-webkit-scrollbar { width: 6px; height: 6px; } 
+.scroll-thin::-webkit-scrollbar-thumb { background: rgba(36,147,68,.5); }
+.bg-grid {
+  background-size: 32px 32px;
+  background-image:
     linear-gradient(to right, rgba(36, 147, 68, 0.08) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(36, 147, 68, 0.08) 1px, transparent 1px);
+}
+
+/* Prevent cursor from becoming a drag / grab icon over interactive 3D map */
+.maplibregl-canvas-container.maplibregl-interactive,
+.maplibregl-canvas-container.maplibregl-interactive:active {
+  cursor: default !important;
+}
+
+/* GeoShield Glassmorphism and Map Styles */
+.glass {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.4);
+  position: relative;
+}
+
+.leaflet-container {
+  background: #0f172a !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark-tiles {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.2) brightness(0.7);
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.95) !important;
+  color: #e2e8f0 !important;
+  border-radius: 12px !important;
+  border: 1px solid #334155 !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.95) !important;
 }

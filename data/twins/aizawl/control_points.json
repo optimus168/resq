@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cp-lam",
+    "name": "Lammual Ground Shelter",
+    "kind": "shelter",
+    "lon": 92.716,
+    "lat": 23.729,
+    "u": 0.402,
+    "v": 0.4504,
+    "pixel_col": 205,
+    "pixel_row": 230,
+    "dem_elevation_m": 1001.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-civa",
+    "name": "Civil Hospital Aizawl",
+    "kind": "hospital",
+    "lon": 92.717,
+    "lat": 23.734,
+    "u": 0.4134,
+    "v": 0.3882,
+    "pixel_col": 211,
+    "pixel_row": 198,
+    "dem_elevation_m": 1092.0,
+    "in_bounds": true
+  }
+]

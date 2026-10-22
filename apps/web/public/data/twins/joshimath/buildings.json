@@ -1,0 +1,3422 @@
+[
+  {
+    "id": "bldg-v-jos-001",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.560212,
+      30.55921
+    ],
+    "u": 0.2184,
+    "v": 0.5402,
+    "ground_elevation_m": 1723.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.6,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-002",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567147,
+      30.552855
+    ],
+    "u": 0.2973,
+    "v": 0.6242,
+    "ground_elevation_m": 1938.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.8,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-003",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570875,
+      30.558751
+    ],
+    "u": 0.3397,
+    "v": 0.5463,
+    "ground_elevation_m": 1696.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.6,
+      14.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-004",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564609,
+      30.557522
+    ],
+    "u": 0.2684,
+    "v": 0.5625,
+    "ground_elevation_m": 1750.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.6,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-005",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567719,
+      30.558534
+    ],
+    "u": 0.3038,
+    "v": 0.5491,
+    "ground_elevation_m": 1677.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      8.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-006",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563778,
+      30.56451
+    ],
+    "u": 0.259,
+    "v": 0.4702,
+    "ground_elevation_m": 1409.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.1,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-007",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564806,
+      30.560002
+    ],
+    "u": 0.2707,
+    "v": 0.5297,
+    "ground_elevation_m": 1615.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.7,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-008",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564239,
+      30.558106
+    ],
+    "u": 0.2642,
+    "v": 0.5548,
+    "ground_elevation_m": 1711.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.9,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-009",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569382,
+      30.556333
+    ],
+    "u": 0.3227,
+    "v": 0.5782,
+    "ground_elevation_m": 1810.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.9,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-010",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.562355,
+      30.554246
+    ],
+    "u": 0.2428,
+    "v": 0.6058,
+    "ground_elevation_m": 1952.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.3,
+      14.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-011",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566679,
+      30.558572
+    ],
+    "u": 0.292,
+    "v": 0.5486,
+    "ground_elevation_m": 1675.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.2,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-012",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569951,
+      30.557448
+    ],
+    "u": 0.3292,
+    "v": 0.5635,
+    "ground_elevation_m": 1751.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.6,
+      12.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-013",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563462,
+      30.556653
+    ],
+    "u": 0.2554,
+    "v": 0.574,
+    "ground_elevation_m": 1838.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.7,
+      13.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-014",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566665,
+      30.551881
+    ],
+    "u": 0.2918,
+    "v": 0.6371,
+    "ground_elevation_m": 1989.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.7,
+      13.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-015",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569747,
+      30.555698
+    ],
+    "u": 0.3269,
+    "v": 0.5866,
+    "ground_elevation_m": 1856.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.9,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-016",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565892,
+      30.557065
+    ],
+    "u": 0.283,
+    "v": 0.5686,
+    "ground_elevation_m": 1763.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.0,
+      14.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-017",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.568706,
+      30.559474
+    ],
+    "u": 0.3151,
+    "v": 0.5367,
+    "ground_elevation_m": 1660.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.1,
+      8.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-018",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569159,
+      30.554897
+    ],
+    "u": 0.3202,
+    "v": 0.5972,
+    "ground_elevation_m": 1894.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.0,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-019",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.562386,
+      30.557346
+    ],
+    "u": 0.2431,
+    "v": 0.5648,
+    "ground_elevation_m": 1785.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.8,
+      12.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-020",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.560882,
+      30.557087
+    ],
+    "u": 0.226,
+    "v": 0.5683,
+    "ground_elevation_m": 1849.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.6,
+      8.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-021",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.562415,
+      30.556786
+    ],
+    "u": 0.2435,
+    "v": 0.5722,
+    "ground_elevation_m": 1830.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.1,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-022",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563557,
+      30.557685
+    ],
+    "u": 0.2565,
+    "v": 0.5604,
+    "ground_elevation_m": 1756.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.7,
+      9.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-023",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567794,
+      30.56009
+    ],
+    "u": 0.3047,
+    "v": 0.5286,
+    "ground_elevation_m": 1579.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.4,
+      9.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-024",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563672,
+      30.554897
+    ],
+    "u": 0.2578,
+    "v": 0.5972,
+    "ground_elevation_m": 1898.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.1,
+      9.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-025",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.561095,
+      30.555998
+    ],
+    "u": 0.2285,
+    "v": 0.5827,
+    "ground_elevation_m": 1885.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.4,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-026",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565212,
+      30.558827
+    ],
+    "u": 0.2753,
+    "v": 0.5453,
+    "ground_elevation_m": 1671.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.3,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-027",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566568,
+      30.558451
+    ],
+    "u": 0.2907,
+    "v": 0.5502,
+    "ground_elevation_m": 1683.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.7,
+      14.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-028",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565981,
+      30.557467
+    ],
+    "u": 0.2841,
+    "v": 0.5632,
+    "ground_elevation_m": 1739.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.8,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-029",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.561634,
+      30.562054
+    ],
+    "u": 0.2346,
+    "v": 0.5026,
+    "ground_elevation_m": 1571.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.0,
+      15.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-030",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.568278,
+      30.556537
+    ],
+    "u": 0.3102,
+    "v": 0.5755,
+    "ground_elevation_m": 1804.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-031",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569759,
+      30.554376
+    ],
+    "u": 0.327,
+    "v": 0.6041,
+    "ground_elevation_m": 1905.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.8,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-032",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.561044,
+      30.557918
+    ],
+    "u": 0.2279,
+    "v": 0.5573,
+    "ground_elevation_m": 1777.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.5,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-033",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.568364,
+      30.552885
+    ],
+    "u": 0.3112,
+    "v": 0.6238,
+    "ground_elevation_m": 1949.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.4,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-034",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565266,
+      30.562263
+    ],
+    "u": 0.2759,
+    "v": 0.4999,
+    "ground_elevation_m": 1479.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.7,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-035",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.571402,
+      30.554072
+    ],
+    "u": 0.3457,
+    "v": 0.6081,
+    "ground_elevation_m": 1877.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.0,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-036",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566923,
+      30.550022
+    ],
+    "u": 0.2948,
+    "v": 0.6616,
+    "ground_elevation_m": 2084.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.2,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-037",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569601,
+      30.564078
+    ],
+    "u": 0.3252,
+    "v": 0.4759,
+    "ground_elevation_m": 1509.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.1,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-038",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566297,
+      30.559063
+    ],
+    "u": 0.2876,
+    "v": 0.5422,
+    "ground_elevation_m": 1646.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.5,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-039",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566609,
+      30.554131
+    ],
+    "u": 0.2912,
+    "v": 0.6073,
+    "ground_elevation_m": 1894.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-040",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564829,
+      30.556518
+    ],
+    "u": 0.2709,
+    "v": 0.5758,
+    "ground_elevation_m": 1820.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-041",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.558753,
+      30.558079
+    ],
+    "u": 0.2018,
+    "v": 0.5552,
+    "ground_elevation_m": 1801.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.5,
+      13.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-042",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.562363,
+      30.554444
+    ],
+    "u": 0.2429,
+    "v": 0.6032,
+    "ground_elevation_m": 1948.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.3,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-043",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566372,
+      30.56108
+    ],
+    "u": 0.2885,
+    "v": 0.5155,
+    "ground_elevation_m": 1540.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.4,
+      9.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-044",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570095,
+      30.560733
+    ],
+    "u": 0.3309,
+    "v": 0.5201,
+    "ground_elevation_m": 1551.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.6,
+      12.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-045",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564956,
+      30.5575
+    ],
+    "u": 0.2724,
+    "v": 0.5628,
+    "ground_elevation_m": 1747.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.5,
+      12.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-046",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.56856,
+      30.553994
+    ],
+    "u": 0.3134,
+    "v": 0.6091,
+    "ground_elevation_m": 1926.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.5,
+      9.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-047",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.55722,
+      30.557432
+    ],
+    "u": 0.1844,
+    "v": 0.5637,
+    "ground_elevation_m": 1844.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.4,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-048",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564545,
+      30.557763
+    ],
+    "u": 0.2677,
+    "v": 0.5593,
+    "ground_elevation_m": 1733.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.5,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-049",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563948,
+      30.552005
+    ],
+    "u": 0.2609,
+    "v": 0.6354,
+    "ground_elevation_m": 1994.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.7,
+      10.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-050",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.559629,
+      30.561055
+    ],
+    "u": 0.2118,
+    "v": 0.5158,
+    "ground_elevation_m": 1636.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.3,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-051",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563099,
+      30.55822
+    ],
+    "u": 0.2513,
+    "v": 0.5533,
+    "ground_elevation_m": 1730.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.7,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-052",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564981,
+      30.553309
+    ],
+    "u": 0.2727,
+    "v": 0.6182,
+    "ground_elevation_m": 1939.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.4,
+      10.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-053",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569504,
+      30.559586
+    ],
+    "u": 0.3241,
+    "v": 0.5353,
+    "ground_elevation_m": 1646.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.2,
+      12.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-054",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563087,
+      30.56008
+    ],
+    "u": 0.2511,
+    "v": 0.5287,
+    "ground_elevation_m": 1635.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.2,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-055",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.57128,
+      30.557914
+    ],
+    "u": 0.3443,
+    "v": 0.5573,
+    "ground_elevation_m": 1735.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.0,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-056",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569233,
+      30.558456
+    ],
+    "u": 0.321,
+    "v": 0.5502,
+    "ground_elevation_m": 1697.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.4,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-057",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.568645,
+      30.560813
+    ],
+    "u": 0.3144,
+    "v": 0.519,
+    "ground_elevation_m": 1559.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.8,
+      13.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-058",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570343,
+      30.559626
+    ],
+    "u": 0.3337,
+    "v": 0.5347,
+    "ground_elevation_m": 1638.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.2,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-059",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.571583,
+      30.562322
+    ],
+    "u": 0.3478,
+    "v": 0.4991,
+    "ground_elevation_m": 1442.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-060",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.56181,
+      30.555154
+    ],
+    "u": 0.2366,
+    "v": 0.5938,
+    "ground_elevation_m": 1906.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.0,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-061",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.568799,
+      30.562028
+    ],
+    "u": 0.3161,
+    "v": 0.503,
+    "ground_elevation_m": 1460.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.7,
+      11.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-062",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.5614,
+      30.555032
+    ],
+    "u": 0.2319,
+    "v": 0.5954,
+    "ground_elevation_m": 1913.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.3,
+      11.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-063",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567385,
+      30.558944
+    ],
+    "u": 0.3,
+    "v": 0.5437,
+    "ground_elevation_m": 1641.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.0,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-064",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.56873,
+      30.556387
+    ],
+    "u": 0.3153,
+    "v": 0.5775,
+    "ground_elevation_m": 1812.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.9,
+      9.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-065",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565767,
+      30.556564
+    ],
+    "u": 0.2816,
+    "v": 0.5752,
+    "ground_elevation_m": 1804.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.8,
+      15.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-066",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567346,
+      30.560056
+    ],
+    "u": 0.2996,
+    "v": 0.529,
+    "ground_elevation_m": 1577.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-067",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563959,
+      30.550788
+    ],
+    "u": 0.261,
+    "v": 0.6515,
+    "ground_elevation_m": 2035.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.7,
+      8.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-068",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563738,
+      30.555184
+    ],
+    "u": 0.2585,
+    "v": 0.5934,
+    "ground_elevation_m": 1880.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.8,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-069",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.562315,
+      30.557419
+    ],
+    "u": 0.2423,
+    "v": 0.5639,
+    "ground_elevation_m": 1788.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.2,
+      10.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-070",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570583,
+      30.552033
+    ],
+    "u": 0.3364,
+    "v": 0.635,
+    "ground_elevation_m": 1940.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.6,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-071",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563154,
+      30.560954
+    ],
+    "u": 0.2519,
+    "v": 0.5172,
+    "ground_elevation_m": 1602.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.0,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-072",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.560862,
+      30.560793
+    ],
+    "u": 0.2258,
+    "v": 0.5193,
+    "ground_elevation_m": 1628.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.0,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-073",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565837,
+      30.553834
+    ],
+    "u": 0.2824,
+    "v": 0.6113,
+    "ground_elevation_m": 1905.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.6,
+      15.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-074",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.572791,
+      30.560155
+    ],
+    "u": 0.3615,
+    "v": 0.5277,
+    "ground_elevation_m": 1576.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-075",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564962,
+      30.554057
+    ],
+    "u": 0.2725,
+    "v": 0.6083,
+    "ground_elevation_m": 1921.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.3,
+      14.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-076",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.56716,
+      30.558862
+    ],
+    "u": 0.2975,
+    "v": 0.5448,
+    "ground_elevation_m": 1651.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-077",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567436,
+      30.556952
+    ],
+    "u": 0.3006,
+    "v": 0.5701,
+    "ground_elevation_m": 1773.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.3,
+      8.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-078",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567153,
+      30.558858
+    ],
+    "u": 0.2974,
+    "v": 0.5449,
+    "ground_elevation_m": 1651.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.5,
+      13.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-079",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569959,
+      30.556414
+    ],
+    "u": 0.3293,
+    "v": 0.5772,
+    "ground_elevation_m": 1812.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.8,
+      14.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-080",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565363,
+      30.55682
+    ],
+    "u": 0.277,
+    "v": 0.5718,
+    "ground_elevation_m": 1788.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.9,
+      13.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-081",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564004,
+      30.556528
+    ],
+    "u": 0.2616,
+    "v": 0.5757,
+    "ground_elevation_m": 1836.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.3,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-082",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567965,
+      30.555711
+    ],
+    "u": 0.3066,
+    "v": 0.5864,
+    "ground_elevation_m": 1845.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.9,
+      14.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-083",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570404,
+      30.555195
+    ],
+    "u": 0.3344,
+    "v": 0.5933,
+    "ground_elevation_m": 1880.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.2,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-084",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.569949,
+      30.553524
+    ],
+    "u": 0.3292,
+    "v": 0.6153,
+    "ground_elevation_m": 1916.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.1,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-085",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563619,
+      30.561833
+    ],
+    "u": 0.2572,
+    "v": 0.5056,
+    "ground_elevation_m": 1550.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.3,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-086",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566719,
+      30.554143
+    ],
+    "u": 0.2925,
+    "v": 0.6072,
+    "ground_elevation_m": 1895.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.4,
+      8.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-087",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.56981,
+      30.555111
+    ],
+    "u": 0.3276,
+    "v": 0.5944,
+    "ground_elevation_m": 1885.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.2,
+      10.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-088",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567372,
+      30.551782
+    ],
+    "u": 0.2999,
+    "v": 0.6384,
+    "ground_elevation_m": 2003.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.2,
+      9.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-089",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.571779,
+      30.557837
+    ],
+    "u": 0.35,
+    "v": 0.5584,
+    "ground_elevation_m": 1752.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.8,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-090",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563932,
+      30.564991
+    ],
+    "u": 0.2607,
+    "v": 0.4638,
+    "ground_elevation_m": 1445.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.5,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-091",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563509,
+      30.556041
+    ],
+    "u": 0.2559,
+    "v": 0.5821,
+    "ground_elevation_m": 1874.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.7,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-092",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570483,
+      30.553886
+    ],
+    "u": 0.3353,
+    "v": 0.6106,
+    "ground_elevation_m": 1901.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      14.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-093",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564657,
+      30.553948
+    ],
+    "u": 0.269,
+    "v": 0.6097,
+    "ground_elevation_m": 1931.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.1,
+      9.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-094",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567291,
+      30.558347
+    ],
+    "u": 0.299,
+    "v": 0.5516,
+    "ground_elevation_m": 1678.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.9,
+      15.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-095",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.57206,
+      30.555627
+    ],
+    "u": 0.3532,
+    "v": 0.5876,
+    "ground_elevation_m": 1840.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.5,
+      12.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-096",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564744,
+      30.560952
+    ],
+    "u": 0.27,
+    "v": 0.5172,
+    "ground_elevation_m": 1588.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.2,
+      12.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-097",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570394,
+      30.550358
+    ],
+    "u": 0.3343,
+    "v": 0.6572,
+    "ground_elevation_m": 1999.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.1,
+      16.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-098",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563335,
+      30.555458
+    ],
+    "u": 0.2539,
+    "v": 0.5898,
+    "ground_elevation_m": 1884.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.6,
+      10.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-099",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570659,
+      30.564849
+    ],
+    "u": 0.3373,
+    "v": 0.4657,
+    "ground_elevation_m": 1635.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.4,
+      9.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-100",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.570181,
+      30.551007
+    ],
+    "u": 0.3318,
+    "v": 0.6486,
+    "ground_elevation_m": 1979.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-101",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.560773,
+      30.561462
+    ],
+    "u": 0.2248,
+    "v": 0.5105,
+    "ground_elevation_m": 1601.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.9,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-102",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.562481,
+      30.553991
+    ],
+    "u": 0.2442,
+    "v": 0.6092,
+    "ground_elevation_m": 1952.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.0,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-103",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.573615,
+      30.560076
+    ],
+    "u": 0.3709,
+    "v": 0.5288,
+    "ground_elevation_m": 1575.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.0,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-104",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.568172,
+      30.561966
+    ],
+    "u": 0.309,
+    "v": 0.5038,
+    "ground_elevation_m": 1458.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.3,
+      12.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-105",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.56984,
+      30.556338
+    ],
+    "u": 0.328,
+    "v": 0.5782,
+    "ground_elevation_m": 1817.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.8,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-106",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.568022,
+      30.558913
+    ],
+    "u": 0.3073,
+    "v": 0.5441,
+    "ground_elevation_m": 1667.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.7,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-107",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.56358,
+      30.557061
+    ],
+    "u": 0.2567,
+    "v": 0.5686,
+    "ground_elevation_m": 1787.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.1,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-108",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565465,
+      30.559831
+    ],
+    "u": 0.2782,
+    "v": 0.532,
+    "ground_elevation_m": 1602.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-109",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.562578,
+      30.555805
+    ],
+    "u": 0.2453,
+    "v": 0.5852,
+    "ground_elevation_m": 1889.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.5,
+      12.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-110",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.574328,
+      30.558563
+    ],
+    "u": 0.379,
+    "v": 0.5488,
+    "ground_elevation_m": 1656.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.9,
+      14.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-111",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.567207,
+      30.556035
+    ],
+    "u": 0.298,
+    "v": 0.5822,
+    "ground_elevation_m": 1830.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.6,
+      12.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-112",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563626,
+      30.5592
+    ],
+    "u": 0.2573,
+    "v": 0.5403,
+    "ground_elevation_m": 1664.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.6,
+      13.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-113",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564182,
+      30.552724
+    ],
+    "u": 0.2636,
+    "v": 0.6259,
+    "ground_elevation_m": 1968.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.3,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-114",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563745,
+      30.554364
+    ],
+    "u": 0.2586,
+    "v": 0.6042,
+    "ground_elevation_m": 1922.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.4,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-115",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.571422,
+      30.555518
+    ],
+    "u": 0.346,
+    "v": 0.589,
+    "ground_elevation_m": 1855.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.6,
+      15.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-116",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.565605,
+      30.551834
+    ],
+    "u": 0.2798,
+    "v": 0.6377,
+    "ground_elevation_m": 1991.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.3,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-117",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.563707,
+      30.557404
+    ],
+    "u": 0.2582,
+    "v": 0.5641,
+    "ground_elevation_m": 1770.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.6,
+      15.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-jos-118",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.566432,
+      30.562469
+    ],
+    "u": 0.2892,
+    "v": 0.4972,
+    "ground_elevation_m": 1449.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.1,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-119",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.572392,
+      30.561711
+    ],
+    "u": 0.357,
+    "v": 0.5072,
+    "ground_elevation_m": 1485.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.6,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-jos-120",
+    "village_id": "v-jos",
+    "village_name": "Joshimath Town",
+    "center": [
+      79.564989,
+      30.549147
+    ],
+    "u": 0.2728,
+    "v": 0.6732,
+    "ground_elevation_m": 2102.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.0,
+      8.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-001",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.557421,
+      30.554481
+    ],
+    "u": 0.1867,
+    "v": 0.6027,
+    "ground_elevation_m": 1951.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.9,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-002",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.56553,
+      30.547379
+    ],
+    "u": 0.2789,
+    "v": 0.6965,
+    "ground_elevation_m": 2211.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.9,
+      10.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-003",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.556768,
+      30.551005
+    ],
+    "u": 0.1792,
+    "v": 0.6486,
+    "ground_elevation_m": 2113.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.2,
+      15.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-004",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.55509,
+      30.553602
+    ],
+    "u": 0.1601,
+    "v": 0.6143,
+    "ground_elevation_m": 2038.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.1,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-005",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.56398,
+      30.559738
+    ],
+    "u": 0.2613,
+    "v": 0.5332,
+    "ground_elevation_m": 1629.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.9,
+      12.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-006",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.55843,
+      30.558036
+    ],
+    "u": 0.1981,
+    "v": 0.5557,
+    "ground_elevation_m": 1804.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.3,
+      12.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-007",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.562189,
+      30.555073
+    ],
+    "u": 0.2409,
+    "v": 0.5949,
+    "ground_elevation_m": 1901.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.4,
+      11.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-008",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.558931,
+      30.552074
+    ],
+    "u": 0.2038,
+    "v": 0.6345,
+    "ground_elevation_m": 2009.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-009",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.562573,
+      30.554841
+    ],
+    "u": 0.2453,
+    "v": 0.5979,
+    "ground_elevation_m": 1913.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.3,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-010",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.561112,
+      30.553436
+    ],
+    "u": 0.2286,
+    "v": 0.6165,
+    "ground_elevation_m": 1954.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.7,
+      8.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-011",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.550194,
+      30.55483
+    ],
+    "u": 0.1044,
+    "v": 0.5981,
+    "ground_elevation_m": 2020.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.3,
+      12.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-012",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.560287,
+      30.548388
+    ],
+    "u": 0.2193,
+    "v": 0.6832,
+    "ground_elevation_m": 2165.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.0,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-013",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.558157,
+      30.548188
+    ],
+    "u": 0.195,
+    "v": 0.6858,
+    "ground_elevation_m": 2216.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.5,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-014",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.55902,
+      30.548949
+    ],
+    "u": 0.2049,
+    "v": 0.6758,
+    "ground_elevation_m": 2161.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.4,
+      13.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-015",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.569825,
+      30.553353
+    ],
+    "u": 0.3278,
+    "v": 0.6176,
+    "ground_elevation_m": 1922.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.2,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-016",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559448,
+      30.555347
+    ],
+    "u": 0.2097,
+    "v": 0.5913,
+    "ground_elevation_m": 1910.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.6,
+      13.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-017",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.562762,
+      30.556615
+    ],
+    "u": 0.2474,
+    "v": 0.5745,
+    "ground_elevation_m": 1843.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-018",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.557071,
+      30.548457
+    ],
+    "u": 0.1827,
+    "v": 0.6823,
+    "ground_elevation_m": 2225.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.8,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-019",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.555108,
+      30.557686
+    ],
+    "u": 0.1603,
+    "v": 0.5604,
+    "ground_elevation_m": 1822.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.5,
+      15.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-020",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.55487,
+      30.551209
+    ],
+    "u": 0.1576,
+    "v": 0.6459,
+    "ground_elevation_m": 2168.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.2,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-021",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.560407,
+      30.555924
+    ],
+    "u": 0.2206,
+    "v": 0.5836,
+    "ground_elevation_m": 1887.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.3,
+      12.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-022",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.563623,
+      30.553088
+    ],
+    "u": 0.2572,
+    "v": 0.6211,
+    "ground_elevation_m": 1964.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.9,
+      8.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-023",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.564042,
+      30.554003
+    ],
+    "u": 0.262,
+    "v": 0.609,
+    "ground_elevation_m": 1940.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.6,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-024",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.558552,
+      30.551736
+    ],
+    "u": 0.1995,
+    "v": 0.639,
+    "ground_elevation_m": 2037.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.4,
+      12.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-025",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.569472,
+      30.556623
+    ],
+    "u": 0.3238,
+    "v": 0.5744,
+    "ground_elevation_m": 1797.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.7,
+      13.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-026",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.561252,
+      30.550552
+    ],
+    "u": 0.2302,
+    "v": 0.6546,
+    "ground_elevation_m": 2053.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.9,
+      13.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-027",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.561413,
+      30.544511
+    ],
+    "u": 0.2321,
+    "v": 0.7344,
+    "ground_elevation_m": 2341.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      15.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-028",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559173,
+      30.551904
+    ],
+    "u": 0.2066,
+    "v": 0.6368,
+    "ground_elevation_m": 2013.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.8,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-029",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.560798,
+      30.551216
+    ],
+    "u": 0.2251,
+    "v": 0.6458,
+    "ground_elevation_m": 2027.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      15.3,
+      12.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-030",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.555586,
+      30.554604
+    ],
+    "u": 0.1658,
+    "v": 0.6011,
+    "ground_elevation_m": 1980.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.5,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-031",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.556674,
+      30.549807
+    ],
+    "u": 0.1782,
+    "v": 0.6645,
+    "ground_elevation_m": 2173.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.2,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-032",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.568419,
+      30.554617
+    ],
+    "u": 0.3118,
+    "v": 0.6009,
+    "ground_elevation_m": 1908.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.1,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-033",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559085,
+      30.555219
+    ],
+    "u": 0.2056,
+    "v": 0.5929,
+    "ground_elevation_m": 1911.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.2,
+      13.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-034",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.557979,
+      30.549849
+    ],
+    "u": 0.193,
+    "v": 0.6639,
+    "ground_elevation_m": 2141.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.9,
+      13.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-035",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.556552,
+      30.555621
+    ],
+    "u": 0.1768,
+    "v": 0.5876,
+    "ground_elevation_m": 1891.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.2,
+      10.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-036",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.558995,
+      30.548736
+    ],
+    "u": 0.2046,
+    "v": 0.6786,
+    "ground_elevation_m": 2168.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.5,
+      13.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-037",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.556879,
+      30.554122
+    ],
+    "u": 0.1805,
+    "v": 0.6075,
+    "ground_elevation_m": 1966.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.1,
+      13.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-038",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.553336,
+      30.55469
+    ],
+    "u": 0.1402,
+    "v": 0.5999,
+    "ground_elevation_m": 2010.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.6,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-039",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.566402,
+      30.554839
+    ],
+    "u": 0.2888,
+    "v": 0.598,
+    "ground_elevation_m": 1879.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.4,
+      8.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-040",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.56125,
+      30.545496
+    ],
+    "u": 0.2302,
+    "v": 0.7214,
+    "ground_elevation_m": 2280.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.5,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-041",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559564,
+      30.553614
+    ],
+    "u": 0.211,
+    "v": 0.6142,
+    "ground_elevation_m": 1951.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.1,
+      12.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-042",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.556421,
+      30.549388
+    ],
+    "u": 0.1753,
+    "v": 0.67,
+    "ground_elevation_m": 2207.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.9,
+      11.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-043",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.560917,
+      30.555294
+    ],
+    "u": 0.2264,
+    "v": 0.592,
+    "ground_elevation_m": 1902.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.3,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-044",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.561948,
+      30.553288
+    ],
+    "u": 0.2382,
+    "v": 0.6185,
+    "ground_elevation_m": 1956.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.6,
+      8.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-045",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559982,
+      30.550736
+    ],
+    "u": 0.2158,
+    "v": 0.6522,
+    "ground_elevation_m": 2052.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.7,
+      10.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-046",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.556479,
+      30.553716
+    ],
+    "u": 0.1759,
+    "v": 0.6128,
+    "ground_elevation_m": 2003.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.9,
+      10.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-047",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.560308,
+      30.549475
+    ],
+    "u": 0.2195,
+    "v": 0.6689,
+    "ground_elevation_m": 2107.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.2,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-048",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.557032,
+      30.553237
+    ],
+    "u": 0.1822,
+    "v": 0.6191,
+    "ground_elevation_m": 1999.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.1,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-049",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.564849,
+      30.546642
+    ],
+    "u": 0.2712,
+    "v": 0.7063,
+    "ground_elevation_m": 2236.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.4,
+      13.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-050",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.560561,
+      30.556989
+    ],
+    "u": 0.2224,
+    "v": 0.5696,
+    "ground_elevation_m": 1856.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      13.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-051",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.561455,
+      30.544395
+    ],
+    "u": 0.2326,
+    "v": 0.736,
+    "ground_elevation_m": 2353.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.1,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-052",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559423,
+      30.552328
+    ],
+    "u": 0.2094,
+    "v": 0.6312,
+    "ground_elevation_m": 1991.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.8,
+      10.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-053",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559801,
+      30.554344
+    ],
+    "u": 0.2137,
+    "v": 0.6045,
+    "ground_elevation_m": 1933.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.5,
+      14.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-054",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.562704,
+      30.552672
+    ],
+    "u": 0.2468,
+    "v": 0.6266,
+    "ground_elevation_m": 1975.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.3,
+      9.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-055",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.559293,
+      30.553686
+    ],
+    "u": 0.208,
+    "v": 0.6132,
+    "ground_elevation_m": 1953.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.0,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-056",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.5603,
+      30.552256
+    ],
+    "u": 0.2194,
+    "v": 0.6321,
+    "ground_elevation_m": 1990.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.2,
+      14.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-057",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.557014,
+      30.554661
+    ],
+    "u": 0.182,
+    "v": 0.6003,
+    "ground_elevation_m": 1949.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.9,
+      8.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-058",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.5574,
+      30.549866
+    ],
+    "u": 0.1864,
+    "v": 0.6637,
+    "ground_elevation_m": 2153.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.9,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sun-059",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.560331,
+      30.551784
+    ],
+    "u": 0.2198,
+    "v": 0.6383,
+    "ground_elevation_m": 2010.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.7,
+      15.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-sun-060",
+    "village_id": "v-sun",
+    "village_name": "Sunil Ward",
+    "center": [
+      79.556188,
+      30.55329
+    ],
+    "u": 0.1726,
+    "v": 0.6184,
+    "ground_elevation_m": 2018.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.7,
+      9.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  }
+]

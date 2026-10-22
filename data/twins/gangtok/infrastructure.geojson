@@ -1,0 +1,327 @@
+{
+  "type": "FeatureCollection",
+  "aoi_id": "gangtok",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            88.6138,
+            27.3314
+          ],
+          [
+            88.6115,
+            27.324
+          ],
+          [
+            88.6015,
+            27.3135
+          ],
+          [
+            88.598,
+            27.3
+          ],
+          [
+            88.5952,
+            27.2905
+          ],
+          [
+            88.58,
+            27.275
+          ],
+          [
+            88.565,
+            27.265
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-nh10",
+        "name": "NH10 Gangtok\u2013Ranipool Lifeline",
+        "kind": "road",
+        "road_kind": "primary",
+        "surface": "asphalt",
+        "width_m": 9.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            88.6138,
+            27.3314
+          ],
+          [
+            88.6185,
+            27.338
+          ],
+          [
+            88.625,
+            27.32
+          ],
+          [
+            88.62,
+            27.3
+          ],
+          [
+            88.5952,
+            27.2905
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-alt",
+        "name": "Sichey\u2013Tathangchen\u2013Ranipool Link",
+        "kind": "road",
+        "road_kind": "alternate",
+        "surface": "paved",
+        "width_m": 6.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            88.6115,
+            27.324
+          ],
+          [
+            88.6,
+            27.33
+          ],
+          [
+            88.59,
+            27.315
+          ],
+          [
+            88.585,
+            27.3
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-syari",
+        "name": "Lower Syari Bypass Corridor",
+        "kind": "road",
+        "road_kind": "tertiary",
+        "surface": "paved",
+        "width_m": 6.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6125,
+          27.329
+        ]
+      },
+      "properties": {
+        "id": "cp-paljor",
+        "name": "Paljor Stadium",
+        "lon": 88.6125,
+        "lat": 27.329,
+        "kind": "shelter",
+        "capacity": 1500,
+        "feature_type": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6,
+          27.306
+        ]
+      },
+      "properties": {
+        "id": "cp-stnm",
+        "name": "STNM Multi-Specialty Hospital",
+        "lon": 88.6,
+        "lat": 27.306,
+        "kind": "hospital",
+        "beds": 450,
+        "feature_type": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6,
+          27.311
+        ]
+      },
+      "properties": {
+        "id": "cp-crh",
+        "name": "Central Referral Hospital Tadong",
+        "lon": 88.6,
+        "lat": 27.311,
+        "kind": "hospital",
+        "beds": 300,
+        "feature_type": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5952,
+          27.2905
+        ]
+      },
+      "properties": {
+        "id": "cp-ranipool",
+        "name": "Ranipool Bridge Junction",
+        "lon": 88.5952,
+        "lat": 27.2905,
+        "kind": "junction",
+        "elevation_nominal": 670,
+        "feature_type": "junction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6115,
+          27.324
+        ]
+      },
+      "properties": {
+        "id": "cp-deorali",
+        "name": "Deorali Transport Hub",
+        "lon": 88.6115,
+        "lat": 27.324,
+        "kind": "transit",
+        "elevation_nominal": 1540,
+        "feature_type": "transit"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6138,
+          27.3314
+        ]
+      },
+      "properties": {
+        "id": "v-gtk",
+        "name": "Gangtok (MG Marg)",
+        "lat": 27.3314,
+        "lon": 88.6138,
+        "pop": 30000,
+        "bldg_density": "high",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6115,
+          27.324
+        ]
+      },
+      "properties": {
+        "id": "v-dor",
+        "name": "Deorali",
+        "lat": 27.324,
+        "lon": 88.6115,
+        "pop": 6000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6015,
+          27.3135
+        ]
+      },
+      "properties": {
+        "id": "v-tad",
+        "name": "Tadong",
+        "lat": 27.3135,
+        "lon": 88.6015,
+        "pop": 8000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.5952,
+          27.2905
+        ]
+      },
+      "properties": {
+        "id": "v-rnp",
+        "name": "Ranipool",
+        "lat": 27.2905,
+        "lon": 88.5952,
+        "pop": 5000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6185,
+          27.338
+        ]
+      },
+      "properties": {
+        "id": "v-sic",
+        "name": "Sichey",
+        "lat": 27.338,
+        "lon": 88.6185,
+        "pop": 4000,
+        "bldg_density": "low",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.6,
+          27.33
+        ]
+      },
+      "properties": {
+        "id": "v-syr",
+        "name": "Lower Syari",
+        "lat": 27.33,
+        "lon": 88.6,
+        "pop": 3000,
+        "bldg_density": "low",
+        "feature_type": "settlement"
+      }
+    }
+  ]
+}

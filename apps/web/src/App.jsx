@@ -1,108 +1,187 @@
-import React, { useState } from 'react';
-import MissionControl from './components/MissionControl';
-import { Mountain, Shield, Activity, Sparkles, ArrowRight, Layers, FileCheck } from 'lucide-react';
-import { SimulatedBadge } from './components/Badges';
+import React, { useState, useEffect } from 'react';
+import { RouterProvider, useLocation, useNavigate } from './router';
+import { AuthProvider, IncidentProvider, useAuth } from './lib/api';
+import { Toaster } from './lib/toast';
+import Shell from './components/Shell';
+import { getCurrentLanguage } from './geoshield/i18n/translations';
 
-export default function App() {
-  const [currentView, setCurrentView] = useState('mission_control'); // 'landing', 'mission_control'
+// RESQ Pages
+import Landing from './pages/Landing';
+import Login from './pages/Login';
+import MissionControl from './pages/MissionControl';
+import SimulationLab from './pages/SimulationLab';
+import AgentConsole from './pages/AgentConsole';
+import Approvals from './pages/Approvals';
+import FieldReports from './pages/FieldReports';
+import Alerts from './pages/Alerts';
+import DataHealth from './pages/DataHealth';
+import Audit from './pages/Audit';
 
-  if (currentView === 'landing') {
+// GeoShield Pages
+import GeoShieldDashboard from './geoshield/pages/Dashboard';
+import GeoShieldRiskMap from './geoshield/pages/RiskMap';
+import GeoShieldStations from './geoshield/pages/Stations';
+import GeoShieldStationDetail from './geoshield/pages/StationDetail';
+import GeoShieldSimulator from './geoshield/pages/Simulator';
+import GeoShieldSatellite from './geoshield/pages/SatelliteData';
+import GeoShieldFlood from './geoshield/pages/FloodData';
+import GeoShieldDemo from './geoshield/pages/DemoFlow';
+import GeoShieldAlerts from './geoshield/pages/Alerts';
+import GeoShieldReports from './geoshield/pages/Reports';
+
+// TerraGuard Pages
+import TerraGuardPage from './pages/TerraGuardPage';
+
+// Verification, Governance & Presenter Pages
+import ValidationPage from './components/ValidationPage';
+import PresenterPage from './pages/PresenterPage';
+import ResponsibleAIPage from './components/ResponsibleAIPage';
+
+function MainRouter() {
+  const { pathname } = useLocation();
+  const { user, setUser } = useAuth();
+  const navigate = useNavigate();
+  const [lang, setLang] = useState(getCurrentLanguage());
+
+  useEffect(() => {
+    const onLangChange = (e) => setLang(e.detail || getCurrentLanguage());
+    window.addEventListener('geoshield-languagechange', onLangChange);
+    return () => window.removeEventListener('geoshield-languagechange', onLangChange);
+  }, []);
+
+  // Route routing logic
+  if (pathname === '/' || pathname === '') {
+    return <Landing />;
+  }
+
+  if (pathname === '/login') {
+    return <Login onLoginSuccess={u => setUser(u)} />;
+  }
+
+  // Route mapping within the operations Shell
+  let PageComponent = MissionControl;
+  if (pathname === '/simulation-lab') PageComponent = SimulationLab;
+  else if (pathname === '/agent-console') PageComponent = AgentConsole;
+  else if (pathname === '/approvals') PageComponent = Approvals;
+  else if (pathname === '/field-reports') PageComponent = FieldReports;
+  else if (pathname === '/alerts') PageComponent = Alerts;
+  else if (pathname === '/data-health') PageComponent = DataHealth;
+  else if (pathname === '/audit') PageComponent = Audit;
+  else if (pathname === '/mission-control') PageComponent = MissionControl;
+  else if (pathname === '/validation') {
     return (
-      <div className="min-h-screen bg-[#06150C] text-white flex flex-col font-sans">
-        {/* Navigation */}
-        <header className="px-8 py-5 border-b border-[#249344]/30 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded bg-[#BDFF42] text-[#06150C] flex items-center justify-center font-black text-base shadow-lg shadow-lime-500/20">
-              RQ
-            </div>
-            <div>
-              <div className="text-lg font-black tracking-tight">
-                BHURAKSHA <span className="text-[#BDFF42]">×</span> RESQ.AI
-              </div>
-              <div className="text-[11px] font-mono text-[#9FD8A8]">
-                AGENTIC AI LANDSLIDE INTELLIGENCE PLATFORM (SIH26001)
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <SimulatedBadge />
-            <button
-              onClick={() => setCurrentView('mission_control')}
-              className="px-5 py-2.5 rounded-lg bg-[#BDFF42] text-[#06150C] font-bold text-xs tracking-wider uppercase hover:bg-lime-300 transition-all shadow-lg shadow-lime-500/25 flex items-center gap-2"
-            >
-              <span>Launch Mission Control</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-        </header>
-
-        {/* Hero Section */}
-        <main className="flex-1 max-w-6xl mx-auto px-6 py-16 flex flex-col items-center text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#249344]/20 border border-[#249344]/40 text-[#BDFF42] text-xs font-mono">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>INFOTHON 7.0 / SIH 2026 PROTOTYPE · AUTONOMOUS AGENTIC REPLANNING</span>
-          </div>
-
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight max-w-4xl">
-            Protecting India's North Eastern Region With{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#BDFF42] via-emerald-400 to-[#FFA31A]">
-              Coupled Physics & Autonomous Agentic AI
-            </span>
-          </h1>
-
-          <p className="max-w-2xl text-slate-300 text-base leading-relaxed">
-            A 14-agent LangGraph supervisor orchestration coordinating AWS Terrarium DEM digital twins, 
-            infinite-slope Factor of Safety simulations, tamper-evident SHA-256 audit ledgers, 
-            and backend-enforced Human Approval Gates for Gangtok, Shillong, Aizawl, and Tupul.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <button
-              onClick={() => setCurrentView('mission_control')}
-              className="px-8 py-3.5 rounded-lg bg-[#BDFF42] text-[#06150C] font-bold text-sm tracking-wider uppercase hover:bg-lime-300 transition-all shadow-xl shadow-lime-500/30 flex items-center gap-2"
-            >
-              <span>Enter Mission Control Console</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-
-          {/* Feature Highlights Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 text-left w-full">
-            <div className="p-6 rounded-xl bg-[#0A2416] border border-[#249344]/40 space-y-3">
-              <div className="w-10 h-10 rounded-lg bg-[#249344]/30 text-[#BDFF42] flex items-center justify-center">
-                <Activity className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-white text-base">Visible Agent Graph</h3>
-              <p className="text-xs text-[#9FD8A8] leading-relaxed">
-                Watch 14 logical agents analyze rainfall telemetry, inspect slope stability, run simulations, and route multilingual alerts in real time.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-xl bg-[#0A2416] border border-[#249344]/40 space-y-3">
-              <div className="w-10 h-10 rounded-lg bg-[#249344]/30 text-[#BDFF42] flex items-center justify-center">
-                <Mountain className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-white text-base">3D Landslide Digital Twin</h3>
-              <p className="text-xs text-[#9FD8A8] leading-relaxed">
-                Coupled hydro-mechanical simulation: unsaturated bucket infiltration → infinite-slope failure → D8 debris runout on real 30m terrain.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-xl bg-[#0A2416] border border-[#249344]/40 space-y-3">
-              <div className="w-10 h-10 rounded-lg bg-[#249344]/30 text-[#BDFF42] flex items-center justify-center">
-                <Shield className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-white text-base">Autonomous Re-planning Gate</h3>
-              <p className="text-xs text-[#9FD8A8] leading-relaxed">
-                When external conditions change (rain surge, blocked road), the Verifier invalidates assumptions and generates Plan V2 with visual diffs.
-              </p>
-            </div>
-          </div>
-        </main>
-      </div>
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <ValidationPage onBack={() => navigate('/mission-control')} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/presenter') PageComponent = PresenterPage;
+  else if (pathname === '/responsible-ai') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <ResponsibleAIPage onBack={() => navigate('/mission-control')} />
+      </Shell>
+    );
+  }
+  // GeoShield Routes
+  else if (pathname === '/geoshield' || pathname === '/geoshield/dashboard' || pathname === '/geoshield-overview') PageComponent = GeoShieldDashboard;
+  else if (pathname === '/risk-map' || pathname === '/map' || pathname === '/geoshield/map' || pathname === '/terraguard/gis' || pathname === '/terraguard/map') PageComponent = GeoShieldRiskMap;
+  else if (pathname === '/stations' || pathname === '/geoshield/stations') PageComponent = GeoShieldStations;
+  else if (pathname.startsWith('/station/') || pathname.startsWith('/geoshield/station/')) PageComponent = GeoShieldStationDetail;
+  else if (pathname === '/simulator' || pathname === '/geoshield/simulator' || pathname === '/terraguard/simulator') PageComponent = SimulationLab;
+  else if (pathname === '/satellite' || pathname === '/geoshield/satellite') PageComponent = GeoShieldSatellite;
+  else if (pathname === '/flood' || pathname === '/geoshield/flood') PageComponent = GeoShieldFlood;
+  else if (pathname === '/demo' || pathname === '/geoshield/demo') PageComponent = GeoShieldDemo;
+  else if (pathname === '/geoshield/alerts' || pathname === '/terraguard/dispatch') PageComponent = Alerts;
+  else if (pathname === '/geoshield/reports') PageComponent = GeoShieldReports;
+  // BhuRaksha Geotech Routes
+  else if (pathname === '/terraguard' || pathname === '/terraguard/home') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="home" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/dashboard') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="dashboard" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/earthquakes') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="earthquake-monitor" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/lstm') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="temporal-lstm-predictor" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/cv') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="crowdsource-cv-verification" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/ml') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="ml-models-pipeline" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/hills') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="hills-regions" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/sos') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="emergency-sos" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/alerts') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="alerts" key={pathname} />
+      </Shell>
+    );
+  }
+  else if (pathname === '/terraguard/about') {
+    return (
+      <Shell currentUser={user} onLogout={() => setUser(false)}>
+        <TerraGuardPage initialModule="about" key={pathname} />
+      </Shell>
     );
   }
 
-  return <MissionControl />;
+  return (
+    <Shell currentUser={user} onLogout={() => setUser(false)}>
+      <PageComponent key={lang} />
+    </Shell>
+  );
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <IncidentProvider>
+        <RouterProvider>
+          <Toaster />
+          <MainRouter />
+        </RouterProvider>
+      </IncidentProvider>
+    </AuthProvider>
+  );
 }

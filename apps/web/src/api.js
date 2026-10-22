@@ -92,11 +92,57 @@ export const api = {
     return request(`/simulation/${simId}/timeline`);
   },
 
+  /** Run the NER landslide detection pipeline (POST /simulations/detect). */
+  async runDetection(payload) {
+    return request('/simulations/detect', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+  },
+
+  async simulateLandslide(payload = { intensity: 'high' }) {
+    return request('/simulate/landslide', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+  },
+
+  async simulateBatch(count = 5) {
+    return request(`/simulate/batch?count=${count}`, {
+      method: 'POST'
+    });
+  },
+
+  async resetSimulation() {
+    return request('/simulate/reset', {
+      method: 'POST'
+    });
+  },
+
+  async getSimulationSummary(runId) {
+    return request(`/simulations/${runId}/summary`);
+  },
+
+  async getDetections(runId) {
+    return request(`/simulations/${runId}/detections.geojson`);
+  },
+
+  /** URL for a rendered simulation overlay PNG (layer: hazard|depth|velocity|fs). */
+  layerUrl(runId, layer, hour) {
+    return `${API_BASE}/simulations/${runId}/layer/${layer}/${hour}.png`;
+  },
+
   // Incidents & Agent Pipeline
   async createIncident(aoi = 'gangtok', scenario = 'baseline') {
+    let finalAoi = aoi;
+    let finalScenario = scenario;
+    if (typeof aoi === 'object' && aoi !== null) {
+      finalAoi = aoi.aoi || 'gangtok';
+      finalScenario = aoi.scenario || 'baseline';
+    }
     return request('/incidents', {
       method: 'POST',
-      body: JSON.stringify({ aoi, scenario })
+      body: JSON.stringify({ aoi: finalAoi, scenario: finalScenario })
     });
   },
 
@@ -104,8 +150,43 @@ export const api = {
     return request('/incidents');
   },
 
+  async getIncidents() {
+    return this.listIncidents();
+  },
+
   async getIncident(id) {
     return request(`/incidents/${id}`);
+  },
+
+  async getIncidentAgents(id) {
+    return request(`/incidents/${id}/agents`);
+  },
+
+  async getIncidentEvents(incidentId, after = 0) {
+    return request(`/incidents/${incidentId}/events?after=${after}`);
+  },
+
+  async getAgentRegistry() {
+    return request('/incidents/agents/registry');
+  },
+
+  async replayIncident(incidentId) {
+    return request(`/incidents/${incidentId}/replay`, { method: 'POST' });
+  },
+
+  async getSupervisorTrace(incidentId) {
+    return request(`/incidents/${incidentId}/supervisor-trace`);
+  },
+
+  async getCascadeAnalysis(incidentId, payload = {}) {
+    return request(`/incidents/${incidentId}/cascade-analysis`, {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+  },
+
+  async getEvaluationBenchmark() {
+    return request('/incidents/evaluation/benchmark');
   },
 
   async triggerEvent(incidentId, eventType, payload = {}, idempotencyKey = '') {
@@ -124,6 +205,30 @@ export const api = {
     return request(`/incidents/${incidentId}/plans/${version}/decision`, {
       method: 'POST',
       body: JSON.stringify({ decision, notes })
+    });
+  },
+
+  async updatePlanTaskStatus(incidentId, version, taskId, status, note = '') {
+    return request(`/incidents/${incidentId}/plans/${version}/tasks/${taskId}/status`, {
+      method: 'POST',
+      body: JSON.stringify({ status, note })
+    });
+  },
+
+  async addPlanTask(incidentId, version, taskData) {
+    return request(`/incidents/${incidentId}/plans/${version}/tasks`, {
+      method: 'POST',
+      body: JSON.stringify(taskData)
+    });
+  },
+
+  async exportPlanProtocol(incidentId, version) {
+    return request(`/incidents/${incidentId}/plans/${version}/export`);
+  },
+
+  async dispatchPlanAlerts(incidentId, version) {
+    return request(`/incidents/${incidentId}/plans/${version}/dispatch`, {
+      method: 'POST'
     });
   },
 
@@ -174,10 +279,59 @@ export const api = {
 
   // Audit Ledger
   async getAuditLedger(limit = 50) {
-    return request(`/audit/ledger?limit=${limit}`);
+    const res = await request(`/audit/ledger?limit=${limit}`);
+    return res.records || res;
   },
 
   async verifyAuditChain() {
     return request('/audit/verify');
+  },
+
+  // Phase 13 & 14 Differentiators
+  async getDebate(incidentId) {
+    return request(`/incidents/${incidentId}/debate`);
+  },
+
+  async runWhatIf(incidentId, payload) {
+    return request(`/incidents/${incidentId}/whatif`, {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+  },
+
+  async getEvidenceGraph(incidentId) {
+    return request(`/incidents/${incidentId}/evidence-graph`);
+  },
+
+  async getValidationReport() {
+    return request('/validation/report');
+  },
+
+  async explainFeatures(sample) {
+    return request('/validation/explain', {
+      method: 'POST',
+      body: JSON.stringify(sample)
+    });
+  },
+
+  // Digital Twin API (Phase S1-S4)
+  async getTwinManifest(aoiId) {
+    return request(`/twins/${aoiId}/manifest`);
+  },
+
+  async getTwinInfrastructure(aoiId) {
+    return request(`/twins/${aoiId}/infrastructure`);
+  },
+
+  async getTwinBuildings(aoiId) {
+    return request(`/twins/${aoiId}/buildings`);
+  },
+
+  async getTwinTrees(aoiId) {
+    return request(`/twins/${aoiId}/trees`);
+  },
+
+  getTwinFileUrl(aoiId, filename) {
+    return `${API_BASE}/twins/${aoiId}/files/${filename}`;
   }
 };

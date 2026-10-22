@@ -1,0 +1,20 @@
+{
+  "algorithm": "XGBoost (Gradient Boosted Decision Trees)",
+  "validation_strategy": "Spatial Block K-Fold (4 NER geographical clusters)",
+  "spatial_cv_roc_auc_mean": 0.979,
+  "spatial_cv_roc_auc_std": 0.009,
+  "spatial_cv_pr_auc_mean": 0.947,
+  "baseline_logistic_roc_auc": 0.99,
+  "baseline_logistic_pr_auc": 0.973,
+  "auc_gain_over_baseline": -0.011,
+  "feature_importances": {
+    "slope_deg": 0.4404,
+    "aspect_sin": 0.0308,
+    "aspect_cos": 0.0332,
+    "twi": 0.0887,
+    "elevation_m": 0.0324,
+    "dist_drainage_m": 0.1167,
+    "dist_fault_km": 0.1604,
+    "soil_clay_pct": 0.0974
+  }
+}

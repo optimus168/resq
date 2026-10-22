@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cp-hss",
+    "name": "Noney High School Shelter",
+    "kind": "shelter",
+    "lon": 93.618,
+    "lat": 24.854,
+    "u": 0.1648,
+    "v": -0.0932,
+    "pixel_col": 84,
+    "pixel_row": -48,
+    "dem_elevation_m": null,
+    "in_bounds": false
+  },
+  {
+    "id": "cp-chc",
+    "name": "CHC Noney Health Center",
+    "kind": "hospital",
+    "lon": 93.619,
+    "lat": 24.8555,
+    "u": 0.1762,
+    "v": -0.112,
+    "pixel_col": 90,
+    "pixel_row": -57,
+    "dem_elevation_m": null,
+    "in_bounds": false
+  }
+]

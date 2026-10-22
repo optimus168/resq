@@ -1,0 +1,188 @@
+{
+  "type": "FeatureCollection",
+  "aoi_id": "aizawl",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.71,
+            23.695
+          ],
+          [
+            92.715,
+            23.715
+          ],
+          [
+            92.718,
+            23.73
+          ],
+          [
+            92.73,
+            23.75
+          ],
+          [
+            92.735,
+            23.76
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-nh306",
+        "name": "NH306 Aizawl Arterial",
+        "kind": "road",
+        "road_kind": "primary",
+        "surface": "asphalt",
+        "width_m": 8.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            92.71,
+            23.695
+          ],
+          [
+            92.7,
+            23.71
+          ],
+          [
+            92.705,
+            23.735
+          ],
+          [
+            92.735,
+            23.76
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-byp",
+        "name": "Western Ridge Bypass",
+        "kind": "road",
+        "road_kind": "alternate",
+        "surface": "paved",
+        "width_m": 7.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.716,
+          23.729
+        ]
+      },
+      "properties": {
+        "id": "cp-lam",
+        "name": "Lammual Ground Shelter",
+        "lon": 92.716,
+        "lat": 23.729,
+        "kind": "shelter",
+        "capacity": 1800,
+        "feature_type": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.717,
+          23.734
+        ]
+      },
+      "properties": {
+        "id": "cp-civa",
+        "name": "Civil Hospital Aizawl",
+        "lon": 92.717,
+        "lat": 23.734,
+        "kind": "hospital",
+        "beds": 300,
+        "feature_type": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.718,
+          23.73
+        ]
+      },
+      "properties": {
+        "id": "v-daw",
+        "name": "Dawrpui",
+        "lat": 23.73,
+        "lon": 92.718,
+        "pop": 14000,
+        "bldg_density": "high",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.705,
+          23.72
+        ]
+      },
+      "properties": {
+        "id": "v-hun",
+        "name": "Hunthar",
+        "lat": 23.72,
+        "lon": 92.705,
+        "pop": 5000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.73,
+          23.75
+        ]
+      },
+      "properties": {
+        "id": "v-ram",
+        "name": "Ramhlun",
+        "lat": 23.75,
+        "lon": 92.73,
+        "pop": 11000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.72,
+          23.74
+        ]
+      },
+      "properties": {
+        "id": "v-chn",
+        "name": "Chanmari",
+        "lat": 23.74,
+        "lon": 92.72,
+        "pop": 9000,
+        "bldg_density": "high",
+        "feature_type": "settlement"
+      }
+    }
+  ]
+}

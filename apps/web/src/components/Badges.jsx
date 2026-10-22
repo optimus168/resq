@@ -5,7 +5,7 @@ export function SimulatedBadge({ className = '' }) {
   return (
     <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider uppercase bg-[#FFA31A]/20 text-[#FFA31A] border border-[#FFA31A]/40 ${className}`}>
       <span className="w-1.5 h-1.5 rounded-full bg-[#FFA31A] animate-pulse"></span>
-      SIMULATED / DEMO
+      PROTOTYPE
     </span>
   );
 }

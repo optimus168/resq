@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-10-18T13:40:31.298775+00:00",
+  "description": "Pre-cached real 30m DEM elevation datasets for North Eastern Region AOIs",
+  "aois": {
+    "gangtok": {
+      "aoi": "gangtok",
+      "name": "Gangtok \u2013 NH10 Corridor",
+      "state": "Sikkim",
+      "center": [
+        27.305,
+        88.6
+      ],
+      "bounds": {
+        "west": 88.5498046875,
+        "east": 88.6376953125,
+        "north": 27.33273513685914,
+        "south": 27.254629577800074
+      },
+      "resolution_m": 30.0,
+      "shape": [
+        512,
+        512
+      ],
+      "min_elevation_m": 557.0,
+      "max_elevation_m": 2159.0,
+      "source": "AWS Terrain Tiles (Mapzen Terrarium - SRTM & Copernicus GLO-30)",
+      "licence": "Open Data Commons Open Database License (ODbL) / Public Domain",
+      "retrieved_at": "2026-10-18T13:40:35.346642+00:00",
+      "tile_urls": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6111/3449.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6111/3450.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6112/3449.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6112/3450.png"
+      ]
+    },
+    "shillong": {
+      "aoi": "shillong",
+      "name": "Shillong Hills",
+      "state": "Meghalaya",
+      "center": [
+        25.57,
+        91.88
+      ],
+      "bounds": {
+        "west": 91.845703125,
+        "east": 91.93359375,
+        "north": 25.601902261115736,
+        "south": 25.522614647623286
+      },
+      "resolution_m": 30.0,
+      "shape": [
+        512,
+        512
+      ],
+      "min_elevation_m": 1031.0,
+      "max_elevation_m": 1965.0,
+      "source": "AWS Terrain Tiles (Mapzen Terrarium - SRTM & Copernicus GLO-30)",
+      "licence": "Open Data Commons Open Database License (ODbL) / Public Domain",
+      "retrieved_at": "2026-10-18T13:40:39.414686+00:00",
+      "tile_urls": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6186/3493.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6186/3494.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6187/3493.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6187/3494.png"
+      ]
+    },
+    "aizawl": {
+      "aoi": "aizawl",
+      "name": "Aizawl Ridge",
+      "state": "Mizoram",
+      "center": [
+        23.73,
+        92.72
+      ],
+      "bounds": {
+        "west": 92.6806640625,
+        "east": 92.7685546875,
+        "north": 23.765236889758665,
+        "south": 23.684774166883745
+      },
+      "resolution_m": 30.0,
+      "shape": [
+        512,
+        512
+      ],
+      "min_elevation_m": 323.0,
+      "max_elevation_m": 1326.0,
+      "source": "AWS Terrain Tiles (Mapzen Terrarium - SRTM & Copernicus GLO-30)",
+      "licence": "Open Data Commons Open Database License (ODbL) / Public Domain",
+      "retrieved_at": "2026-10-18T13:40:43.974505+00:00",
+      "tile_urls": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6205/3539.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6205/3540.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6206/3539.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6206/3540.png"
+      ]
+    },
+    "tupul": {
+      "aoi": "tupul",
+      "name": "Tupul / Noney Railway Site",
+      "state": "Manipur",
+      "center": [
+        24.81,
+        93.63
+      ],
+      "bounds": {
+        "west": 93.603515625,
+        "east": 93.69140625,
+        "north": 24.84656534821974,
+        "south": 24.766784522874442
+      },
+      "resolution_m": 30.0,
+      "shape": [
+        512,
+        512
+      ],
+      "min_elevation_m": 341.0,
+      "max_elevation_m": 1616.0,
+      "source": "AWS Terrain Tiles (Mapzen Terrarium - SRTM & Copernicus GLO-30)",
+      "licence": "Open Data Commons Open Database License (ODbL) / Public Domain",
+      "retrieved_at": "2026-10-18T13:40:49.089599+00:00",
+      "tile_urls": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6226/3512.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6226/3513.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6227/3512.png",
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/13/6227/3513.png"
+      ]
+    }
+  }
+}

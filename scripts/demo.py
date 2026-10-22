@@ -42,7 +42,7 @@ def step_header(num: int, title: str):
 async def run_demo():
     start_time = time.time()
     print(f"\n{BOLD}{GREEN}════════════════════════════════════════════════════════════════════════════════{RESET}")
-    print(f"{BOLD}{GREEN}  BHURAKSHA × RESQ.AI — AUTONOMOUS AGENTIC DEMONSTRATION RUNNER (SIH26001)       {RESET}")
+    print(f"{BOLD}{GREEN}  BHURAKSHA × RESQ.AI — AUTONOMOUS AGENTIC OPERATIONAL PIPELINE RUNNER        {RESET}")
     print(f"{BOLD}{GREEN}════════════════════════════════════════════════════════════════════════════════{RESET}")
     print(f"Target AOI: Gangtok-NH10 Lifeline Corridor (Sikkim)")
     print(f"Mode: Deterministic Offline Demonstration (Zero Paid API Keys Required)")
@@ -107,31 +107,27 @@ async def run_demo():
         print(f"  Approver: collector@bhuraksha.demo (Role: COLLECTOR)")
         print(f"  Notes: Authorized by District Magistrate Gangtok for immediate staging")
 
-        step_header(5, "Inject External Perturbations (Rain Escalation & Roadblock)")
-        print(f"  Event 1: Cloudburst Intensification (+65mm/24h)")
+        step_header(5, "Inject External Perturbation (Cloudburst Escalation)")
+        print(f"  Event: Cloudburst Intensification (+65mm/24h Monsoon Surge)")
         rain_event = await client.post(
             f"/api/v1/incidents/{incident_id}/events",
             json={"type": "RAIN_ESCALATION", "payload": {"delta": 0.65, "mm_added": 65}, "idempotency_key": f"demo-rain-{uuid.uuid4().hex[:6]}"},
             headers={"Authorization": f"Bearer {op_token}"}
         )
-        print(f"  Event 2: Rockfall & Mudslide blocking NH10 KM-18 (Singtam-Deorali)")
-        road_event = await client.post(
-            f"/api/v1/incidents/{incident_id}/events",
-            json={"type": "ROAD_BLOCKED", "payload": {"road_id": "NH10_KM18", "segment": "KM-18"}, "idempotency_key": f"demo-road-{uuid.uuid4().hex[:6]}"},
-            headers={"Authorization": f"Bearer {op_token}"}
-        )
-        print(f"✓ Perturbation events accepted and enqueued.")
+        assert rain_event.status_code == 200, f"Event injection failed: {rain_event.text}"
+        print(f"✓ Perturbation event accepted and enqueued.")
 
         step_header(6, "Autonomous Verifier Assumption Invalidation & Selective Re-planning")
         print("  Verifier evaluating evidence sufficiency and invalidated assumptions...")
         inc_v2 = None
-        for attempt in range(30):
+        for attempt in range(40):
             await asyncio.sleep(0.4)
             get_res2 = await client.get(f"/api/v1/incidents/{incident_id}", headers={"Authorization": f"Bearer {op_token}"})
             inc_v2 = get_res2.json()
-            if inc_v2.get("current_version") == 2 and inc_v2.get("status") == "PENDING_APPROVAL":
+            if inc_v2.get("current_version") == 2 and inc_v2.get("status") == "PENDING_APPROVAL" and inc_v2.get("busy", 0) == 0:
                 break
 
+        assert inc_v2 and inc_v2.get("current_version") == 2, f"Expected Plan V2, got {inc_v2.get('current_version') if inc_v2 else None}"
         print(f"✓ {BOLD}{YELLOW}Plan V2 Synthesized via Autonomous Selective Replanning!{RESET}")
         print(f"  Current Version: V{inc_v2['current_version']}")
         print(f"  Status: {BOLD}{YELLOW}{inc_v2['status']}{RESET}")

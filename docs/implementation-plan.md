@@ -1,6 +1,6 @@
 # Phased Implementation Plan & Verification Matrix
 
-**Project:** RESQ.AI × BhuRaksha (SIH26001)  
+**Project:** RESQ.AI × BhuRaksha (NER Operational Deployment)  
 **Execution Strategy:** Phase-by-phase strict verification. Phase $N+1$ cannot begin until Phase $N$ exit gate passes with executed command output.
 
 ---
@@ -19,4 +19,4 @@
 | **Phase 7** | **Field Intel & Alert Lifecycle** | PWA offline queue, prompt-injection defense, 4-language alert drafts, cited SOP assistant | `pytest tests/test_reports.py tests/test_alerts.py` | Queued |
 | **Phase 8** | **Scenario Director & Demo Mode** | One-click deterministic story: Rain escalation → V1 → Approved → Road blocked → V2 diff → Re-approved | `make demo` or `pytest tests/test_scenarios.py` | Queued |
 | **Phase 9** | **Hardening & Security** | RBAC permission denial, injection stress tests, audit integrity check, failure recovery | `pytest tests/test_security.py` | Queued |
-| **Phase 10** | **Pitch Assets & Final Audit** | Final auditor report, clean-clone setup verification, SIH pitch slide deck | Independent verification suite | Queued |
+| **Phase 10** | **Pitch Assets & Final Audit** | Final auditor report, clean-clone setup verification, Executive presentation deck | Independent verification suite | Queued |

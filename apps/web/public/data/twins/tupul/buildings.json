@@ -1,0 +1,40 @@
+[
+  {
+    "id": "bldg-v-non-011",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.617581,
+      24.843679
+    ],
+    "u": 0.16,
+    "v": 0.0362,
+    "ground_elevation_m": 602.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.2,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-non-028",
+    "village_id": "v-non",
+    "village_name": "Noney Town",
+    "center": [
+      93.614482,
+      24.844109
+    ],
+    "u": 0.1248,
+    "v": 0.0308,
+    "ground_elevation_m": 633.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.9,
+      10.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  }
+]

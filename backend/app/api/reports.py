@@ -59,7 +59,9 @@ async def create_field_report(
     # Check for idempotent resubmission from PWA offline sync
     existing = await db.fetch_one("SELECT * FROM field_reports WHERE client_id = ?", (client_id,))
     if existing:
-        return {**dict(existing), "sync_status": "already_synced"}
+        d = dict(existing)
+        d["triage"] = json.loads(d["triage_json"]) if d.get("triage_json") else {}
+        return {**d, "sync_status": "already_synced"}
         
     # Match to AOI
     matched_aoi = None

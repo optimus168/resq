@@ -1,0 +1,67 @@
+[
+  {
+    "id": "cp-paljor",
+    "name": "Paljor Stadium",
+    "kind": "shelter",
+    "lon": 88.6125,
+    "lat": 27.329,
+    "u": 0.7133,
+    "v": 0.0478,
+    "pixel_col": 365,
+    "pixel_row": 24,
+    "dem_elevation_m": 1644.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-stnm",
+    "name": "STNM Multi-Specialty Hospital",
+    "kind": "hospital",
+    "lon": 88.6,
+    "lat": 27.306,
+    "u": 0.5711,
+    "v": 0.3423,
+    "pixel_col": 292,
+    "pixel_row": 175,
+    "dem_elevation_m": 1378.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-crh",
+    "name": "Central Referral Hospital Tadong",
+    "kind": "hospital",
+    "lon": 88.6,
+    "lat": 27.311,
+    "u": 0.5711,
+    "v": 0.2783,
+    "pixel_col": 292,
+    "pixel_row": 142,
+    "dem_elevation_m": 1381.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-ranipool",
+    "name": "Ranipool Bridge Junction",
+    "kind": "junction",
+    "lon": 88.5952,
+    "lat": 27.2905,
+    "u": 0.5165,
+    "v": 0.5407,
+    "pixel_col": 264,
+    "pixel_row": 276,
+    "dem_elevation_m": 832.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-deorali",
+    "name": "Deorali Transport Hub",
+    "kind": "transit",
+    "lon": 88.6115,
+    "lat": 27.324,
+    "u": 0.702,
+    "v": 0.1118,
+    "pixel_col": 359,
+    "pixel_row": 57,
+    "dem_elevation_m": 1630.0,
+    "in_bounds": true
+  }
+]

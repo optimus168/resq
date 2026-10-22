@@ -15,6 +15,7 @@ class Settings(BaseModel):
     # Storage & DB
     DATABASE_PATH: str = os.environ.get("DATABASE_PATH", str(ROOT_DIR / "bhuraksha.db"))
     DATAPACK_DIR: str = os.environ.get("DATAPACK_DIR", str(ROOT_DIR / "data" / "datapacks"))
+    SIM_RUN_DIR: str = os.environ.get("SIM_RUN_DIR", str(ROOT_DIR / "data" / "simulation_runs"))
     
     # Security
     JWT_SECRET: str = os.environ.get("JWT_SECRET", "9f2c7b1e4a8d3f6c0b5e9a2d7c4f1e8b3a6d9c2f5e8b1a4d7c0f3e6b9a2d5c8f")

@@ -1,0 +1,5151 @@
+[
+  {
+    "id": "bldg-v-gtk-001",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611548,
+      27.327571
+    ],
+    "u": 0.7025,
+    "v": 0.0661,
+    "ground_elevation_m": 1597.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.9,
+      10.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-004",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.610862,
+      27.33126
+    ],
+    "u": 0.6947,
+    "v": 0.0189,
+    "ground_elevation_m": 1584.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.8,
+      14.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-005",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.609356,
+      27.330366
+    ],
+    "u": 0.6776,
+    "v": 0.0303,
+    "ground_elevation_m": 1557.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.2,
+      8.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-006",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.608118,
+      27.331386
+    ],
+    "u": 0.6635,
+    "v": 0.0173,
+    "ground_elevation_m": 1507.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.6,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-007",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.609337,
+      27.330739
+    ],
+    "u": 0.6773,
+    "v": 0.0256,
+    "ground_elevation_m": 1553.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.8,
+      9.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-008",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615856,
+      27.32525
+    ],
+    "u": 0.7515,
+    "v": 0.0958,
+    "ground_elevation_m": 1669.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.7,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-009",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.610794,
+      27.324996
+    ],
+    "u": 0.6939,
+    "v": 0.0991,
+    "ground_elevation_m": 1598.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.3,
+      14.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-012",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.609734,
+      27.328038
+    ],
+    "u": 0.6819,
+    "v": 0.0601,
+    "ground_elevation_m": 1540.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.3,
+      10.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-014",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612564,
+      27.332065
+    ],
+    "u": 0.7141,
+    "v": 0.0086,
+    "ground_elevation_m": 1592.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.1,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-015",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611616,
+      27.332147
+    ],
+    "u": 0.7033,
+    "v": 0.0075,
+    "ground_elevation_m": 1569.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.1,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-016",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615175,
+      27.330274
+    ],
+    "u": 0.7438,
+    "v": 0.0315,
+    "ground_elevation_m": 1690.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.6,
+      15.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-017",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.606472,
+      27.328513
+    ],
+    "u": 0.6447,
+    "v": 0.0541,
+    "ground_elevation_m": 1381.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.0,
+      10.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-018",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611359,
+      27.33052
+    ],
+    "u": 0.7004,
+    "v": 0.0284,
+    "ground_elevation_m": 1607.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.3,
+      9.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-019",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612525,
+      27.329864
+    ],
+    "u": 0.7136,
+    "v": 0.0368,
+    "ground_elevation_m": 1638.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.7,
+      13.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-020",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.610778,
+      27.328452
+    ],
+    "u": 0.6937,
+    "v": 0.0548,
+    "ground_elevation_m": 1574.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.0,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-021",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614636,
+      27.325747
+    ],
+    "u": 0.7376,
+    "v": 0.0895,
+    "ground_elevation_m": 1732.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.9,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-023",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.609755,
+      27.332156
+    ],
+    "u": 0.6821,
+    "v": 0.0074,
+    "ground_elevation_m": 1540.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.9,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-024",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.616322,
+      27.328894
+    ],
+    "u": 0.7568,
+    "v": 0.0492,
+    "ground_elevation_m": 1715.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.0,
+      10.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-025",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.616381,
+      27.331017
+    ],
+    "u": 0.7575,
+    "v": 0.022,
+    "ground_elevation_m": 1716.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.8,
+      13.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-026",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615828,
+      27.325409
+    ],
+    "u": 0.7512,
+    "v": 0.0938,
+    "ground_elevation_m": 1689.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.1,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-027",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.607177,
+      27.323668
+    ],
+    "u": 0.6528,
+    "v": 0.1161,
+    "ground_elevation_m": 1402.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.4,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-028",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614061,
+      27.326955
+    ],
+    "u": 0.7311,
+    "v": 0.074,
+    "ground_elevation_m": 1693.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      16.2,
+      15.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-034",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612823,
+      27.326125
+    ],
+    "u": 0.717,
+    "v": 0.0846,
+    "ground_elevation_m": 1659.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.6,
+      15.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-036",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.613778,
+      27.328596
+    ],
+    "u": 0.7279,
+    "v": 0.053,
+    "ground_elevation_m": 1676.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.8,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-037",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611753,
+      27.329996
+    ],
+    "u": 0.7048,
+    "v": 0.0351,
+    "ground_elevation_m": 1618.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.2,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-038",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611271,
+      27.324307
+    ],
+    "u": 0.6993,
+    "v": 0.1079,
+    "ground_elevation_m": 1619.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.1,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-041",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.618219,
+      27.328031
+    ],
+    "u": 0.7784,
+    "v": 0.0602,
+    "ground_elevation_m": 1650.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.6,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-042",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614077,
+      27.329748
+    ],
+    "u": 0.7313,
+    "v": 0.0383,
+    "ground_elevation_m": 1673.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-043",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.606538,
+      27.329034
+    ],
+    "u": 0.6455,
+    "v": 0.0474,
+    "ground_elevation_m": 1374.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.7,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-044",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614948,
+      27.331242
+    ],
+    "u": 0.7412,
+    "v": 0.0191,
+    "ground_elevation_m": 1670.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.5,
+      15.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-045",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615571,
+      27.328131
+    ],
+    "u": 0.7483,
+    "v": 0.0589,
+    "ground_elevation_m": 1736.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.2,
+      10.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-046",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614273,
+      27.327748
+    ],
+    "u": 0.7335,
+    "v": 0.0639,
+    "ground_elevation_m": 1694.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.6,
+      14.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-048",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611598,
+      27.329451
+    ],
+    "u": 0.7031,
+    "v": 0.0421,
+    "ground_elevation_m": 1619.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.0,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-050",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615687,
+      27.327955
+    ],
+    "u": 0.7496,
+    "v": 0.0612,
+    "ground_elevation_m": 1737.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.4,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-052",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612303,
+      27.32828
+    ],
+    "u": 0.7111,
+    "v": 0.057,
+    "ground_elevation_m": 1635.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.0,
+      13.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-053",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.610032,
+      27.332274
+    ],
+    "u": 0.6853,
+    "v": 0.0059,
+    "ground_elevation_m": 1547.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.5,
+      8.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-055",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612138,
+      27.329933
+    ],
+    "u": 0.7092,
+    "v": 0.0359,
+    "ground_elevation_m": 1631.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.1,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-057",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.61534,
+      27.331295
+    ],
+    "u": 0.7456,
+    "v": 0.0184,
+    "ground_elevation_m": 1700.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      14.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-059",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.617653,
+      27.331625
+    ],
+    "u": 0.772,
+    "v": 0.0142,
+    "ground_elevation_m": 1678.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.3,
+      9.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-060",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.608334,
+      27.329471
+    ],
+    "u": 0.6659,
+    "v": 0.0418,
+    "ground_elevation_m": 1508.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.2,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-061",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.617897,
+      27.329308
+    ],
+    "u": 0.7747,
+    "v": 0.0439,
+    "ground_elevation_m": 1662.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.6,
+      11.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-062",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615737,
+      27.323781
+    ],
+    "u": 0.7502,
+    "v": 0.1146,
+    "ground_elevation_m": 1629.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.7,
+      12.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-065",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.605956,
+      27.327043
+    ],
+    "u": 0.6389,
+    "v": 0.0729,
+    "ground_elevation_m": 1367.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.7,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-068",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614927,
+      27.327823
+    ],
+    "u": 0.7409,
+    "v": 0.0629,
+    "ground_elevation_m": 1735.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.8,
+      13.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-070",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614421,
+      27.326624
+    ],
+    "u": 0.7352,
+    "v": 0.0782,
+    "ground_elevation_m": 1715.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.1,
+      13.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-071",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614812,
+      27.326849
+    ],
+    "u": 0.7396,
+    "v": 0.0754,
+    "ground_elevation_m": 1734.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.6,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-074",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612185,
+      27.331842
+    ],
+    "u": 0.7097,
+    "v": 0.0114,
+    "ground_elevation_m": 1590.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.9,
+      15.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-075",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615017,
+      27.330596
+    ],
+    "u": 0.742,
+    "v": 0.0274,
+    "ground_elevation_m": 1683.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.7,
+      13.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-077",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612787,
+      27.33088
+    ],
+    "u": 0.7166,
+    "v": 0.0238,
+    "ground_elevation_m": 1629.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.2,
+      14.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-081",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615725,
+      27.330123
+    ],
+    "u": 0.75,
+    "v": 0.0334,
+    "ground_elevation_m": 1713.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.8,
+      10.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-082",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611475,
+      27.329865
+    ],
+    "u": 0.7017,
+    "v": 0.0368,
+    "ground_elevation_m": 1609.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.8,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-083",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.618407,
+      27.331355
+    ],
+    "u": 0.7805,
+    "v": 0.0177,
+    "ground_elevation_m": 1653.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.2,
+      13.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-084",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.60911,
+      27.332293
+    ],
+    "u": 0.6748,
+    "v": 0.0057,
+    "ground_elevation_m": 1516.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.2,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-085",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.617781,
+      27.330227
+    ],
+    "u": 0.7734,
+    "v": 0.0321,
+    "ground_elevation_m": 1664.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.7,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-086",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614016,
+      27.33172
+    ],
+    "u": 0.7306,
+    "v": 0.013,
+    "ground_elevation_m": 1649.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.7,
+      9.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-087",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.62167,
+      27.330987
+    ],
+    "u": 0.8177,
+    "v": 0.0224,
+    "ground_elevation_m": 1501.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.2,
+      14.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-089",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614789,
+      27.32534
+    ],
+    "u": 0.7394,
+    "v": 0.0947,
+    "ground_elevation_m": 1724.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.5,
+      9.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-091",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.617158,
+      27.331932
+    ],
+    "u": 0.7663,
+    "v": 0.0103,
+    "ground_elevation_m": 1713.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.0,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-092",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614065,
+      27.331799
+    ],
+    "u": 0.7311,
+    "v": 0.012,
+    "ground_elevation_m": 1649.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.8,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-093",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614112,
+      27.328924
+    ],
+    "u": 0.7317,
+    "v": 0.0488,
+    "ground_elevation_m": 1681.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.7,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-094",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611164,
+      27.332554
+    ],
+    "u": 0.6981,
+    "v": 0.0023,
+    "ground_elevation_m": 1549.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-100",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.612536,
+      27.326462
+    ],
+    "u": 0.7137,
+    "v": 0.0803,
+    "ground_elevation_m": 1653.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.6,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-101",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.609773,
+      27.329589
+    ],
+    "u": 0.6823,
+    "v": 0.0403,
+    "ground_elevation_m": 1556.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.5,
+      13.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-106",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.60922,
+      27.329546
+    ],
+    "u": 0.676,
+    "v": 0.0408,
+    "ground_elevation_m": 1546.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.2,
+      10.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-107",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.614656,
+      27.328894
+    ],
+    "u": 0.7379,
+    "v": 0.0492,
+    "ground_elevation_m": 1700.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.2,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-111",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.615774,
+      27.332118
+    ],
+    "u": 0.7506,
+    "v": 0.0079,
+    "ground_elevation_m": 1710.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.5,
+      13.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-114",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.616722,
+      27.327402
+    ],
+    "u": 0.7614,
+    "v": 0.0683,
+    "ground_elevation_m": 1693.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.6,
+      8.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-gtk-115",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.619984,
+      27.33167
+    ],
+    "u": 0.7985,
+    "v": 0.0136,
+    "ground_elevation_m": 1593.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      12.6,
+      14.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-gtk-118",
+    "village_id": "v-gtk",
+    "village_name": "Gangtok (MG Marg)",
+    "center": [
+      88.611547,
+      27.331281
+    ],
+    "u": 0.7025,
+    "v": 0.0186,
+    "ground_elevation_m": 1596.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.1,
+      8.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-001",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.616492,
+      27.322607
+    ],
+    "u": 0.7588,
+    "v": 0.1297,
+    "ground_elevation_m": 1473.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-002",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.609346,
+      27.321153
+    ],
+    "u": 0.6774,
+    "v": 0.1483,
+    "ground_elevation_m": 1547.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.0,
+      8.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-003",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.611548,
+      27.32409
+    ],
+    "u": 0.7025,
+    "v": 0.1107,
+    "ground_elevation_m": 1624.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      15.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-004",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613282,
+      27.320069
+    ],
+    "u": 0.7222,
+    "v": 0.1622,
+    "ground_elevation_m": 1419.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.0,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-005",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.61546,
+      27.320534
+    ],
+    "u": 0.747,
+    "v": 0.1562,
+    "ground_elevation_m": 1335.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.1,
+      11.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-006",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.612156,
+      27.321864
+    ],
+    "u": 0.7094,
+    "v": 0.1392,
+    "ground_elevation_m": 1599.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.1,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-007",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613589,
+      27.327267
+    ],
+    "u": 0.7257,
+    "v": 0.07,
+    "ground_elevation_m": 1667.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.3,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-008",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.616783,
+      27.328109
+    ],
+    "u": 0.7621,
+    "v": 0.0592,
+    "ground_elevation_m": 1697.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.8,
+      8.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-009",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.611394,
+      27.32511
+    ],
+    "u": 0.7007,
+    "v": 0.0976,
+    "ground_elevation_m": 1622.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.7,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-010",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.607617,
+      27.325144
+    ],
+    "u": 0.6578,
+    "v": 0.0972,
+    "ground_elevation_m": 1420.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.9,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-011",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.612687,
+      27.324373
+    ],
+    "u": 0.7155,
+    "v": 0.1071,
+    "ground_elevation_m": 1660.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.3,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-012",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.611247,
+      27.320898
+    ],
+    "u": 0.6991,
+    "v": 0.1516,
+    "ground_elevation_m": 1529.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.3,
+      14.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-013",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.612405,
+      27.328785
+    ],
+    "u": 0.7122,
+    "v": 0.0506,
+    "ground_elevation_m": 1638.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.2,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-014",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.609497,
+      27.325201
+    ],
+    "u": 0.6792,
+    "v": 0.0965,
+    "ground_elevation_m": 1534.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.6,
+      11.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-015",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613415,
+      27.320484
+    ],
+    "u": 0.7237,
+    "v": 0.1569,
+    "ground_elevation_m": 1442.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      11.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-016",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613314,
+      27.325401
+    ],
+    "u": 0.7226,
+    "v": 0.0939,
+    "ground_elevation_m": 1684.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.9,
+      11.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-017",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.612855,
+      27.320319
+    ],
+    "u": 0.7174,
+    "v": 0.159,
+    "ground_elevation_m": 1450.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.7,
+      15.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-018",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.604336,
+      27.32314
+    ],
+    "u": 0.6204,
+    "v": 0.1229,
+    "ground_elevation_m": 1283.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      16.2,
+      8.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-019",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.612202,
+      27.32279
+    ],
+    "u": 0.7099,
+    "v": 0.1273,
+    "ground_elevation_m": 1652.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.6,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-020",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.621486,
+      27.323661
+    ],
+    "u": 0.8156,
+    "v": 0.1162,
+    "ground_elevation_m": 1398.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.8,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-021",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613183,
+      27.326616
+    ],
+    "u": 0.7211,
+    "v": 0.0784,
+    "ground_elevation_m": 1667.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      12.8,
+      11.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-022",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.604908,
+      27.320534
+    ],
+    "u": 0.627,
+    "v": 0.1562,
+    "ground_elevation_m": 1373.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.5,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-023",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.604979,
+      27.329612
+    ],
+    "u": 0.6278,
+    "v": 0.04,
+    "ground_elevation_m": 1319.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.9,
+      12.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-024",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.615554,
+      27.323974
+    ],
+    "u": 0.7481,
+    "v": 0.1122,
+    "ground_elevation_m": 1651.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-025",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.612748,
+      27.324506
+    ],
+    "u": 0.7162,
+    "v": 0.1054,
+    "ground_elevation_m": 1658.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.4,
+      8.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-026",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.611627,
+      27.32767
+    ],
+    "u": 0.7034,
+    "v": 0.0649,
+    "ground_elevation_m": 1602.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.7,
+      11.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-027",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.612007,
+      27.325544
+    ],
+    "u": 0.7077,
+    "v": 0.0921,
+    "ground_elevation_m": 1640.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.7,
+      15.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-028",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.608006,
+      27.325724
+    ],
+    "u": 0.6622,
+    "v": 0.0898,
+    "ground_elevation_m": 1434.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      14.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-029",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.617391,
+      27.317048
+    ],
+    "u": 0.769,
+    "v": 0.2008,
+    "ground_elevation_m": 1140.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.8,
+      14.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-030",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.614759,
+      27.320658
+    ],
+    "u": 0.739,
+    "v": 0.1546,
+    "ground_elevation_m": 1377.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.9,
+      14.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-031",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.602289,
+      27.326532
+    ],
+    "u": 0.5972,
+    "v": 0.0794,
+    "ground_elevation_m": 1222.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.8,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-032",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.614298,
+      27.327723
+    ],
+    "u": 0.7338,
+    "v": 0.0642,
+    "ground_elevation_m": 1694.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.5,
+      14.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-033",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613589,
+      27.321726
+    ],
+    "u": 0.7257,
+    "v": 0.141,
+    "ground_elevation_m": 1536.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.0,
+      12.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-034",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.615639,
+      27.32634
+    ],
+    "u": 0.7491,
+    "v": 0.0819,
+    "ground_elevation_m": 1735.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.4,
+      8.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-035",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.610881,
+      27.326562
+    ],
+    "u": 0.6949,
+    "v": 0.079,
+    "ground_elevation_m": 1610.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      11.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-036",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.61421,
+      27.329196
+    ],
+    "u": 0.7328,
+    "v": 0.0453,
+    "ground_elevation_m": 1682.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-037",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.616362,
+      27.317075
+    ],
+    "u": 0.7573,
+    "v": 0.2005,
+    "ground_elevation_m": 1139.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.5,
+      9.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-038",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.610894,
+      27.326784
+    ],
+    "u": 0.6951,
+    "v": 0.0762,
+    "ground_elevation_m": 1600.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.5,
+      10.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-039",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.611644,
+      27.328647
+    ],
+    "u": 0.7036,
+    "v": 0.0523,
+    "ground_elevation_m": 1610.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.8,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-040",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.614441,
+      27.320934
+    ],
+    "u": 0.7354,
+    "v": 0.1511,
+    "ground_elevation_m": 1431.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.3,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-041",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.605635,
+      27.321963
+    ],
+    "u": 0.6352,
+    "v": 0.1379,
+    "ground_elevation_m": 1361.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.3,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-042",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.614807,
+      27.328683
+    ],
+    "u": 0.7396,
+    "v": 0.0519,
+    "ground_elevation_m": 1704.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.4,
+      10.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-043",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.615389,
+      27.319714
+    ],
+    "u": 0.7462,
+    "v": 0.1667,
+    "ground_elevation_m": 1276.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      11.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-044",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.614759,
+      27.325809
+    ],
+    "u": 0.739,
+    "v": 0.0887,
+    "ground_elevation_m": 1734.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.3,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-045",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.608603,
+      27.323017
+    ],
+    "u": 0.669,
+    "v": 0.1244,
+    "ground_elevation_m": 1468.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.6,
+      9.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-046",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.609545,
+      27.324837
+    ],
+    "u": 0.6797,
+    "v": 0.1011,
+    "ground_elevation_m": 1527.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.4,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-047",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.615066,
+      27.323602
+    ],
+    "u": 0.7425,
+    "v": 0.1169,
+    "ground_elevation_m": 1675.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.3,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-048",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.610676,
+      27.326787
+    ],
+    "u": 0.6926,
+    "v": 0.0762,
+    "ground_elevation_m": 1592.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.5,
+      8.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-049",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.616578,
+      27.330526
+    ],
+    "u": 0.7597,
+    "v": 0.0283,
+    "ground_elevation_m": 1710.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.6,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-050",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.615874,
+      27.325168
+    ],
+    "u": 0.7517,
+    "v": 0.0969,
+    "ground_elevation_m": 1663.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.4,
+      10.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-051",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613424,
+      27.329803
+    ],
+    "u": 0.7238,
+    "v": 0.0375,
+    "ground_elevation_m": 1652.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.0,
+      10.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-052",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.60845,
+      27.321891
+    ],
+    "u": 0.6673,
+    "v": 0.1388,
+    "ground_elevation_m": 1486.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.9,
+      8.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-053",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.615512,
+      27.318886
+    ],
+    "u": 0.7476,
+    "v": 0.1773,
+    "ground_elevation_m": 1230.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.1,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-054",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.616817,
+      27.328442
+    ],
+    "u": 0.7625,
+    "v": 0.055,
+    "ground_elevation_m": 1693.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.0,
+      9.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-055",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613758,
+      27.320674
+    ],
+    "u": 0.7277,
+    "v": 0.1544,
+    "ground_elevation_m": 1460.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.8,
+      8.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-056",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.61751,
+      27.323851
+    ],
+    "u": 0.7703,
+    "v": 0.1137,
+    "ground_elevation_m": 1498.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.9,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-057",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.611912,
+      27.321057
+    ],
+    "u": 0.7066,
+    "v": 0.1495,
+    "ground_elevation_m": 1538.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.9,
+      9.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-dor-058",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.608217,
+      27.330749
+    ],
+    "u": 0.6646,
+    "v": 0.0254,
+    "ground_elevation_m": 1524.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-059",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.61982,
+      27.326221
+    ],
+    "u": 0.7966,
+    "v": 0.0834,
+    "ground_elevation_m": 1533.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.7,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-dor-060",
+    "village_id": "v-dor",
+    "village_name": "Deorali",
+    "center": [
+      88.613178,
+      27.32728
+    ],
+    "u": 0.7211,
+    "v": 0.0698,
+    "ground_elevation_m": 1654.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.1,
+      8.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-001",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.598618,
+      27.309564
+    ],
+    "u": 0.5554,
+    "v": 0.2967,
+    "ground_elevation_m": 1341.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.5,
+      12.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-002",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600465,
+      27.312379
+    ],
+    "u": 0.5764,
+    "v": 0.2606,
+    "ground_elevation_m": 1357.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.4,
+      8.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-003",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.599109,
+      27.319859
+    ],
+    "u": 0.561,
+    "v": 0.1649,
+    "ground_elevation_m": 1224.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.1,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-004",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600575,
+      27.313661
+    ],
+    "u": 0.5777,
+    "v": 0.2442,
+    "ground_elevation_m": 1332.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.9,
+      9.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-005",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.595589,
+      27.312175
+    ],
+    "u": 0.5209,
+    "v": 0.2632,
+    "ground_elevation_m": 1219.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.1,
+      9.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-006",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.598986,
+      27.311992
+    ],
+    "u": 0.5596,
+    "v": 0.2656,
+    "ground_elevation_m": 1310.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.0,
+      8.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-007",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.59879,
+      27.311013
+    ],
+    "u": 0.5573,
+    "v": 0.2781,
+    "ground_elevation_m": 1325.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.3,
+      8.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-008",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.598229,
+      27.307943
+    ],
+    "u": 0.551,
+    "v": 0.3174,
+    "ground_elevation_m": 1369.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.3,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-009",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600904,
+      27.316927
+    ],
+    "u": 0.5814,
+    "v": 0.2024,
+    "ground_elevation_m": 1365.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.2,
+      10.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-010",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.606989,
+      27.317001
+    ],
+    "u": 0.6506,
+    "v": 0.2015,
+    "ground_elevation_m": 1447.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.6,
+      10.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-011",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601716,
+      27.318078
+    ],
+    "u": 0.5906,
+    "v": 0.1877,
+    "ground_elevation_m": 1358.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.6,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-012",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600979,
+      27.315134
+    ],
+    "u": 0.5823,
+    "v": 0.2254,
+    "ground_elevation_m": 1332.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.4,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-013",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.599622,
+      27.309569
+    ],
+    "u": 0.5668,
+    "v": 0.2966,
+    "ground_elevation_m": 1365.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-014",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.60184,
+      27.310561
+    ],
+    "u": 0.5921,
+    "v": 0.2839,
+    "ground_elevation_m": 1406.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.5,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-015",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.598231,
+      27.308349
+    ],
+    "u": 0.551,
+    "v": 0.3122,
+    "ground_elevation_m": 1358.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.9,
+      10.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-016",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.596774,
+      27.322945
+    ],
+    "u": 0.5344,
+    "v": 0.1254,
+    "ground_elevation_m": 1099.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.6,
+      9.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-017",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601804,
+      27.312945
+    ],
+    "u": 0.5916,
+    "v": 0.2534,
+    "ground_elevation_m": 1390.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.0,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-018",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601756,
+      27.317064
+    ],
+    "u": 0.5911,
+    "v": 0.2006,
+    "ground_elevation_m": 1373.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.6,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-019",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.603114,
+      27.313021
+    ],
+    "u": 0.6065,
+    "v": 0.2524,
+    "ground_elevation_m": 1436.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.8,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-020",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.604173,
+      27.307946
+    ],
+    "u": 0.6186,
+    "v": 0.3174,
+    "ground_elevation_m": 1234.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.9,
+      13.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-021",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.59846,
+      27.313602
+    ],
+    "u": 0.5536,
+    "v": 0.245,
+    "ground_elevation_m": 1248.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.5,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-022",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.598595,
+      27.309769
+    ],
+    "u": 0.5551,
+    "v": 0.294,
+    "ground_elevation_m": 1336.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.4,
+      14.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-023",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.602516,
+      27.317491
+    ],
+    "u": 0.5997,
+    "v": 0.1952,
+    "ground_elevation_m": 1384.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      16.7,
+      12.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-024",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601723,
+      27.310904
+    ],
+    "u": 0.5907,
+    "v": 0.2795,
+    "ground_elevation_m": 1435.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.1,
+      15.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-025",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600475,
+      27.318531
+    ],
+    "u": 0.5765,
+    "v": 0.1819,
+    "ground_elevation_m": 1316.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.0,
+      12.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-026",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.593381,
+      27.317921
+    ],
+    "u": 0.4958,
+    "v": 0.1897,
+    "ground_elevation_m": 1063.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      17.4,
+      8.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-027",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600204,
+      27.315685
+    ],
+    "u": 0.5734,
+    "v": 0.2183,
+    "ground_elevation_m": 1313.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.7,
+      11.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-028",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.602314,
+      27.316763
+    ],
+    "u": 0.5974,
+    "v": 0.2045,
+    "ground_elevation_m": 1390.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.5,
+      13.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-029",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.599608,
+      27.315947
+    ],
+    "u": 0.5667,
+    "v": 0.2149,
+    "ground_elevation_m": 1296.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.2,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-030",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.599909,
+      27.307834
+    ],
+    "u": 0.5701,
+    "v": 0.3188,
+    "ground_elevation_m": 1391.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.4,
+      9.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-031",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600887,
+      27.311913
+    ],
+    "u": 0.5812,
+    "v": 0.2666,
+    "ground_elevation_m": 1397.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.3,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-032",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601827,
+      27.30501
+    ],
+    "u": 0.5919,
+    "v": 0.355,
+    "ground_elevation_m": 1277.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      14.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-033",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.612702,
+      27.314398
+    ],
+    "u": 0.7156,
+    "v": 0.2348,
+    "ground_elevation_m": 1201.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      12.0,
+      8.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-034",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.604475,
+      27.317031
+    ],
+    "u": 0.622,
+    "v": 0.2011,
+    "ground_elevation_m": 1474.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.2,
+      13.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-035",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601702,
+      27.314345
+    ],
+    "u": 0.5905,
+    "v": 0.2355,
+    "ground_elevation_m": 1351.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.3,
+      13.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-036",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.594257,
+      27.310813
+    ],
+    "u": 0.5058,
+    "v": 0.2807,
+    "ground_elevation_m": 1192.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.2,
+      11.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-037",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.607309,
+      27.308848
+    ],
+    "u": 0.6543,
+    "v": 0.3058,
+    "ground_elevation_m": 1265.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.9,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-038",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.600123,
+      27.312904
+    ],
+    "u": 0.5725,
+    "v": 0.2539,
+    "ground_elevation_m": 1326.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.6,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-039",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.603902,
+      27.319402
+    ],
+    "u": 0.6155,
+    "v": 0.1707,
+    "ground_elevation_m": 1394.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.8,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-040",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.60099,
+      27.306305
+    ],
+    "u": 0.5824,
+    "v": 0.3384,
+    "ground_elevation_m": 1359.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.3,
+      15.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-041",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.597762,
+      27.311541
+    ],
+    "u": 0.5457,
+    "v": 0.2714,
+    "ground_elevation_m": 1281.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.3,
+      10.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-042",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.595605,
+      27.315154
+    ],
+    "u": 0.5211,
+    "v": 0.2251,
+    "ground_elevation_m": 1158.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.8,
+      9.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-043",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.593663,
+      27.313833
+    ],
+    "u": 0.499,
+    "v": 0.242,
+    "ground_elevation_m": 1116.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.0,
+      11.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-044",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.599324,
+      27.310832
+    ],
+    "u": 0.5634,
+    "v": 0.2804,
+    "ground_elevation_m": 1350.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.6,
+      11.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-045",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.602279,
+      27.313662
+    ],
+    "u": 0.597,
+    "v": 0.2442,
+    "ground_elevation_m": 1390.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.0,
+      14.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-046",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.60311,
+      27.31541
+    ],
+    "u": 0.6065,
+    "v": 0.2218,
+    "ground_elevation_m": 1416.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.3,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-047",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.59546,
+      27.317327
+    ],
+    "u": 0.5195,
+    "v": 0.1973,
+    "ground_elevation_m": 1152.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.2,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-048",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.59507,
+      27.310279
+    ],
+    "u": 0.515,
+    "v": 0.2875,
+    "ground_elevation_m": 1234.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      16.3,
+      12.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-049",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.602125,
+      27.312034
+    ],
+    "u": 0.5953,
+    "v": 0.265,
+    "ground_elevation_m": 1434.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      11.7,
+      15.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-050",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.599421,
+      27.316252
+    ],
+    "u": 0.5645,
+    "v": 0.211,
+    "ground_elevation_m": 1285.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.9,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-051",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.602457,
+      27.313076
+    ],
+    "u": 0.5991,
+    "v": 0.2517,
+    "ground_elevation_m": 1410.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      15.4,
+      8.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-052",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.59483,
+      27.311905
+    ],
+    "u": 0.5123,
+    "v": 0.2667,
+    "ground_elevation_m": 1199.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.3,
+      10.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-053",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.596512,
+      27.309451
+    ],
+    "u": 0.5314,
+    "v": 0.2981,
+    "ground_elevation_m": 1280.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.3,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-054",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601547,
+      27.313672
+    ],
+    "u": 0.5887,
+    "v": 0.2441,
+    "ground_elevation_m": 1374.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.5,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-055",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.608076,
+      27.31737
+    ],
+    "u": 0.663,
+    "v": 0.1967,
+    "ground_elevation_m": 1402.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.7,
+      13.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-056",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.59988,
+      27.31368
+    ],
+    "u": 0.5697,
+    "v": 0.244,
+    "ground_elevation_m": 1310.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.4,
+      9.1
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-057",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.606206,
+      27.316421
+    ],
+    "u": 0.6417,
+    "v": 0.2089,
+    "ground_elevation_m": 1479.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.4,
+      9.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-tad-058",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.603023,
+      27.314032
+    ],
+    "u": 0.6055,
+    "v": 0.2395,
+    "ground_elevation_m": 1402.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.8,
+      15.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-059",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.601232,
+      27.312744
+    ],
+    "u": 0.5851,
+    "v": 0.256,
+    "ground_elevation_m": 1375.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.5,
+      14.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-tad-060",
+    "village_id": "v-tad",
+    "village_name": "Tadong",
+    "center": [
+      88.602127,
+      27.315553
+    ],
+    "u": 0.5953,
+    "v": 0.22,
+    "ground_elevation_m": 1384.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.3,
+      13.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-001",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.598231,
+      27.289325
+    ],
+    "u": 0.551,
+    "v": 0.5558,
+    "ground_elevation_m": 857.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.2,
+      14.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-002",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.596826,
+      27.289121
+    ],
+    "u": 0.535,
+    "v": 0.5584,
+    "ground_elevation_m": 859.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      11.3,
+      10.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-003",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.595574,
+      27.284846
+    ],
+    "u": 0.5207,
+    "v": 0.6131,
+    "ground_elevation_m": 874.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.5,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-004",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.594712,
+      27.291256
+    ],
+    "u": 0.5109,
+    "v": 0.5311,
+    "ground_elevation_m": 849.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.0,
+      15.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-005",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.596404,
+      27.289924
+    ],
+    "u": 0.5302,
+    "v": 0.5481,
+    "ground_elevation_m": 849.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.8,
+      8.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-006",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.59815,
+      27.290518
+    ],
+    "u": 0.5501,
+    "v": 0.5405,
+    "ground_elevation_m": 875.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.9,
+      13.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-007",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.595446,
+      27.297707
+    ],
+    "u": 0.5193,
+    "v": 0.4485,
+    "ground_elevation_m": 1183.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.6,
+      10.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-008",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.599243,
+      27.283546
+    ],
+    "u": 0.5625,
+    "v": 0.6298,
+    "ground_elevation_m": 833.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.9,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-009",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593854,
+      27.288238
+    ],
+    "u": 0.5012,
+    "v": 0.5697,
+    "ground_elevation_m": 832.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      9.5,
+      9.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-010",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.589206,
+      27.290109
+    ],
+    "u": 0.4483,
+    "v": 0.5457,
+    "ground_elevation_m": 926.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.5,
+      11.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-011",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.60101,
+      27.286605
+    ],
+    "u": 0.5826,
+    "v": 0.5906,
+    "ground_elevation_m": 894.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.7,
+      13.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-012",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.595577,
+      27.287351
+    ],
+    "u": 0.5208,
+    "v": 0.5811,
+    "ground_elevation_m": 870.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.1,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-013",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.594085,
+      27.289268
+    ],
+    "u": 0.5038,
+    "v": 0.5565,
+    "ground_elevation_m": 824.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.8,
+      13.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-014",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.596061,
+      27.288861
+    ],
+    "u": 0.5263,
+    "v": 0.5617,
+    "ground_elevation_m": 850.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.4,
+      9.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-015",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.601199,
+      27.296687
+    ],
+    "u": 0.5847,
+    "v": 0.4615,
+    "ground_elevation_m": 1075.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.7,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-016",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593874,
+      27.290769
+    ],
+    "u": 0.5014,
+    "v": 0.5373,
+    "ground_elevation_m": 833.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.4,
+      14.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-017",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593639,
+      27.291895
+    ],
+    "u": 0.4987,
+    "v": 0.5229,
+    "ground_elevation_m": 832.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      17.4,
+      10.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-018",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.599521,
+      27.290277
+    ],
+    "u": 0.5657,
+    "v": 0.5436,
+    "ground_elevation_m": 858.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.6,
+      10.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-019",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.59247,
+      27.285054
+    ],
+    "u": 0.4854,
+    "v": 0.6105,
+    "ground_elevation_m": 824.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      10.9,
+      12.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-020",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.600373,
+      27.289426
+    ],
+    "u": 0.5754,
+    "v": 0.5545,
+    "ground_elevation_m": 866.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.0,
+      15.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-021",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.589432,
+      27.283541
+    ],
+    "u": 0.4509,
+    "v": 0.6298,
+    "ground_elevation_m": 951.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.9,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-022",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.59789,
+      27.286644
+    ],
+    "u": 0.5471,
+    "v": 0.5901,
+    "ground_elevation_m": 874.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.0,
+      13.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-023",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.597108,
+      27.293351
+    ],
+    "u": 0.5382,
+    "v": 0.5042,
+    "ground_elevation_m": 1043.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.6,
+      9.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-024",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593417,
+      27.289686
+    ],
+    "u": 0.4962,
+    "v": 0.5512,
+    "ground_elevation_m": 837.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.0,
+      8.2
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-025",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.590496,
+      27.292395
+    ],
+    "u": 0.463,
+    "v": 0.5165,
+    "ground_elevation_m": 849.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      14.0,
+      15.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-026",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593761,
+      27.288253
+    ],
+    "u": 0.5001,
+    "v": 0.5695,
+    "ground_elevation_m": 827.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.2,
+      12.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-027",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.590038,
+      27.289566
+    ],
+    "u": 0.4578,
+    "v": 0.5527,
+    "ground_elevation_m": 923.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.1,
+      14.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-028",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593955,
+      27.293679
+    ],
+    "u": 0.5023,
+    "v": 0.5,
+    "ground_elevation_m": 980.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.3,
+      10.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-029",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.590467,
+      27.285102
+    ],
+    "u": 0.4626,
+    "v": 0.6099,
+    "ground_elevation_m": 886.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.7,
+      8.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-030",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.58774,
+      27.287545
+    ],
+    "u": 0.4316,
+    "v": 0.5786,
+    "ground_elevation_m": 1008.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      12.8,
+      14.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-031",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593451,
+      27.297552
+    ],
+    "u": 0.4966,
+    "v": 0.4505,
+    "ground_elevation_m": 1118.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.6,
+      8.6
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-032",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.600669,
+      27.292271
+    ],
+    "u": 0.5787,
+    "v": 0.5181,
+    "ground_elevation_m": 869.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      16.7,
+      9.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-033",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.602264,
+      27.288754
+    ],
+    "u": 0.5969,
+    "v": 0.5631,
+    "ground_elevation_m": 913.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.0,
+      15.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-034",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.59148,
+      27.287975
+    ],
+    "u": 0.4742,
+    "v": 0.5731,
+    "ground_elevation_m": 861.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.2,
+      14.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-035",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.59307,
+      27.289733
+    ],
+    "u": 0.4923,
+    "v": 0.5506,
+    "ground_elevation_m": 848.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.2,
+      13.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-036",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593243,
+      27.291617
+    ],
+    "u": 0.4942,
+    "v": 0.5264,
+    "ground_elevation_m": 835.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.1,
+      9.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-037",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.595072,
+      27.288802
+    ],
+    "u": 0.515,
+    "v": 0.5625,
+    "ground_elevation_m": 843.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.9,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-038",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.591934,
+      27.290645
+    ],
+    "u": 0.4793,
+    "v": 0.5389,
+    "ground_elevation_m": 868.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.6,
+      12.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-039",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.599909,
+      27.292289
+    ],
+    "u": 0.5701,
+    "v": 0.5178,
+    "ground_elevation_m": 922.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      9.3,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-040",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.594417,
+      27.29332
+    ],
+    "u": 0.5076,
+    "v": 0.5046,
+    "ground_elevation_m": 966.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      9.6,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-041",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.597491,
+      27.289424
+    ],
+    "u": 0.5426,
+    "v": 0.5545,
+    "ground_elevation_m": 858.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.5,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-042",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.590448,
+      27.287509
+    ],
+    "u": 0.4624,
+    "v": 0.579,
+    "ground_elevation_m": 926.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.5,
+      14.5
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-043",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.597306,
+      27.292463
+    ],
+    "u": 0.5405,
+    "v": 0.5156,
+    "ground_elevation_m": 971.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.9,
+      11.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-044",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.594932,
+      27.285846
+    ],
+    "u": 0.5134,
+    "v": 0.6003,
+    "ground_elevation_m": 849.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.3,
+      15.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-045",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.598331,
+      27.287358
+    ],
+    "u": 0.5521,
+    "v": 0.581,
+    "ground_elevation_m": 873.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      16.5,
+      12.4
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-046",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.599422,
+      27.290563
+    ],
+    "u": 0.5645,
+    "v": 0.5399,
+    "ground_elevation_m": 864.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      15.7,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-047",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.595408,
+      27.293774
+    ],
+    "u": 0.5189,
+    "v": 0.4988,
+    "ground_elevation_m": 1018.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      15.6,
+      12.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-048",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.594831,
+      27.296689
+    ],
+    "u": 0.5123,
+    "v": 0.4615,
+    "ground_elevation_m": 1179.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.4,
+      14.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-049",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.592832,
+      27.288938
+    ],
+    "u": 0.4896,
+    "v": 0.5607,
+    "ground_elevation_m": 824.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      13.8,
+      11.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-050",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.597834,
+      27.287937
+    ],
+    "u": 0.5465,
+    "v": 0.5736,
+    "ground_elevation_m": 902.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      14.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-051",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.594016,
+      27.292619
+    ],
+    "u": 0.503,
+    "v": 0.5136,
+    "ground_elevation_m": 901.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.3,
+      15.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-052",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.599763,
+      27.28565
+    ],
+    "u": 0.5684,
+    "v": 0.6028,
+    "ground_elevation_m": 837.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      14.7
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-053",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.590672,
+      27.292785
+    ],
+    "u": 0.465,
+    "v": 0.5115,
+    "ground_elevation_m": 863.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      18.0,
+      8.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-054",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.590769,
+      27.293211
+    ],
+    "u": 0.4661,
+    "v": 0.506,
+    "ground_elevation_m": 876.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.4,
+      14.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-055",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.594059,
+      27.284597
+    ],
+    "u": 0.5035,
+    "v": 0.6163,
+    "ground_elevation_m": 818.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      17.2,
+      15.8
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-rnp-056",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.597867,
+      27.286318
+    ],
+    "u": 0.5468,
+    "v": 0.5943,
+    "ground_elevation_m": 872.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.5,
+      12.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-057",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.599605,
+      27.293181
+    ],
+    "u": 0.5666,
+    "v": 0.5064,
+    "ground_elevation_m": 960.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      10.0,
+      13.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-058",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.595542,
+      27.287427
+    ],
+    "u": 0.5204,
+    "v": 0.5801,
+    "ground_elevation_m": 864.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      13.9,
+      14.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-059",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.595383,
+      27.293974
+    ],
+    "u": 0.5186,
+    "v": 0.4963,
+    "ground_elevation_m": 1019.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.3,
+      14.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-rnp-060",
+    "village_id": "v-rnp",
+    "village_name": "Ranipool",
+    "center": [
+      88.593005,
+      27.290003
+    ],
+    "u": 0.4915,
+    "v": 0.5471,
+    "ground_elevation_m": 856.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      11.9,
+      15.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-sic-012",
+    "village_id": "v-sic",
+    "village_name": "Sichey",
+    "center": [
+      88.619592,
+      27.331708
+    ],
+    "u": 0.794,
+    "v": 0.0131,
+    "ground_elevation_m": 1609.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.0,
+      12.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-001",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.600811,
+      27.321304
+    ],
+    "u": 0.5803,
+    "v": 0.1464,
+    "ground_elevation_m": 1259.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.4,
+      15.0
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-002",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.59187,
+      27.331232
+    ],
+    "u": 0.4786,
+    "v": 0.0192,
+    "ground_elevation_m": 1199.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      12.7,
+      10.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-004",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.600276,
+      27.331979
+    ],
+    "u": 0.5742,
+    "v": 0.0097,
+    "ground_elevation_m": 1189.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      12.0,
+      13.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-005",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.59791,
+      27.330724
+    ],
+    "u": 0.5473,
+    "v": 0.0258,
+    "ground_elevation_m": 1099.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      10.9,
+      14.0
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-006",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.599171,
+      27.33151
+    ],
+    "u": 0.5617,
+    "v": 0.0157,
+    "ground_elevation_m": 1171.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      18.0,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-008",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.604147,
+      27.332732
+    ],
+    "u": 0.6183,
+    "v": 0.0,
+    "ground_elevation_m": 1274.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      13.0,
+      11.9
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-009",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.597489,
+      27.330308
+    ],
+    "u": 0.5425,
+    "v": 0.0311,
+    "ground_elevation_m": 1076.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.9,
+      14.4
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-010",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.601669,
+      27.331724
+    ],
+    "u": 0.5901,
+    "v": 0.0129,
+    "ground_elevation_m": 1251.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.2,
+      15.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-011",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.595225,
+      27.328433
+    ],
+    "u": 0.5168,
+    "v": 0.0551,
+    "ground_elevation_m": 1033.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.7,
+      13.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-012",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.60269,
+      27.332054
+    ],
+    "u": 0.6017,
+    "v": 0.0087,
+    "ground_elevation_m": 1261.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.3,
+      12.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-013",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.602109,
+      27.332124
+    ],
+    "u": 0.5951,
+    "v": 0.0078,
+    "ground_elevation_m": 1236.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.3,
+      14.2
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-015",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.60142,
+      27.327855
+    ],
+    "u": 0.5873,
+    "v": 0.0625,
+    "ground_elevation_m": 1214.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      10.7,
+      10.7
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-016",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.600974,
+      27.3289
+    ],
+    "u": 0.5822,
+    "v": 0.0491,
+    "ground_elevation_m": 1186.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      13.5,
+      9.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-017",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.604238,
+      27.330869
+    ],
+    "u": 0.6193,
+    "v": 0.0239,
+    "ground_elevation_m": 1339.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      16.0,
+      9.3
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-018",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.597765,
+      27.328201
+    ],
+    "u": 0.5457,
+    "v": 0.0581,
+    "ground_elevation_m": 1082.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      14.0,
+      15.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-019",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.601271,
+      27.328163
+    ],
+    "u": 0.5856,
+    "v": 0.0585,
+    "ground_elevation_m": 1209.0,
+    "storeys": 5,
+    "height_m": 16.0,
+    "footprint_m": [
+      9.8,
+      11.3
+    ],
+    "typology": "Reinforced Concrete Frame"
+  },
+  {
+    "id": "bldg-v-syr-020",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.594852,
+      27.324152
+    ],
+    "u": 0.5125,
+    "v": 0.1099,
+    "ground_elevation_m": 1025.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      14.1,
+      14.8
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-022",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.598314,
+      27.329724
+    ],
+    "u": 0.5519,
+    "v": 0.0385,
+    "ground_elevation_m": 1107.0,
+    "storeys": 3,
+    "height_m": 9.6,
+    "footprint_m": [
+      17.0,
+      9.1
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-023",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.600371,
+      27.329956
+    ],
+    "u": 0.5753,
+    "v": 0.0356,
+    "ground_elevation_m": 1152.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      14.8,
+      14.5
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-024",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.593808,
+      27.322972
+    ],
+    "u": 0.5007,
+    "v": 0.125,
+    "ground_elevation_m": 986.0,
+    "storeys": 2,
+    "height_m": 6.4,
+    "footprint_m": [
+      11.7,
+      10.9
+    ],
+    "typology": "Masonry with CGI Roof"
+  },
+  {
+    "id": "bldg-v-syr-025",
+    "village_id": "v-syr",
+    "village_name": "Lower Syari",
+    "center": [
+      88.600412,
+      27.323032
+    ],
+    "u": 0.5758,
+    "v": 0.1242,
+    "ground_elevation_m": 1217.0,
+    "storeys": 4,
+    "height_m": 12.8,
+    "footprint_m": [
+      15.3,
+      11.6
+    ],
+    "typology": "Reinforced Concrete Frame"
+  }
+]

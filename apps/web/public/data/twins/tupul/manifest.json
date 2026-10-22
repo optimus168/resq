@@ -1,0 +1,126 @@
+{
+  "aoi_id": "tupul",
+  "aoi_name": "Tupul / Noney Railway Site",
+  "state": "Manipur",
+  "district": "Noney",
+  "center": [
+    24.866,
+    93.611
+  ],
+  "crs": "EPSG:4326 (WGS84) & EPSG:3857 (Web Mercator)",
+  "bounds": {
+    "west": 93.603515625,
+    "east": 93.69140625,
+    "north": 24.84656534821974,
+    "south": 24.766784522874442
+  },
+  "grid": {
+    "width_px": 512,
+    "height_px": 512,
+    "cell_size_m": 17.35,
+    "min_elevation_m": 341.0,
+    "max_elevation_m": 1616.0,
+    "relief_m": 1275.0
+  },
+  "data_provenance": {
+    "dem_source": "Copernicus GLO-30 / AWS Terrarium (30m spatial resolution)",
+    "dem_licence": "Open Data Commons Open Database License (ODbL) / Public Domain",
+    "satellite_imagery_source": "Esri World Imagery / Copernicus Sentinel-2 L2A True Colour",
+    "satellite_imagery_date": "2026-10-11",
+    "satellite_imagery_scene": "S2A_46REN_20261011_0_L2A",
+    "satellite_licence": "Esri Master Terms / Public View; Copernicus Open Access Policy",
+    "canopy_source": "WRI/Meta High-Resolution Canopy Height model & topographic mask",
+    "infrastructure_source": "OpenStreetMap Contributors & BhuRaksha Lifeline Dataset"
+  },
+  "visual_approximations": [
+    "Tangent-space normal maps provide high-frequency micro-relief for surface light scattering beyond the 30m DEM.",
+    "Tree instances are generated deterministically based on canopy height mask, elevation limits (750m-2000m), and slope gradient.",
+    "Building footprints are positioned around verified settlement centers with storeys (2-5) reflecting regional masonry/RC typologies.",
+    "Atmospheric Rayleigh/Mie sky and cloud advection are rendered procedurally and parameterized by Open-Meteo cloud cover.",
+    "Mandatory disclaimer: Screening-level scenario simulation \u2014 not a certified warning service."
+  ],
+  "created_at": "2026-10-19T06:58:40.960823+00:00",
+  "total_bundle_bytes": 3907068,
+  "files": {
+    "heightmap_16bit.png": {
+      "sha256": "745b58f7aa94cac08f7b7cced3234111e7cbd4200c6ef3a3dff0704d9731f6fb",
+      "bytes": 246144,
+      "format": "png"
+    },
+    "heightmap_rgb.png": {
+      "sha256": "f2b65bf08b3ecefd7140e7dbc820afd08a7a8b635e8bae962dcf8077f3ddca8c",
+      "bytes": 393732,
+      "format": "png"
+    },
+    "dem_512x512_f32.bin": {
+      "sha256": "6d36f819f40ea6d365c93fbca83d8233768f7e36980a574f52beaf4f6b662636",
+      "bytes": 1048576,
+      "format": "bin"
+    },
+    "dem_256x256_f32.bin": {
+      "sha256": "9f5a06e8d14c5f23e1f35fbcd3ba8f578f477fe54d9c7307800d90358ac9a527",
+      "bytes": 262144,
+      "format": "bin"
+    },
+    "dem_128x128_f32.bin": {
+      "sha256": "f10a254b6f1ddc8d80a4b31e68399e558fbb1d7ff05c974f1e3286c65e38f2d3",
+      "bytes": 65536,
+      "format": "bin"
+    },
+    "normal_map.png": {
+      "sha256": "28b6cf5dc28f4240746e5f5f7f709d31d66abbb0eaea8d1a110d297c5a765afe",
+      "bytes": 444344,
+      "format": "png"
+    },
+    "slope.png": {
+      "sha256": "cd59e45b07cfb7dcc664449818af40cf3a795f6c042b38af5b198104cf868147",
+      "bytes": 166492,
+      "format": "png"
+    },
+    "aspect.png": {
+      "sha256": "ef0f93a7096d5a5e3d72700b514a8d0076072c8798a8328d12b727ee0eafcb53",
+      "bytes": 161230,
+      "format": "png"
+    },
+    "twi.png": {
+      "sha256": "a7ae70d6d0c589aaa33f7c250078547e52df52f4e69ab8e3cf80750dd3f35700",
+      "bytes": 226972,
+      "format": "png"
+    },
+    "orthophoto.jpg": {
+      "sha256": "ea3231e5632d2e00d43a6a5e9ad6fbb8ac2fc053e74e3314cd0cb6135087400a",
+      "bytes": 352393,
+      "format": "jpg"
+    },
+    "orthophoto_preview.jpg": {
+      "sha256": "b4b5ae126a6d8014beb8329a76242104100793a736ee75891035b86eccae0c37",
+      "bytes": 1438,
+      "format": "jpg"
+    },
+    "canopy.png": {
+      "sha256": "d01dbe4c3d8b93b5b2331f305daabc4ceec77372ade5074fd5ca4579afdfea39",
+      "bytes": 192185,
+      "format": "png"
+    },
+    "trees.json": {
+      "sha256": "b0677508b4b9971a72db4fc67d5cea28008dab8869c79840417460e84763cce7",
+      "bytes": 341456,
+      "format": "json"
+    },
+    "buildings.json": {
+      "sha256": "65e271b457d5d46d57d08c912d6665af9cb6ad6ff845ed4f8bec047750554862",
+      "bytes": 701,
+      "format": "json"
+    },
+    "infrastructure.geojson": {
+      "sha256": "a1936679611a6913798016dfd477baf7187dd670c7c1b1e3735ee73dc33c04bf",
+      "bytes": 3202,
+      "format": "geojson"
+    },
+    "control_points.json": {
+      "sha256": "fce81ee3c7e60c059c7b69481cded17d0ebf69043be09139f392c2a33d81cf78",
+      "bytes": 523,
+      "format": "json"
+    }
+  }
+}

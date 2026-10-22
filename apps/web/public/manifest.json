@@ -1,0 +1,16 @@
+{
+  "short_name": "BhuRaksha",
+  "name": "RESQ.AI × BhuRaksha — Agentic Disaster Digital Twin",
+  "icons": [
+    {
+      "src": "/mountain_logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#06150C",
+  "theme_color": "#BDFF42",
+  "display": "standalone",
+  "orientation": "any"
+}

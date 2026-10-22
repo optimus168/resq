@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: bhuraksha-postgis
+    environment:
+      POSTGRES_DB: bhuraksha
+      POSTGRES_USER: resq
+      POSTGRES_PASSWORD: resq_secure_db_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U resq -d bhuraksha"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: bhuraksha-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: bhuraksha-backend
+    environment:
+      DATABASE_URL: "postgresql+asyncpg://resq:resq_secure_db_pass@db:5432/bhuraksha"
+      REDIS_URL: "redis://redis:6379/0"
+      APP_ENV: "production"
+      EMERGENT_LLM_KEY: "${EMERGENT_LLM_KEY:-}"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: bhuraksha-web
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+  redis_data:

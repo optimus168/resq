@@ -1,6 +1,6 @@
 # System Architecture & Multi-Agent Specification
 
-**Project:** RESQ.AI × BhuRaksha (SIH26001)  
+**Project:** RESQ.AI × BhuRaksha (National Landslide Framework)  
 **Core Mission:** Agentic AI landslide intelligence, 3D digital-twin simulation, and dynamic response-coordination platform for India's North Eastern Region.
 
 ---

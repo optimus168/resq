@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cp-mep-h",
+    "name": "Meppadi Community Health Centre",
+    "kind": "hospital",
+    "lon": 76.126,
+    "lat": 11.551,
+    "u": 0.1447,
+    "v": 0.1758,
+    "pixel_col": 74,
+    "pixel_row": 90,
+    "dem_elevation_m": 943.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-cho-s",
+    "name": "Chooralmala School Evacuation Camp",
+    "kind": "shelter",
+    "lon": 76.155,
+    "lat": 11.517,
+    "u": 0.4747,
+    "v": 0.5706,
+    "pixel_col": 243,
+    "pixel_row": 292,
+    "dem_elevation_m": 899.0,
+    "in_bounds": true
+  }
+]

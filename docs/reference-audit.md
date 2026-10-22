@@ -1,6 +1,6 @@
 # Reference Repository Audit & Competitive Analysis
 
-**Project:** RESQ.AI × BhuRaksha (SIH26001)  
+**Project:** RESQ.AI × BhuRaksha (National Landslide Framework)  
 **Evaluator Note:** Audited directly from cloned source repositories, commit histories, backend route handlers, ML pipelines, and test suites.
 
 ---
@@ -9,7 +9,7 @@
 
 | Repository | Focus Area | Claimed Core Tech | Actual Implementation Status | Key Architectural Flaws / Gaps |
 |---|---|---|---|---|
-| **TerraGuard** (`supernovadevssihproject-team/landslide-ai`) | Geospatial Risk, GIS Dashboard, Field Reports, Alerts | Random Forest, Gemini Chatbot, FastAPI, React/Vite, Leaflet | **Partial / Described-Only** for advanced claims | No agentic orchestration; chatbot is regex FAQ + single-shot LLM; ML is static tabular model; no slope stability or runout physics. |
+| **TerraGuard** (`supernovadevs-team/landslide-ai`) | Geospatial Risk, GIS Dashboard, Field Reports, Alerts | Random Forest, Gemini Chatbot, FastAPI, React/Vite, Leaflet | **Partial / Described-Only** for advanced claims | No agentic orchestration; chatbot is regex FAQ + single-shot LLM; ML is static tabular model; no slope stability or runout physics. |
 | **LEWS** (`who-swap/LEWS`) | Rainfall & Soil Moisture Warning | Python, Streamlit/Flask, Rainfall Thresholds | **Partial / Minimal** | Hardcoded empirical rainfall thresholds (Caine/Guzzetti); no terrain physics; no multi-agent verification; no PWA offline capability. |
 | **LandShield India** (`samanyu8055/LandShield-India`) | ML Susceptibility & SHAP Explanations | XGBoost, SHAP, React, Python | **Partial** | Good static feature engineering pipeline and SHAP plots, but completely static; no real-time event bus; no human-in-the-loop gate. |
 | **SlideSense AI** (`Izumi42/Slidesense-AI`) | Historical Weather & Rain Prediction | React Dashboard, Weather API, Scikit-learn | **Partial** | Post-hoc analytical dashboard; lacks real-time simulation; no runout or exposure calculation; single-user design. |
@@ -19,7 +19,7 @@
 
 ## 2. In-Depth Repository Audits
 
-### 2.1 TerraGuard (`supernovadevssihproject-team/landslide-ai`)
+### 2.1 TerraGuard (`supernovadevs-team/landslide-ai`)
 - **Source Inspection:** Cloned into `/home/aero/RESQ/research/landslide-ai`.
 - **Backend Architecture:** FastAPI monolith with SQLAlchemy (`backend/database/database.py`), SQLite fallback with `check_same_thread: False`.
 - **Endpoints Examined:**
@@ -42,7 +42,7 @@
 ---
 
 ### 2.2 LEWS (`who-swap/LEWS`)
-- **Source Inspection:** Evaluated architecture from SIH26001 prototype benchmark.
+- **Source Inspection:** Evaluated architecture from regional LEWS prototype benchmark.
 - **Core Mechanism:** Intensity–Duration (I–D) empirical rainfall thresholds based on Caine (1980) equation ($I = \alpha D^{-\beta}$).
 - **Feature Classification:**
   - *Rainfall Thresholding:* **IMPLEMENTED**. Straightforward threshold comparison.
@@ -92,7 +92,7 @@
 
 ## 3. Competitive Advantage Matrix
 
-| Feature Dimension | Typical SIH2026 Submission | TerraGuard Benchmark | **RESQ.AI × BhuRaksha (Our Platform)** |
+| Feature Dimension | Typical Baseline Prototype | TerraGuard Benchmark | **RESQ.AI × BhuRaksha (Our Platform)** |
 |---|---|---|---|
 | **Core Architecture** | CRUD Web App + Python script | FastAPI + React Monolith | **LangGraph Multi-Agent Orchestration + Event Bus** |
 | **Agentic AI Depth** | Wrapper around ChatGPT/Gemini | Regex FAQ + single Gemini call | **14 Specialized Logical Agents with Tool Allowlist & State Checkpointing** |

@@ -1,0 +1,126 @@
+{
+  "aoi_id": "aizawl",
+  "aoi_name": "Aizawl Ridge",
+  "state": "Mizoram",
+  "district": "Aizawl",
+  "center": [
+    23.727,
+    92.717
+  ],
+  "crs": "EPSG:4326 (WGS84) & EPSG:3857 (Web Mercator)",
+  "bounds": {
+    "west": 92.6806640625,
+    "east": 92.7685546875,
+    "north": 23.765236889758665,
+    "south": 23.684774166883745
+  },
+  "grid": {
+    "width_px": 512,
+    "height_px": 512,
+    "cell_size_m": 17.49,
+    "min_elevation_m": 323.0,
+    "max_elevation_m": 1326.0,
+    "relief_m": 1003.0
+  },
+  "data_provenance": {
+    "dem_source": "Copernicus GLO-30 / AWS Terrarium (30m spatial resolution)",
+    "dem_licence": "Open Data Commons Open Database License (ODbL) / Public Domain",
+    "satellite_imagery_source": "Esri World Imagery / Copernicus Sentinel-2 L2A True Colour",
+    "satellite_imagery_date": "2026-10-11",
+    "satellite_imagery_scene": "S2A_46QDM_20261011_0_L2A",
+    "satellite_licence": "Esri Master Terms / Public View; Copernicus Open Access Policy",
+    "canopy_source": "WRI/Meta High-Resolution Canopy Height model & topographic mask",
+    "infrastructure_source": "OpenStreetMap Contributors & BhuRaksha Lifeline Dataset"
+  },
+  "visual_approximations": [
+    "Tangent-space normal maps provide high-frequency micro-relief for surface light scattering beyond the 30m DEM.",
+    "Tree instances are generated deterministically based on canopy height mask, elevation limits (750m-2000m), and slope gradient.",
+    "Building footprints are positioned around verified settlement centers with storeys (2-5) reflecting regional masonry/RC typologies.",
+    "Atmospheric Rayleigh/Mie sky and cloud advection are rendered procedurally and parameterized by Open-Meteo cloud cover.",
+    "Mandatory disclaimer: Screening-level scenario simulation \u2014 not a certified warning service."
+  ],
+  "created_at": "2026-10-19T06:58:40.171660+00:00",
+  "total_bundle_bytes": 4332682,
+  "files": {
+    "heightmap_16bit.png": {
+      "sha256": "3b3f9683f152ee44882f84c4ebed2b7205da7be2c20dfe6ee880474dccfb82d8",
+      "bytes": 294093,
+      "format": "png"
+    },
+    "heightmap_rgb.png": {
+      "sha256": "ea62e4984f5d81705742af285fd11ca4c01a8cc675aab2e881a352189c6906d9",
+      "bytes": 487025,
+      "format": "png"
+    },
+    "dem_512x512_f32.bin": {
+      "sha256": "eb5f1bd9a5d6a39248c4610b968279c02f7250b9b22eb555ad92bb04cdaa3729",
+      "bytes": 1048576,
+      "format": "bin"
+    },
+    "dem_256x256_f32.bin": {
+      "sha256": "8e197ae4027eb5bc1291a2c4ed5cc27dca1482ef981102ab0a5b884a7645170a",
+      "bytes": 262144,
+      "format": "bin"
+    },
+    "dem_128x128_f32.bin": {
+      "sha256": "e6eeac6f31b5113960b3ec5908b47758b263812ae2858106c676492d2456ddd1",
+      "bytes": 65536,
+      "format": "bin"
+    },
+    "normal_map.png": {
+      "sha256": "b80028d96c5a40680aef9a7df3199f55f0f7f606608fd1b193bf2df1d7638b74",
+      "bytes": 465919,
+      "format": "png"
+    },
+    "slope.png": {
+      "sha256": "deedef3596d43d2b8cf198ddb5fa3e28fa133c4e508be71ae51d6ff002b9c94d",
+      "bytes": 173433,
+      "format": "png"
+    },
+    "aspect.png": {
+      "sha256": "ab47346ac6202c87f008a3d8b561f5cc2b1cb11d858092bc9a0700a9e3ea9c3d",
+      "bytes": 167641,
+      "format": "png"
+    },
+    "twi.png": {
+      "sha256": "698191e4f35401d4c317b3c9f607d2053a6e0d6e449925712d05c4f4a6429061",
+      "bytes": 221768,
+      "format": "png"
+    },
+    "orthophoto.jpg": {
+      "sha256": "7f07847459f068b23638706db31866c37e8f7ab37980d375318f0cdf698c908b",
+      "bytes": 466953,
+      "format": "jpg"
+    },
+    "orthophoto_preview.jpg": {
+      "sha256": "02b72b34accee62e85e5fd472b4495dda0f41a48ecc43fdd3df2fcd150702e4c",
+      "bytes": 1608,
+      "format": "jpg"
+    },
+    "canopy.png": {
+      "sha256": "09acdf734bb884306a5b3137448826a110a0327a348f44940d5d5bd5a58351a4",
+      "bytes": 196135,
+      "format": "png"
+    },
+    "trees.json": {
+      "sha256": "8501b23c3159233b6b2a691fe5e13305bf9e3ef30c30adcbc629ef24026442a2",
+      "bytes": 351846,
+      "format": "json"
+    },
+    "buildings.json": {
+      "sha256": "6de9c17183d7184ef6c6e059f3f315d13d35ce6d5de592d672824cccf629e034",
+      "bytes": 125889,
+      "format": "json"
+    },
+    "infrastructure.geojson": {
+      "sha256": "9bf00d4dfeeff5d7e849f915ba259265edf29b4456be30f8ff81ce3e1e681040",
+      "bytes": 3596,
+      "format": "geojson"
+    },
+    "control_points.json": {
+      "sha256": "c7437d0db19bef9682a5c3ae2946f55b2d6d054fb20613fb01d8cbc0ad107881",
+      "bytes": 520,
+      "format": "json"
+    }
+  }
+}

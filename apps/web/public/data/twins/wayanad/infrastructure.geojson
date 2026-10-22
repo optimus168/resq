@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "aoi_id": "wayanad",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.135,
+            11.54
+          ],
+          [
+            76.145,
+            11.528
+          ],
+          [
+            76.155,
+            11.517
+          ],
+          [
+            76.17,
+            11.505
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-mep",
+        "name": "Chooralmala\u2013Meppadi Lifeline Road",
+        "kind": "road",
+        "road_kind": "primary",
+        "surface": "asphalt",
+        "width_m": 7.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.126,
+          11.551
+        ]
+      },
+      "properties": {
+        "id": "cp-mep-h",
+        "name": "Meppadi Community Health Centre",
+        "lon": 76.126,
+        "lat": 11.551,
+        "kind": "hospital",
+        "beds": 100,
+        "feature_type": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.155,
+          11.517
+        ]
+      },
+      "properties": {
+        "id": "cp-cho-s",
+        "name": "Chooralmala School Evacuation Camp",
+        "lon": 76.155,
+        "lat": 11.517,
+        "kind": "shelter",
+        "capacity": 800,
+        "feature_type": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.155,
+          11.517
+        ]
+      },
+      "properties": {
+        "id": "v-cho",
+        "name": "Chooralmala",
+        "lat": 11.517,
+        "lon": 76.155,
+        "pop": 3500,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.168,
+          11.505
+        ]
+      },
+      "properties": {
+        "id": "v-mun",
+        "name": "Mundakkai",
+        "lat": 11.505,
+        "lon": 76.168,
+        "pop": 1200,
+        "bldg_density": "low",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.126,
+          11.551
+        ]
+      },
+      "properties": {
+        "id": "v-mep",
+        "name": "Meppadi",
+        "lat": 11.551,
+        "lon": 76.126,
+        "pop": 8000,
+        "bldg_density": "high",
+        "feature_type": "settlement"
+      }
+    }
+  ]
+}

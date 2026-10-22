@@ -1,11 +1,11 @@
-# Feature Traceability Matrix — SIH26001 × BhuRaksha
+# Feature Traceability Matrix — National Landslide Framework × BhuRaksha
 
-**Problem Statement:** SIH26001 — AI-Based Early Warning and Landslide Risk Monitoring System in NER  
+**Mission Directive:** AI-Based Early Warning and Landslide Risk Monitoring System in NER  
 **Team:** RESQ · **Product:** BhuRaksha · **Domain:** Agentic AI
 
 ---
 
-| SIH26001 Requirement | Reference Repo Baseline | BhuRaksha Implemented Component | Agent / Service Owner | Implementation Path / Proof | Status |
+| Operational Mandate Requirement | Reference Baseline | BhuRaksha Implemented Component | Agent / Service Owner | Implementation Path / Proof | Status |
 |---|---|---|---|---|---|
 | **a. Collect & analyse rainfall patterns** | Open-Meteo & IMD (TerraGuard, SlideSense) | Real-time Open-Meteo adapter + 72h historical rainfall + antecedent hyetograph | Sentinel Agent (`tool_weather`) | `backend/integrations/weather.py`, `tests/test_weather.py` | **IMPLEMENTED** |
 | **a. Soil moisture & geotechnical sensors** | Mock JSON generator (GeoShield) | Simulated piezometer ($r_u$) & tilt sensor telemetry with physical anomaly injection | Sentinel Agent (`tool_sensors`) | `backend/integrations/sensors.py`, `tests/test_sensors.py` | **IMPLEMENTED (SIMULATED)** |

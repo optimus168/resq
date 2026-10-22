@@ -1,0 +1,207 @@
+{
+  "type": "FeatureCollection",
+  "aoi_id": "shillong",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.878,
+            25.595
+          ],
+          [
+            91.885,
+            25.58
+          ],
+          [
+            91.89,
+            25.57
+          ],
+          [
+            91.88,
+            25.555
+          ],
+          [
+            91.865,
+            25.545
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-nh6",
+        "name": "NH6 Shillong Arterial",
+        "kind": "road",
+        "road_kind": "primary",
+        "surface": "asphalt",
+        "width_m": 10.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.878,
+            25.595
+          ],
+          [
+            91.87,
+            25.585
+          ],
+          [
+            91.865,
+            25.565
+          ],
+          [
+            91.865,
+            25.545
+          ]
+        ]
+      },
+      "properties": {
+        "id": "r-gs",
+        "name": "GS Road Link",
+        "kind": "road",
+        "road_kind": "alternate",
+        "surface": "asphalt",
+        "width_m": 8.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.887,
+          25.587
+        ]
+      },
+      "properties": {
+        "id": "cp-polo",
+        "name": "Polo Ground Shelter",
+        "lon": 91.887,
+        "lat": 25.587,
+        "kind": "shelter",
+        "capacity": 2000,
+        "feature_type": "shelter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.889,
+          25.5745
+        ]
+      },
+      "properties": {
+        "id": "cp-civ-sh",
+        "name": "Civil Hospital Shillong",
+        "lon": 91.889,
+        "lat": 25.5745,
+        "kind": "hospital",
+        "beds": 350,
+        "feature_type": "hospital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8825,
+          25.576
+        ]
+      },
+      "properties": {
+        "id": "cp-pb",
+        "name": "Police Bazar Circle",
+        "lon": 91.8825,
+        "lat": 25.576,
+        "kind": "transit",
+        "elevation_nominal": 1490,
+        "feature_type": "transit"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.8825,
+          25.576
+        ]
+      },
+      "properties": {
+        "id": "v-pb",
+        "name": "Police Bazar",
+        "lat": 25.576,
+        "lon": 91.8825,
+        "pop": 25000,
+        "bldg_density": "high",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.896,
+          25.57
+        ]
+      },
+      "properties": {
+        "id": "v-lai",
+        "name": "Laitumkhrah",
+        "lat": 25.57,
+        "lon": 91.896,
+        "pop": 15000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.878,
+          25.595
+        ]
+      },
+      "properties": {
+        "id": "v-maw",
+        "name": "Mawlai",
+        "lat": 25.595,
+        "lon": 91.878,
+        "pop": 12000,
+        "bldg_density": "medium",
+        "feature_type": "settlement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.9,
+          25.58
+        ]
+      },
+      "properties": {
+        "id": "v-non",
+        "name": "Nongthymmai",
+        "lat": 25.58,
+        "lon": 91.9,
+        "pop": 9000,
+        "bldg_density": "low",
+        "feature_type": "settlement"
+      }
+    }
+  ]
+}

@@ -49,7 +49,7 @@ export default function AskMissionControl({ incidentId = '', onSendQuery }) {
   const sampleQueries = [
     "What is the current Factor of Safety on NH10?",
     "Which relief shelters are designated under SOP-1?",
-    "Draft an urgent alert in Nepali and Hindi for Deorali"
+    "Draft an urgent evacuation alert for Deorali ward"
   ];
 
   return (

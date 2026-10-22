@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cp-polo",
+    "name": "Polo Ground Shelter",
+    "kind": "shelter",
+    "lon": 91.887,
+    "lat": 25.587,
+    "u": 0.4699,
+    "v": 0.188,
+    "pixel_col": 240,
+    "pixel_row": 96,
+    "dem_elevation_m": 1454.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-civ-sh",
+    "name": "Civil Hospital Shillong",
+    "kind": "hospital",
+    "lon": 91.889,
+    "lat": 25.5745,
+    "u": 0.4926,
+    "v": 0.3456,
+    "pixel_col": 252,
+    "pixel_row": 177,
+    "dem_elevation_m": 1501.0,
+    "in_bounds": true
+  },
+  {
+    "id": "cp-pb",
+    "name": "Police Bazar Circle",
+    "kind": "transit",
+    "lon": 91.8825,
+    "lat": 25.576,
+    "u": 0.4187,
+    "v": 0.3267,
+    "pixel_col": 214,
+    "pixel_row": 167,
+    "dem_elevation_m": 1488.0,
+    "in_bounds": true
+  }
+]
