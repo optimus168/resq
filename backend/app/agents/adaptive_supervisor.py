@@ -188,7 +188,7 @@ class AdaptiveSupervisor:
                 step=self.state.iteration,
                 action="PLAN_SYNTHESIS",
                 target_agents=["planner", "dispatcher"],
-                reason="Consequence analysis complete: generating versioned operational plan and multilingual CAP alert drafts.",
+                reason="Consequence analysis complete: generating versioned operational plan and CAP 1.2 alert drafts.",
                 uncertainty_level="MODERATE",
                 budget_remaining=remaining_budget
             )

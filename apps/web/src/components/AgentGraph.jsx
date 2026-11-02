@@ -24,7 +24,7 @@ const AGENT_NODES = [
   
   { id: 'planner', label: 'Response Planner', tier: 'decision', x: 280, y: 545, icon: '📋', role: 'Versioned SOP Action Generator' },
   
-  { id: 'dispatcher', label: 'Dispatcher', tier: 'dispatch', x: 140, y: 625, icon: '📢', role: 'Multilingual Warning Broadcast' },
+  { id: 'dispatcher', label: 'Dispatcher', tier: 'dispatch', x: 140, y: 625, icon: '📢', role: 'CAP 1.2 Warning Broadcast' },
   { id: 'assistant', label: 'Mission Assistant', tier: 'dispatch', x: 420, y: 625, icon: '🤖', role: 'Grounded SOP Citations & Q&A' },
 ];
 
@@ -61,7 +61,7 @@ const AGENT_TOOLS_MAP = {
   route: ['route.compute', 'himalayan_lifeline.cascade', 'detour.find'],
   resource: ['resource.query', 'resource.reserve', 'team.match'],
   planner: ['plan.create', 'plan.diff', 'ndma_sop.synthesize'],
-  dispatcher: ['alert.draft', 'translate.draft', 'multilingual.dispatch'],
+  dispatcher: ['alert.draft', 'cap.format', 'broadcast.dispatch'],
   assistant: ['state.read', 'sop.search', 'citations.extract'],
 };
 

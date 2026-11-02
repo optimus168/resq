@@ -55,3 +55,16 @@ uvicorn==0.54.0
 websockets==16.1.1
 xxhash==4.0.1
 zstandard==0.25.0
+# ML & Local Qwen/Qwen3-4B (4-bit NF4 bitsandbytes + QLoRA PEFT/TRL)
+xgboost==3.4.1
+scikit-learn==1.9.1
+torch==2.14.1
+transformers==5.20.2
+accelerate==1.15.0
+bitsandbytes==0.50.2
+peft==0.21.2
+trl==1.16.0
+datasets==5.1.0
+huggingface-hub==2.3.0
+safetensors==0.8.0
+tokenizers==0.23.3

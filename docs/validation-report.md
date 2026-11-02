@@ -1,6 +1,6 @@
 # BhuRaksha × RESQ.AI — Geotechnical & ML Validation Report
 
-**Generated:** 2026-10-19T20:59:22.659381+00:00  
+**Generated:** 2026-10-23T16:27:53.250059+00:00  
 **Status:** Evaluated and Computed (Zero Hand-Typed Metrics)  
 **Regulatory Alignment:** NDMA Landslide Guidelines (2019) · Sendai Framework Target G
 

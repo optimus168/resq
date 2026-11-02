@@ -238,7 +238,7 @@ export const BroadcastAndDispatch: React.FC<BroadcastAndDispatchProps> = ({
               Emergency Broadcast &amp; Evacuation Corridor Management
             </h2>
             <p className="text-xs sm:text-sm text-[#bfc8cd] max-w-3xl">
-              Authorized operators can prepare and review a multilingual emergency SMS request for the selected area. Provider acceptance and delivery are reported only when verified by SMSHorizon.
+              Authorized operators can prepare and review a CAP 1.2 emergency SMS request for the selected area. Provider acceptance and delivery are reported only when verified by SMSHorizon.
             </p>
           </div>
 

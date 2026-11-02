@@ -284,26 +284,25 @@ export default function MissionControl() {
 
         {incident && (
           <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto scroll-thin py-0.5 max-w-full">
-            <PresenterMode />
-            <div className="flex items-center gap-1 border-l border-[#249344]/40 pl-1.5 sm:pl-2 shrink-0">
+            <div className="flex items-center gap-1 shrink-0">
               <button
                 onClick={() => fireEvent('RAIN_ESCALATION', { delta: 0.6 })}
                 className="btn-ghost px-2 py-1 text-[10px] sm:text-[11px] rounded whitespace-nowrap"
-                title="Simulate +65mm rainfall spike"
+                title="Trigger +65mm rainfall escalation"
               >
                 + Rain Surge
               </button>
               <button
                 onClick={() => fireEvent('ROAD_BLOCKED', { road_id: 'NH10_SEC4' })}
                 className="btn-ghost px-2 py-1 text-[10px] sm:text-[11px] rounded whitespace-nowrap"
-                title="Trigger road severed at KM-18"
+                title="Report road blockage at NH-10 Sector 4"
               >
                 Block NH-10
               </button>
               <button
                 onClick={() => fireEvent('SENSOR_ANOMALY', { sensor_id: 'PZ-04' })}
                 className="btn-ghost px-2 py-1 text-[10px] sm:text-[11px] rounded whitespace-nowrap"
-                title="Inject pore-pressure sensor glitch"
+                title="Report pore-pressure sensor fault"
               >
                 Sensor Fault
               </button>

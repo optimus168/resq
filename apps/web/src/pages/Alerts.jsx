@@ -181,7 +181,7 @@ export default function Alerts() {
           <ShieldAlert className="w-10 h-10 text-[#249344] mx-auto opacity-60" />
           <div className="font-display text-lg text-white">No active CAP alerts</div>
           <p className="text-xs text-[#9FD8A8] max-w-md mx-auto">
-            When an incident risk reaches IMMINENT or HIGH, the Alert Dispatcher drafts verified multilingual advisories for Collector review.
+            When an incident risk reaches IMMINENT or HIGH, the Alert Dispatcher drafts verified CAP 1.2 advisories for Collector review.
           </p>
         </div>
       ) : (

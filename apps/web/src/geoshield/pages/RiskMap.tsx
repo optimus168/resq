@@ -151,8 +151,9 @@ export default function RiskMap() {
     const map = L.map(mapContainerRef.current, {
       center: NER_CENTER,
       zoom: 7,
-      zoomControl: true,
+      zoomControl: false,
     });
+    L.control.zoom({ position: 'topright' }).addTo(map);
 
     const config = BASEMAP_TILES[basemap] || BASEMAP_TILES.hybrid;
     const tile = L.tileLayer(config.url, {
@@ -398,9 +399,9 @@ export default function RiskMap() {
   }, [earthquakes, showEarthquakes]);
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="flex-1 flex flex-col h-[calc(100vh-3rem)] min-h-[580px] overflow-hidden bg-[#06150C]">
       {/* Map Controls */}
-      <div className="p-3 border-b border-dark-700 bg-dark-900/60 backdrop-blur">
+      <div className="p-3 border-b border-dark-700 bg-dark-900/90 shrink-0">
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <div className="flex items-center gap-3 flex-wrap">
             <h2 className="text-base font-bold text-white flex items-center gap-2">
@@ -512,114 +513,197 @@ export default function RiskMap() {
       </div>
 
       {/* Map Container */}
-      <div className="flex-1 relative" style={{ minHeight: '500px' }}>
+      <div className="flex-1 relative w-full overflow-hidden">
         <div
           ref={mapContainerRef}
-          className="h-full w-full"
-          style={{ minHeight: '500px', background: '#1e293b' }}
+          className="absolute inset-0 h-full w-full z-0"
+          style={{ background: '#0f172a' }}
         />
 
-        {/* Click-to-Predict Result Panel */}
+        {/* Click-to-Predict Result Panel (Left side of map on desktop, bottom sheet on mobile) */}
         {predictMode && (predictLoading || predictResult || predictError) && (
-          <div className="absolute top-4 right-4 z-[1000] w-72 sm:w-80 glass rounded-xl border border-purple-600/30 shadow-2xl overflow-hidden">
-            <div className="bg-purple-600/20 px-4 py-3 flex items-center justify-between">
-              <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                <MousePointerClick className="w-4 h-4 text-purple-400" />
-                AI Risk Prediction
-              </h3>
-              <button onClick={() => { setPredictResult(null); setPredictMarker(null); }} className="text-dark-400 hover:text-white">
+          <div
+            className="
+              absolute left-2.5 right-2.5 bottom-2.5 max-h-[62%]
+              md:top-3.5 md:left-3.5 md:right-auto md:bottom-auto md:w-[355px] lg:w-[380px] md:max-h-[calc(100%-28px)]
+              z-[1000] bg-[#0B1528] border border-purple-500/50 rounded-xl shadow-[0_24px_60px_rgba(0,0,0,0.92)]
+              flex flex-col overflow-hidden
+            "
+            style={{ backgroundColor: '#0B1528' }}
+            data-testid="predict-result-panel"
+          >
+            {/* Sticky Card Header */}
+            <div className="bg-purple-950/60 border-b border-purple-500/30 px-4 py-2.5 flex items-center justify-between shrink-0">
+              <div className="min-w-0">
+                <h3 className="text-sm font-bold text-white flex items-center gap-2">
+                  <MousePointerClick className="w-4 h-4 text-purple-400 shrink-0" />
+                  <span>AI Risk Prediction</span>
+                </h3>
+                {predictMarker && (
+                  <p className="text-[10px] font-mono text-purple-300/80 mt-0.5">
+                    {predictMarker.lat.toFixed(4)}° N, {predictMarker.lng.toFixed(4)}° E
+                  </p>
+                )}
+              </div>
+              <button
+                onClick={() => { setPredictResult(null); setPredictMarker(null); }}
+                className="p-1 rounded-lg text-dark-300 hover:text-white hover:bg-white/10 transition-colors"
+                aria-label="Close prediction panel"
+              >
                 <X className="w-4 h-4" />
               </button>
             </div>
-            <div className="p-4">
+
+            {/* Scrollable Card Body */}
+            <div className="p-3.5 sm:p-4 overflow-y-auto scroll-thin space-y-3">
               {predictLoading && (
-                <div className="flex items-center gap-3 py-4">
+                <div className="flex items-center gap-3 py-6 justify-center">
                   <Loader2 className="w-5 h-5 text-purple-400 animate-spin" />
-                  <span className="text-sm text-dark-300">Analyzing terrain & weather data...</span>
+                  <span className="text-sm text-dark-200">Analyzing terrain & weather data...</span>
                 </div>
               )}
+
               {predictError && (
-                <div className="flex items-center gap-2 py-2 text-red-400 text-sm">
-                  <AlertCircle className="w-4 h-4" /> {predictError}
+                <div className="flex items-center gap-2 py-2 text-red-400 text-xs bg-red-950/40 border border-red-500/30 rounded-lg px-3">
+                  <AlertCircle className="w-4 h-4 shrink-0" />
+                  <span>{predictError}</span>
                 </div>
               )}
+
               {predictResult && (
                 <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-dark-400">Risk Score</span>
-                    <span className={`text-lg font-bold ${
-                      predictResult.risk_assessment.risk_level === 'critical' ? 'text-red-400' :
-                      predictResult.risk_assessment.risk_level === 'very_high' ? 'text-red-300' :
-                      predictResult.risk_assessment.risk_level === 'high' ? 'text-orange-400' :
-                      predictResult.risk_assessment.risk_level === 'moderate' ? 'text-amber-400' : 'text-green-400'
-                    }`}>
-                      {predictResult.risk_assessment.risk_score}/100
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-dark-400">Risk Level</span>
-                    <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${
-                      predictResult.risk_assessment.risk_level === 'critical' ? 'bg-red-600/20 text-red-400' :
-                      predictResult.risk_assessment.risk_level === 'very_high' ? 'bg-red-500/20 text-red-300' :
-                      predictResult.risk_assessment.risk_level === 'high' ? 'bg-orange-600/20 text-orange-400' :
-                      predictResult.risk_assessment.risk_level === 'moderate' ? 'bg-amber-600/20 text-amber-400' : 'bg-green-600/20 text-green-400'
-                    }`}>
-                      {(predictResult.risk_assessment.risk_level || '').toUpperCase().replace('_', ' ')}
-                    </span>
-                  </div>
-                  {predictResult.nearest_station && (
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-dark-400">Nearest Station</span>
-                      <span className="text-xs text-white">{predictResult.nearest_station.name} ({predictResult.nearest_station.distance_km}km)</span>
+                  {/* Top 2x2 Summary KPI Grid */}
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-dark-900/90 border border-dark-700/80 rounded-lg p-2.5">
+                      <span className="text-[10px] uppercase tracking-wider text-dark-400 block">Risk Score</span>
+                      <span className={`text-lg font-extrabold font-mono leading-tight ${
+                        predictResult.risk_assessment.risk_level === 'critical' ? 'text-red-400' :
+                        predictResult.risk_assessment.risk_level === 'very_high' ? 'text-red-300' :
+                        predictResult.risk_assessment.risk_level === 'high' ? 'text-orange-400' :
+                        predictResult.risk_assessment.risk_level === 'moderate' ? 'text-amber-400' : 'text-green-400'
+                      }`}>
+                        {predictResult.risk_assessment.risk_score}/100
+                      </span>
                     </div>
-                  )}
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-dark-400">Probability</span>
-                    <span className="text-xs text-white">{((predictResult.risk_assessment.landslide_probability || 0) * 100).toFixed(1)}%</span>
+
+                    <div className="bg-dark-900/90 border border-dark-700/80 rounded-lg p-2.5 flex flex-col justify-between">
+                      <span className="text-[10px] uppercase tracking-wider text-dark-400 block">Risk Level</span>
+                      <div>
+                        <span className={`inline-block px-2 py-0.5 rounded-full text-xs font-bold ${
+                          predictResult.risk_assessment.risk_level === 'critical' ? 'bg-red-600/25 text-red-400 border border-red-500/40' :
+                          predictResult.risk_assessment.risk_level === 'very_high' ? 'bg-red-500/25 text-red-300 border border-red-400/40' :
+                          predictResult.risk_assessment.risk_level === 'high' ? 'bg-orange-600/25 text-orange-400 border border-orange-500/40' :
+                          predictResult.risk_assessment.risk_level === 'moderate' ? 'bg-amber-600/25 text-amber-400 border border-amber-500/40' :
+                          'bg-green-600/25 text-green-400 border border-green-500/40'
+                        }`}>
+                          {(predictResult.risk_assessment.risk_level || '').toUpperCase().replace('_', ' ')}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="bg-dark-900/90 border border-dark-700/80 rounded-lg p-2.5">
+                      <span className="text-[10px] uppercase tracking-wider text-dark-400 block">Probability</span>
+                      <span className="text-sm font-bold font-mono text-white">
+                        {((predictResult.risk_assessment.landslide_probability || 0) * 100).toFixed(1)}%
+                      </span>
+                    </div>
+
+                    {predictResult.nearest_station && (
+                      <div className="bg-dark-900/90 border border-dark-700/80 rounded-lg p-2.5 min-w-0">
+                        <span className="text-[10px] uppercase tracking-wider text-dark-400 block">Nearest Station</span>
+                        <span className="text-[11px] font-semibold text-white block truncate" title={predictResult.nearest_station.name || ''}>
+                          {predictResult.nearest_station.name}
+                        </span>
+                        <span className="text-[10px] font-mono text-cyan-400">
+                          {predictResult.nearest_station.distance_km} km away
+                        </span>
+                      </div>
+                    )}
                   </div>
+
+                  {/* Contributing Factors */}
                   {predictResult.risk_assessment.contributing_factors && predictResult.risk_assessment.contributing_factors.length > 0 && (
-                    <div>
-                      <span className="text-xs text-dark-400 block mb-1">Contributing Factors:</span>
+                    <div className="bg-amber-950/30 border border-amber-500/30 rounded-lg p-2.5 space-y-1">
+                      <span className="text-[10px] uppercase tracking-wider font-semibold text-amber-300 block">Contributing Factors</span>
                       {predictResult.risk_assessment.contributing_factors.map((f: string, i: number) => (
-                        <div key={i} className="text-xs text-amber-300 flex items-center gap-1">
-                          <AlertTriangle className="w-3 h-3" /> {f}
+                        <div key={i} className="text-xs text-amber-200 flex items-center gap-1.5">
+                          <AlertTriangle className="w-3 h-3 text-amber-400 shrink-0" />
+                          <span>{f}</span>
                         </div>
                       ))}
                     </div>
                   )}
-                  <div className="pt-2 border-t border-dark-700">
-                    <p className="text-xs text-dark-300 leading-relaxed">{predictResult.risk_assessment.recommendation}</p>
+
+                  {/* Operational Recommendation */}
+                  <div className="bg-dark-900/80 border border-dark-700/80 rounded-lg p-2.5">
+                    <p className="text-xs text-dark-200 leading-relaxed">
+                      {predictResult.risk_assessment.recommendation}
+                    </p>
                   </div>
+
                   {/* Terrain Data from nearest-neighbor lookup */}
                   {(predictResult.risk_assessment as any).terrain_data && (
-                    <div className="pt-2 border-t border-dark-700">
-                      <p className="text-[10px] text-dark-500 font-semibold mb-1">TERRAIN DATA (Real NER)</p>
-                      <div className="grid grid-cols-2 gap-1">
-                        <span className="text-[10px] text-dark-400">Slope: {(predictResult.risk_assessment as any).terrain_data.slope}°</span>
-                        <span className="text-[10px] text-dark-400">Elev: {(predictResult.risk_assessment as any).terrain_data.elevation}m</span>
-                        <span className="text-[10px] text-dark-400">NDVI: {(predictResult.risk_assessment as any).terrain_data.ndvi}</span>
-                        <span className="text-[10px] text-dark-400">Soil: {(predictResult.risk_assessment as any).terrain_data.soil_moisture}</span>
+                    <div className="bg-dark-900/90 border border-dark-700/80 rounded-lg p-2.5">
+                      <div className="flex items-center justify-between mb-1.5">
+                        <p className="text-[10px] text-emerald-400 font-bold tracking-wider uppercase">
+                          TERRAIN DATA (Real NER)
+                        </p>
+                        <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">
+                          {(predictResult.risk_assessment as any).terrain_data.source}
+                        </span>
                       </div>
-                      <p className="text-[9px] text-green-400 mt-1">Source: {(predictResult.risk_assessment as any).terrain_data.source}</p>
-                    </div>
-                  )}
-                  {/* Feature Importance */}
-                  {(predictResult.risk_assessment as any).feature_importance && (
-                    <div className="pt-2 border-t border-dark-700">
-                      <p className="text-[10px] text-dark-500 font-semibold mb-1">WHY THIS SCORE?</p>
-                      {Object.entries((predictResult.risk_assessment as any).feature_importance).slice(0, 5).map(([feat, imp]: [string, any]) => (
-                        <div key={feat} className="flex items-center gap-2 mb-0.5">
-                          <span className="text-[10px] text-dark-400 w-20 truncate">{feat.replace(/_/g, ' ')}</span>
-                          <div className="flex-1 h-1.5 bg-dark-800 rounded-full overflow-hidden">
-                            <div className="h-full bg-purple-500 rounded-full" style={{ width: `${imp}%` }} />
-                          </div>
-                          <span className="text-[10px] text-purple-400 w-8 text-right">{imp}%</span>
+                      <div className="grid grid-cols-2 gap-1.5 text-xs">
+                        <div className="flex items-center justify-between bg-dark-800/70 px-2 py-1 rounded">
+                          <span className="text-dark-400 text-[11px]">Slope</span>
+                          <span className="font-mono font-semibold text-white">{(predictResult.risk_assessment as any).terrain_data.slope}°</span>
                         </div>
-                      ))}
+                        <div className="flex items-center justify-between bg-dark-800/70 px-2 py-1 rounded">
+                          <span className="text-dark-400 text-[11px]">Elev</span>
+                          <span className="font-mono font-semibold text-white">{(predictResult.risk_assessment as any).terrain_data.elevation}m</span>
+                        </div>
+                        <div className="flex items-center justify-between bg-dark-800/70 px-2 py-1 rounded">
+                          <span className="text-dark-400 text-[11px]">NDVI</span>
+                          <span className="font-mono font-semibold text-white">{(predictResult.risk_assessment as any).terrain_data.ndvi}</span>
+                        </div>
+                        <div className="flex items-center justify-between bg-dark-800/70 px-2 py-1 rounded">
+                          <span className="text-dark-400 text-[11px]">Soil</span>
+                          <span className="font-mono font-semibold text-white">{(predictResult.risk_assessment as any).terrain_data.soil_moisture}</span>
+                        </div>
+                      </div>
                     </div>
                   )}
-                  <div className="pt-1">
-                    <p className="text-[10px] text-dark-500">Model: {predictResult.model_info?.type || 'RF+GB VotingClassifier'} | Features: {predictResult.model_info?.features || 9}</p>
+
+                  {/* Feature Importance (WHY THIS SCORE?) */}
+                  {(predictResult.risk_assessment as any).feature_importance && (
+                    <div className="bg-dark-900/90 border border-dark-700/80 rounded-lg p-2.5">
+                      <p className="text-[10px] text-purple-300 font-bold tracking-wider uppercase mb-2">
+                        WHY THIS SCORE?
+                      </p>
+                      <div className="space-y-1.5">
+                        {Object.entries((predictResult.risk_assessment as any).feature_importance).slice(0, 5).map(([feat, imp]: [string, any]) => (
+                          <div key={feat} className="flex items-center gap-2">
+                            <span className="text-[11px] text-dark-300 w-24 capitalize truncate">
+                              {feat.replace(/_/g, ' ')}
+                            </span>
+                            <div className="flex-1 h-2 bg-dark-800 rounded-full overflow-hidden">
+                              <div
+                                className="h-full bg-gradient-to-r from-purple-500 to-fuchsia-400 rounded-full"
+                                style={{ width: `${Math.min(100, Number(imp) || 0)}%` }}
+                              />
+                            </div>
+                            <span className="text-[11px] font-mono font-semibold text-purple-300 w-10 text-right">
+                              {imp}%
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="pt-0.5 text-center">
+                    <p className="text-[10px] font-mono text-dark-400">
+                      Model: {predictResult.model_info?.type || 'RF+GB VotingClassifier'} · Features: {predictResult.model_info?.features || 9}
+                    </p>
                   </div>
                 </div>
               )}
@@ -627,8 +711,13 @@ export default function RiskMap() {
           </div>
         )}
 
-        {/* Legend */}
-        <div className="absolute bottom-4 left-4 z-[1000] glass rounded-xl p-3">
+        {/* Legend (Bottom-Right on Desktop, hidden on mobile while prediction sheet is open) */}
+        <div
+          className={`absolute bottom-4 right-4 z-[900] bg-[#0B1528]/95 border border-dark-700 rounded-xl p-3 shadow-2xl ${
+            predictMode && (predictLoading || predictResult || predictError) ? 'hidden md:block' : 'block'
+          }`}
+          style={{ backgroundColor: 'rgba(11, 21, 40, 0.94)' }}
+        >
           <p className="text-xs font-semibold text-white mb-2">Risk Level</p>
           <div className="space-y-1">
             {[

@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import MissionControl from './pages/MissionControl';
 import SimulationLab from './pages/SimulationLab';
 import AgentConsole from './pages/AgentConsole';
+import AgentDashboard from './pages/AgentDashboard';
 import Approvals from './pages/Approvals';
 import FieldReports from './pages/FieldReports';
 import Alerts from './pages/Alerts';
@@ -49,34 +50,37 @@ function MainRouter() {
     return () => window.removeEventListener('geoshield-languagechange', onLangChange);
   }, []);
 
+  const basePath = pathname.split('?')[0];
+
   // Route routing logic
-  if (pathname === '/' || pathname === '') {
+  if (basePath === '/' || basePath === '') {
     return <Landing />;
   }
 
-  if (pathname === '/login') {
+  if (basePath === '/login') {
     return <Login onLoginSuccess={u => setUser(u)} />;
   }
 
   // Route mapping within the operations Shell
   let PageComponent = MissionControl;
-  if (pathname === '/simulation-lab') PageComponent = SimulationLab;
-  else if (pathname === '/agent-console') PageComponent = AgentConsole;
-  else if (pathname === '/approvals') PageComponent = Approvals;
-  else if (pathname === '/field-reports') PageComponent = FieldReports;
-  else if (pathname === '/alerts') PageComponent = Alerts;
-  else if (pathname === '/data-health') PageComponent = DataHealth;
-  else if (pathname === '/audit') PageComponent = Audit;
-  else if (pathname === '/mission-control') PageComponent = MissionControl;
-  else if (pathname === '/validation') {
+  if (basePath === '/agent') PageComponent = AgentDashboard;
+  else if (basePath === '/simulation-lab') PageComponent = SimulationLab;
+  else if (basePath === '/agent-console') PageComponent = AgentConsole;
+  else if (basePath === '/approvals') PageComponent = Approvals;
+  else if (basePath === '/field-reports') PageComponent = FieldReports;
+  else if (basePath === '/alerts') PageComponent = Alerts;
+  else if (basePath === '/data-health') PageComponent = DataHealth;
+  else if (basePath === '/audit') PageComponent = Audit;
+  else if (basePath === '/mission-control') PageComponent = MissionControl;
+  else if (basePath === '/validation') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <ValidationPage onBack={() => navigate('/mission-control')} />
       </Shell>
     );
   }
-  else if (pathname === '/presenter') PageComponent = PresenterPage;
-  else if (pathname === '/responsible-ai') {
+  else if (basePath === '/presenter') PageComponent = PresenterPage;
+  else if (basePath === '/responsible-ai') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <ResponsibleAIPage onBack={() => navigate('/mission-control')} />
@@ -84,81 +88,81 @@ function MainRouter() {
     );
   }
   // GeoShield Routes
-  else if (pathname === '/geoshield' || pathname === '/geoshield/dashboard' || pathname === '/geoshield-overview') PageComponent = GeoShieldDashboard;
-  else if (pathname === '/risk-map' || pathname === '/map' || pathname === '/geoshield/map' || pathname === '/terraguard/gis' || pathname === '/terraguard/map') PageComponent = GeoShieldRiskMap;
-  else if (pathname === '/stations' || pathname === '/geoshield/stations') PageComponent = GeoShieldStations;
-  else if (pathname.startsWith('/station/') || pathname.startsWith('/geoshield/station/')) PageComponent = GeoShieldStationDetail;
-  else if (pathname === '/simulator' || pathname === '/geoshield/simulator' || pathname === '/terraguard/simulator') PageComponent = SimulationLab;
-  else if (pathname === '/satellite' || pathname === '/geoshield/satellite') PageComponent = GeoShieldSatellite;
-  else if (pathname === '/flood' || pathname === '/geoshield/flood') PageComponent = GeoShieldFlood;
-  else if (pathname === '/demo' || pathname === '/geoshield/demo') PageComponent = GeoShieldDemo;
-  else if (pathname === '/geoshield/alerts' || pathname === '/terraguard/dispatch') PageComponent = Alerts;
-  else if (pathname === '/geoshield/reports') PageComponent = GeoShieldReports;
+  else if (basePath === '/geoshield' || basePath === '/geoshield/dashboard' || basePath === '/geoshield-overview') PageComponent = GeoShieldDashboard;
+  else if (basePath === '/risk-map' || basePath === '/map' || basePath === '/geoshield/map' || basePath === '/terraguard/gis' || basePath === '/terraguard/map') PageComponent = GeoShieldRiskMap;
+  else if (basePath === '/stations' || basePath === '/geoshield/stations') PageComponent = GeoShieldStations;
+  else if (basePath.startsWith('/station/') || basePath.startsWith('/geoshield/station/')) PageComponent = GeoShieldStationDetail;
+  else if (basePath === '/simulator' || basePath === '/geoshield/simulator' || basePath === '/terraguard/simulator') PageComponent = SimulationLab;
+  else if (basePath === '/satellite' || basePath === '/geoshield/satellite') PageComponent = GeoShieldSatellite;
+  else if (basePath === '/flood' || basePath === '/geoshield/flood') PageComponent = GeoShieldFlood;
+  else if (basePath === '/demo' || basePath === '/geoshield/demo') PageComponent = GeoShieldDemo;
+  else if (basePath === '/geoshield/alerts' || basePath === '/terraguard/dispatch') PageComponent = Alerts;
+  else if (basePath === '/geoshield/reports') PageComponent = GeoShieldReports;
   // BhuRaksha Geotech Routes
-  else if (pathname === '/terraguard' || pathname === '/terraguard/home') {
+  else if (basePath === '/terraguard' || basePath === '/terraguard/home') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="home" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/dashboard') {
+  else if (basePath === '/terraguard/dashboard') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="dashboard" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/earthquakes') {
+  else if (basePath === '/terraguard/earthquakes') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="earthquake-monitor" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/lstm') {
+  else if (basePath === '/terraguard/lstm') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="temporal-lstm-predictor" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/cv') {
+  else if (basePath === '/terraguard/cv') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="crowdsource-cv-verification" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/ml') {
+  else if (basePath === '/terraguard/ml') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="ml-models-pipeline" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/hills') {
+  else if (basePath === '/terraguard/hills') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="hills-regions" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/sos') {
+  else if (basePath === '/terraguard/sos') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="emergency-sos" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/alerts') {
+  else if (basePath === '/terraguard/alerts') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="alerts" key={pathname} />
       </Shell>
     );
   }
-  else if (pathname === '/terraguard/about') {
+  else if (basePath === '/terraguard/about') {
     return (
       <Shell currentUser={user} onLogout={() => setUser(false)}>
         <TerraGuardPage initialModule="about" key={pathname} />

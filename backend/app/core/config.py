@@ -25,13 +25,32 @@ class Settings(BaseModel):
     # Roles
     ROLES: list[str] = ["admin", "approver", "operator", "field_officer", "analyst", "citizen"]
     
-    # LLM Settings
+    # LLM Settings (Local Qwen3-4B primary + deterministic fallback)
+    HF_HOME: str = os.environ.get("HF_HOME", str(ROOT_DIR / ".cache" / "huggingface"))
+    QWEN_MODEL_ID: str = os.environ.get("QWEN_MODEL_ID", "Qwen/Qwen3-4B")
+    QWEN_ADAPTER_DIR: str = os.environ.get("QWEN_ADAPTER_DIR", str(ROOT_DIR / "data" / "models" / "qwen3_4b_qlora_adapter"))
+    QWEN_ENABLED: bool = os.environ.get("QWEN_ENABLED", "true").lower() in ("1", "true", "yes")
+    QWEN_LOAD_IN_4BIT: bool = os.environ.get("QWEN_LOAD_IN_4BIT", "true").lower() in ("1", "true", "yes")
+    QWEN_MAX_NEW_TOKENS: int = int(os.environ.get("QWEN_MAX_NEW_TOKENS", "384"))
+    QWEN_TEMPERATURE: float = float(os.environ.get("QWEN_TEMPERATURE", "0.2"))
+    QWEN_TOP_P: float = float(os.environ.get("QWEN_TOP_P", "0.9"))
+    QWEN_TIMEOUT_SECONDS: float = float(os.environ.get("QWEN_TIMEOUT_SECONDS", "45.0"))
+    QWEN_ENABLE_THINKING: bool = os.environ.get("QWEN_ENABLE_THINKING", "false").lower() in ("1", "true", "yes")
     EMERGENT_LLM_KEY: str = os.environ.get("EMERGENT_LLM_KEY", "")
-    LLM_MODEL: str = os.environ.get("LLM_MODEL", "claude-sonnet-4-6")
-    FORCED_OFFLINE: bool = False
+    LLM_MODEL: str = os.environ.get("LLM_MODEL", "Qwen/Qwen3-4B")
+    FORCED_OFFLINE: bool = os.environ.get("FORCED_OFFLINE", "false").lower() in ("1", "true", "yes")
+
+    # TextBee.dev SMS Gateway Settings (https://github.com/textbee/textbee)
+    TEXTBEE_API_KEY: str = os.environ.get("TEXTBEE_API_KEY", "")
+    TEXTBEE_BASE_URL: str = os.environ.get("TEXTBEE_BASE_URL", "https://api.textbee.dev/api/v1/gateway")
+    TEXTBEE_DEVICE_ID: str = os.environ.get("TEXTBEE_DEVICE_ID", "6adc7b8ba4996b8ebf83ed43")
+    TEXTBEE_PHONE_NAME: str = os.environ.get("TEXTBEE_PHONE_NAME", "motorola moto g34 5G")
+    TEXTBEE_DEFAULT_PHONE: str = os.environ.get("TEXTBEE_DEFAULT_PHONE", "")
     
     # CORS
     CORS_ORIGINS: str = os.environ.get("CORS_ORIGINS", "*")
 
 settings = Settings()
+os.environ.setdefault("HF_HOME", settings.HF_HOME)
+Path(settings.HF_HOME).mkdir(parents=True, exist_ok=True)
 Path(settings.DATAPACK_DIR).mkdir(parents=True, exist_ok=True)

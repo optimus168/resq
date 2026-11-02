@@ -23,13 +23,17 @@ router = APIRouter(prefix="/api", tags=["predict"])
 
 
 class PredictRequest(BaseModel):
-    latitude: float = Field(..., ge=21.0, le=30.0, description="Latitude in NER region")
-    longitude: float = Field(..., ge=88.0, le=98.0, description="Longitude in NER region")
+    latitude: float = Field(..., ge=5.0, le=38.0, description="Latitude in India / NER region")
+    longitude: float = Field(..., ge=68.0, le=100.0, description="Longitude in India / NER region")
     slope: Optional[float] = Field(None, ge=0, le=90, description="Slope angle in degrees")
     elevation: Optional[float] = Field(None, ge=0, le=6000, description="Elevation in meters")
     rainfall_mm: Optional[float] = Field(None, ge=0, le=500, description="Rainfall in mm")
     soil_moisture: Optional[float] = Field(None, ge=0, le=100, description="Soil moisture %")
     ndvi: Optional[float] = Field(None, ge=-1, le=1, description="NDVI vegetation index")
+    explain_with_llm: bool = Field(
+        False,
+        description="Optional: invoke local Qwen/Qwen3-4B to interpret the deterministic XGBoost prediction",
+    )
 
 
 @router.post("/predict")
@@ -85,7 +89,7 @@ def predict_risk_at_location(req: PredictRequest, db: Session = Depends(get_db))
     # Also run original predictor for backward compatibility
     prediction = predictor.predict_risk(sensor_data, station_data)
 
-    return {
+    response_payload = {
         "location": {
             "latitude": req.latitude,
             "longitude": req.longitude,
@@ -112,6 +116,18 @@ def predict_risk_at_location(req: PredictRequest, db: Session = Depends(get_db))
         },
         "timestamp": datetime.utcnow().isoformat(),
     }
+
+    if req.explain_with_llm:
+        from backend.app.ml.qwen_service import get_qwen_service
+
+        qwen = get_qwen_service()
+        response_payload["llm_interpretation"] = qwen.explain_xgboost_prediction(
+            xgb_output=enhanced_result,
+            location=response_payload["location"],
+            sensor_readings=sensor_data if (req.rainfall_mm is not None or req.soil_moisture is not None) else None,
+        )
+
+    return response_payload
 
 
 @router.get("/export/geojson")

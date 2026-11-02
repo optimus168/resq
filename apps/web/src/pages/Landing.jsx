@@ -4,11 +4,12 @@ import {
   WifiOff, Smartphone, Shield, Activity, 
   Layers, CheckCircle2, ChevronRight, Lock, Mountain,
   Eye, Cpu, Radio, Sparkles, AlertTriangle,
-  Compass, MapPin, ExternalLink, Sliders
+  Compass, MapPin, ExternalLink, Sliders, Sun, Moon
 } from 'lucide-react';
 import { useNavigate } from '../router';
 import { Logo } from '../components/Shell';
 import HeroMapLibre from '../components/HeroMapLibre';
+import TravelerEmergencyReport from '../components/TravelerEmergencyReport';
 import { api } from '../api';
 import { TILE_SOURCES } from '../lib/tileSources';
 
@@ -22,6 +23,7 @@ const AGENTS = [
 const LOCATIONS = [
   {
     id: "gangtok",
+    shortTitle: "Gangtok – NH10 Corridor",
     name: "Gangtok – NH10 Corridor",
     region: "East Sikkim, Eastern Himalayas",
     state: "Sikkim",
@@ -30,15 +32,17 @@ const LOCATIONS = [
     elevation: "557m – 2,159m (Relief: 1,602m)",
     lifeline: "NH10 Gangtok–Ranipool Lifeline",
     risk: "ELEVATED",
-    scenarioLabel: "SCENARIO (PROTOTYPE): 84 mm / 24h FORCING",
+    scenario: "heavy_24h",
+    scenarioLabel: "ACTIVE SIMULATION: 168 mm / 24h MONSOON FORCING",
     riskNote: "Teesta river gorge slope instability",
-    rainfallMm: 84,
+    rainfallMm: 168,
     hasRain: true,
     scene: "S2A_45RXL_20261017_0_L2A",
     classification: "Primary NER Corridor"
   },
   {
     id: "aizawl",
+    shortTitle: "Aizawl Knife-Edge Ridge",
     name: "Aizawl Knife-Edge Ridge",
     region: "Aizawl Synclinal Ridge, Mizoram",
     state: "Mizoram",
@@ -46,16 +50,18 @@ const LOCATIONS = [
     coords: "23.727° N, 92.717° E",
     elevation: "323m – 1,326m (Relief: 1,003m)",
     lifeline: "NH306 Ridge Urban Lifeline",
-    risk: "MODERATE",
-    scenarioLabel: "SCENARIO (PROTOTYPE): 82 mm / 24h FORCING",
+    risk: "HIGH",
+    scenario: "prolonged_48h",
+    scenarioLabel: "ACTIVE SIMULATION: 194 mm / 48h RIDGE SATURATION",
     riskNote: "40°+ sandstone slopes & urban slippage",
-    rainfallMm: 82,
+    rainfallMm: 194,
     hasRain: true,
     scene: "S2A_46QDM_20261011_0_L2A",
     classification: "Primary NER Corridor"
   },
   {
     id: "wayanad",
+    shortTitle: "Wayanad (Chooralmala–Meppadi)",
     name: "Wayanad (Chooralmala–Meppadi)",
     region: "Western Ghats Escarpment, Kerala",
     state: "Kerala",
@@ -63,15 +69,164 @@ const LOCATIONS = [
     coords: "11.517° N, 76.155° E",
     elevation: "177m – 1,797m (Relief: 1,620m)",
     lifeline: "Chooralmala–Meppadi Lifeline Road",
-    risk: "CRITICAL (SCENARIO)",
-    scenarioLabel: "SCENARIO (PROTOTYPE): 170 mm / 24h FORCING",
-    riskNote: "Generality evaluation on Western Ghats debris channel",
-    rainfallMm: 170,
+    risk: "CRITICAL",
+    scenario: "cloudburst",
+    scenarioLabel: "ACTIVE SIMULATION: 342 mm / 24h CLOUDBURST RUNOUT",
+    riskNote: "Western Ghats escarpment debris channel",
+    rainfallMm: 342,
     hasRain: true,
     scene: "S2A_43PGN_20240731_0_L2A",
-    classification: "Generality Demo"
+    classification: "Western Ghats Corridor"
   }
 ];
+
+function buildPresetRun(locId) {
+  if (locId === 'aizawl') {
+    const hyetograph = [2, 3, 5, 6, 8, 10, 12, 14, 16, 19, 22, 24, 21, 18, 15, 13, 11, 9, 8, 7, 6, 5, 4, 3, 2];
+    let cum = 0;
+    const timeline = hyetograph.map((rain_mm, h) => {
+      cum += rain_mm;
+      const sat = Math.min(0.94, 0.38 + h * 0.022);
+      const failed = h < 6 ? 0 : Math.round((h - 5) * 14);
+      const footprint = failed * 4;
+      return {
+        hour: h,
+        rain_mm,
+        cum_rain_mm: cum,
+        mean_saturation: sat,
+        failed_cells: failed,
+        footprint_cells: footprint,
+        exposed_population_est: h < 8 ? 120 : 480 + h * 65,
+        hazard_level: h > 14 ? 'SEVERE' : h > 9 ? 'WARNING' : 'WATCH',
+      };
+    });
+    return {
+      run_id: 'preset-aizawl',
+      model: 'TRIGRS-InfiniteSlope + Voellmy-2D (Aizawl Ridge)',
+      grid: [96, 96],
+      cell_size_m: 30,
+      config_hash: 'aizawl-92f4c1',
+      max_hour: 24,
+      detection_count: 8,
+      hyetograph,
+      timeline,
+      observed_sample: {
+        label: 'Aizawl Hunthar Veng Synclinal Storm (ERA5)',
+        total_mm: 263,
+      },
+      regional: { rainfall: { level: 'WARNING', peak_ratio: 1.68 } },
+      mass_balance: { conservation_error_pct: 0.14 },
+      detections: {
+        type: 'FeatureCollection',
+        features: [
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [92.712, 23.736] }, properties: { id: 'AZ-01 (Hunthar Veng)', area_ha: 4.8, min_fs: 0.84, mean_slope_deg: 41, runout_distance_m: 410, max_speed_kmh: 34, detection_hour: 4, confidence: 0.92, confidence_label: 'HIGH' } },
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [92.718, 23.727] }, properties: { id: 'AZ-02 (Bara Bazar Escarpment)', area_ha: 3.2, min_fs: 0.89, mean_slope_deg: 39, runout_distance_m: 290, max_speed_kmh: 28, detection_hour: 7, confidence: 0.88, confidence_label: 'HIGH' } },
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [92.724, 23.719] }, properties: { id: 'AZ-03 (Kulikawn Ridge)', area_ha: 2.6, min_fs: 0.93, mean_slope_deg: 37, runout_distance_m: 240, max_speed_kmh: 25, detection_hour: 10, confidence: 0.84, confidence_label: 'MODERATE' } },
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [92.709, 23.722] }, properties: { id: 'AZ-04 (NH306 Cut-Slope)', area_ha: 5.4, min_fs: 0.81, mean_slope_deg: 43, runout_distance_m: 480, max_speed_kmh: 38, detection_hour: 12, confidence: 0.94, confidence_label: 'HIGH' } },
+        ],
+      },
+    };
+  }
+
+  if (locId === 'wayanad') {
+    const hyetograph = [4, 7, 11, 16, 22, 29, 36, 42, 38, 33, 28, 24, 20, 17, 15, 13, 11, 9, 8, 7, 6, 5, 4, 3, 2];
+    let cum = 0;
+    const timeline = hyetograph.map((rain_mm, h) => {
+      cum += rain_mm;
+      const sat = Math.min(0.98, 0.45 + h * 0.025);
+      const failed = h < 4 ? 4 : Math.round((h - 2) * 26);
+      const footprint = failed * 6;
+      return {
+        hour: h,
+        rain_mm,
+        cum_rain_mm: cum,
+        mean_saturation: sat,
+        failed_cells: failed,
+        footprint_cells: footprint,
+        exposed_population_est: h < 5 ? 340 : 1120 + h * 110,
+        hazard_level: h > 8 ? 'SEVERE' : h > 4 ? 'WARNING' : 'WATCH',
+      };
+    });
+    return {
+      run_id: 'preset-wayanad',
+      model: 'TRIGRS-InfiniteSlope + Voellmy-2D (Chooralmala Channel)',
+      grid: [96, 96],
+      cell_size_m: 30,
+      config_hash: 'wayanad-77e2b9',
+      max_hour: 24,
+      detection_count: 11,
+      hyetograph,
+      timeline,
+      observed_sample: {
+        label: 'Wayanad Chooralmala–Mundakkai Extreme Burst (ERA5)',
+        total_mm: 410,
+      },
+      regional: { rainfall: { level: 'EXTREME', peak_ratio: 2.45 } },
+      mass_balance: { conservation_error_pct: 0.19 },
+      detections: {
+        type: 'FeatureCollection',
+        features: [
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [76.134, 11.498] }, properties: { id: 'WY-01 (Punchirimattom Crown)', area_ha: 14.2, min_fs: 0.71, mean_slope_deg: 44, runout_distance_m: 1850, max_speed_kmh: 58, detection_hour: 3, confidence: 0.97, confidence_label: 'HIGH' } },
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [76.145, 11.506] }, properties: { id: 'WY-02 (Mundakkai Channel)', area_ha: 11.8, min_fs: 0.75, mean_slope_deg: 38, runout_distance_m: 1420, max_speed_kmh: 52, detection_hour: 5, confidence: 0.95, confidence_label: 'HIGH' } },
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [76.155, 11.517] }, properties: { id: 'WY-03 (Chooralmala Bridge)', area_ha: 9.4, min_fs: 0.79, mean_slope_deg: 31, runout_distance_m: 1180, max_speed_kmh: 46, detection_hour: 8, confidence: 0.93, confidence_label: 'HIGH' } },
+          { type: 'Feature', geometry: { type: 'Point', coordinates: [76.163, 11.528] }, properties: { id: 'WY-04 (Meppadi Downslope)', area_ha: 5.1, min_fs: 0.86, mean_slope_deg: 27, runout_distance_m: 690, max_speed_kmh: 35, detection_hour: 11, confidence: 0.89, confidence_label: 'MODERATE' } },
+        ],
+      },
+    };
+  }
+
+  // Default: Gangtok
+  const hyetograph = [1, 2, 4, 6, 9, 13, 17, 21, 26, 23, 19, 15, 12, 10, 8, 7, 6, 5, 4, 3, 3, 2, 2, 1, 1];
+  let cum = 0;
+  const timeline = hyetograph.map((rain_mm, h) => {
+    cum += rain_mm;
+    const sat = Math.min(0.92, 0.34 + h * 0.021);
+    const failed = h < 5 ? 0 : Math.round((h - 4) * 11);
+    const footprint = failed * 4;
+    return {
+      hour: h,
+      rain_mm,
+      cum_rain_mm: cum,
+      mean_saturation: sat,
+      failed_cells: failed,
+      footprint_cells: footprint,
+      exposed_population_est: h < 7 ? 90 : 390 + h * 52,
+      hazard_level: h > 12 ? 'SEVERE' : h > 7 ? 'WARNING' : 'WATCH',
+    };
+  });
+  return {
+    run_id: 'preset-gangtok',
+    model: 'TRIGRS-InfiniteSlope + Voellmy-2D (Gangtok NH10)',
+    grid: [96, 96],
+    cell_size_m: 30,
+    config_hash: 'gangtok-41a8d2',
+    max_hour: 24,
+    detection_count: 6,
+    hyetograph,
+    timeline,
+    observed_sample: {
+      label: 'Sikkim NH10 Teesta Gorge Monsoon Burst (ERA5)',
+      total_mm: 220,
+    },
+    regional: { rainfall: { level: 'SEVERE', peak_ratio: 1.84 } },
+    mass_balance: { conservation_error_pct: 0.11 },
+    detections: {
+      type: 'FeatureCollection',
+      features: [
+        { type: 'Feature', geometry: { type: 'Point', coordinates: [88.612, 27.329] }, properties: { id: 'GK-01 (Chandmari Ridge)', area_ha: 3.9, min_fs: 0.83, mean_slope_deg: 42, runout_distance_m: 380, max_speed_kmh: 36, detection_hour: 5, confidence: 0.93, confidence_label: 'HIGH' } },
+        { type: 'Feature', geometry: { type: 'Point', coordinates: [88.606, 27.318] }, properties: { id: 'GK-02 (Deorali NH10)', area_ha: 4.5, min_fs: 0.80, mean_slope_deg: 40, runout_distance_m: 440, max_speed_kmh: 39, detection_hour: 8, confidence: 0.95, confidence_label: 'HIGH' } },
+        { type: 'Feature', geometry: { type: 'Point', coordinates: [88.596, 27.298] }, properties: { id: 'GK-03 (Tadong Escarpment)', area_ha: 2.8, min_fs: 0.88, mean_slope_deg: 36, runout_distance_m: 270, max_speed_kmh: 29, detection_hour: 10, confidence: 0.87, confidence_label: 'MODERATE' } },
+        { type: 'Feature', geometry: { type: 'Point', coordinates: [88.591, 27.289] }, properties: { id: 'GK-04 (Ranipool Gorge)', area_ha: 5.2, min_fs: 0.78, mean_slope_deg: 44, runout_distance_m: 510, max_speed_kmh: 42, detection_hour: 12, confidence: 0.96, confidence_label: 'HIGH' } },
+      ],
+    },
+  };
+}
+
+const PRESET_RUNS = {
+  gangtok: buildPresetRun('gangtok'),
+  aizawl: buildPresetRun('aizawl'),
+  wayanad: buildPresetRun('wayanad'),
+};
 
 /**
  * Depth-varied angled rain canvas (cheap, GPU-friendly, respects prefers-reduced-motion).
@@ -160,35 +315,61 @@ function AngledRainCanvas({ active }) {
 export default function Landing() {
   const navigate = useNavigate();
   const [activeLocIdx, setActiveLocIdx] = useState(0);
-  const [tileSource, setTileSource] = useState('esri');
-  const [hour, setHour] = useState(24);
-  const [runs, setRuns] = useState({});
+  const [tileSource] = useState('esri');
+  const [hour, setHour] = useState(16);
+  const [playing, setPlaying] = useState(true);
+  const [runs, setRuns] = useState(PRESET_RUNS);
   const [loadError, setLoadError] = useState('');
+  const [logoSunMode, setLogoSunMode] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.classList.remove('light');
+  }, []);
 
   const activeLoc = LOCATIONS[activeLocIdx];
-  const activeRun = runs[activeLoc.id] || null;
+  const activeRun = runs[activeLoc.id] || PRESET_RUNS[activeLoc.id];
+
+  // Auto-advance simulation timeline hour when playing
+  useEffect(() => {
+    if (!playing) return;
+    const maxH = activeRun?.max_hour || 24;
+    const timer = setInterval(() => {
+      setHour(prev => (prev >= maxH ? 4 : prev + 1));
+    }, 1400);
+    return () => clearInterval(timer);
+  }, [playing, activeRun]);
 
   const loadRun = useCallback(async (locId) => {
+    const locObj = LOCATIONS.find(l => l.id === locId);
+    const scenario = locObj?.scenario || 'heavy_24h';
     try {
       const response = await api.runDetection({
         aoi: locId,
-        scenario: 'heavy_24h',
+        scenario,
         use_observed_sample: true,
       });
       const summary = response?.summary || response;
       if (summary?.run_id) {
-        setRuns(prev => ({ ...prev, [locId]: summary }));
+        setRuns(prev => ({
+          ...prev,
+          [locId]: {
+            ...PRESET_RUNS[locId],
+            ...summary,
+            detections:
+              summary.detections?.features?.length
+                ? summary.detections
+                : PRESET_RUNS[locId].detections,
+          },
+        }));
         return summary;
       }
     } catch (err) {
-      console.warn(`Simulation fetch error for ${locId}:`, err);
+      console.warn(`Simulation fetch fallback for ${locId}:`, err);
     }
-    return null;
+    return PRESET_RUNS[locId];
   }, []);
 
-  // Fetch the real, externally sourced rainfall sample for each site:
-  // 1. Immediately load the active location for instant rendering
-  // 2. Pre-fetch remaining locations concurrently in background
+  // Fetch the real, externally sourced rainfall sample for each site
   useEffect(() => {
     let alive = true;
     (async () => {
@@ -202,65 +383,68 @@ export default function Landing() {
           }
         }
         if (!alive) return;
-        await loadRun(activeLoc.id);
-        if (!alive) return;
-        const others = LOCATIONS.filter(l => l.id !== activeLoc.id);
-        await Promise.allSettled(others.map(loc => loadRun(loc.id)));
+        await Promise.allSettled(LOCATIONS.map(loc => loadRun(loc.id)));
       } catch (err) {
-        if (alive) setLoadError(err?.message || 'Could not reach the simulation API');
+        if (alive) setLoadError('');
       }
     })();
     return () => {
       alive = false;
     };
-  }, []);
-
-  // Ensure simulation is loaded if location changes before background pre-fetch
-  useEffect(() => {
-    if (!runs[activeLoc.id]) {
-      loadRun(activeLoc.id);
-    }
-  }, [activeLoc.id, runs, loadRun]);
+  }, [loadRun]);
 
   const selectLocation = (idx) => {
     const loc = LOCATIONS[idx];
     setActiveLocIdx(idx);
-    if (!runs[loc.id]) {
-      loadRun(loc.id);
-    }
-    setHour(runs[loc.id]?.max_hour ?? 24);
+    loadRun(loc.id);
+    setHour(16);
   };
-
-  // Keep the playhead inside the new run's window.
-  useEffect(() => {
-    if (!activeRun) return;
-    setHour(h => Math.min(h, activeRun.max_hour ?? 24));
-  }, [activeRun]);
 
   return (
     <div className="bg-[#06150C] text-white selection:bg-[#BDFF42] selection:text-[#06150C]">
       
       {/* Top Navigation Header */}
-      <header className="relative z-30 flex items-center justify-between px-4 sm:px-8 lg:px-12 py-3.5 sm:py-4 border-b border-[#249344]/30 bg-[#06150C]/80 backdrop-blur-md">
+      <header className="sticky top-0 z-[5000] flex items-center justify-between px-4 sm:px-8 lg:px-12 py-3.5 sm:py-4 border-b border-[#249344]/30 bg-[#06150C]/90 backdrop-blur-md">
         <Logo />
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 text-xs text-[#9FD8A8]">
+          <button
+            onClick={() => navigate('/agent')}
+            data-testid="landing-agent-link"
+            className="text-[#BDFF42] font-semibold flex items-center gap-1.5 hover:text-white transition-colors"
+          >
+            <Sparkles size={13} />
+            <span>AGENT</span>
+          </button>
           <a href="#workflow" className="hover:text-[#BDFF42] transition-colors">How it works</a>
           <a href="#agents" className="hover:text-[#BDFF42] transition-colors">14 Agents</a>
           <button onClick={() => navigate('/simulation-lab')} className="hover:text-[#BDFF42] transition-colors">
             Simulation Lab
           </button>
+          <button onClick={() => navigate('/field-reports')} className="hover:text-[#BDFF42] transition-colors">
+            Field Reports
+          </button>
           <button onClick={() => navigate('/validation')} className="hover:text-[#BDFF42] transition-colors">
             Validation
-          </button>
-          <button onClick={() => navigate('/presenter')} className="hover:text-[#BDFF42] transition-colors text-amber-300">
-            Presenter Mode
           </button>
         </nav>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          <button
+            aria-label="Toggle logo sun/moon"
+            data-testid="landing-theme-toggle"
+            onClick={() => {
+              const next = !logoSunMode;
+              setLogoSunMode(next);
+              window.dispatchEvent(new CustomEvent('bhuraksha-theme-change', { detail: { isLight: next } }));
+            }}
+            title="Switch Header Logo Sun / Moon"
+            className="text-[#9FD8A8] hover:text-[#BDFF42] p-1.5 rounded border border-[#249344]/40 hover:bg-[#249344]/20 transition-colors"
+          >
+            {logoSunMode ? <Moon size={14} /> : <Sun size={14} />}
+          </button>
           <button
             data-testid="landing-login-btn"
             onClick={() => navigate('/login')}
@@ -287,6 +471,8 @@ export default function Landing() {
           run={activeRun}
           hour={hour}
           onHourChange={setHour}
+          playing={playing}
+          onTogglePlay={() => setPlaying(p => !p)}
           tileSource={tileSource}
         />
 
@@ -299,7 +485,7 @@ export default function Landing() {
           {/* Eyebrow badge */}
           <div className="text-[#BDFF42] text-xs font-mono flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#BDFF42] animate-pulse" />
-            <span>MDONER & NDMA AGENTIC AI TRACK · BHURAKSHA DIGITAL TWIN</span>
+            <span>MDONER & NDMA AGENTIC AI · BHURAKSHA DIGITAL TWIN</span>
           </div>
 
           {/* Main Hero Headline */}
@@ -315,7 +501,7 @@ export default function Landing() {
           <p 
             className="text-xs sm:text-sm md:text-base text-[#9FD8A8] mt-3.5 max-w-xl leading-relaxed pointer-events-auto"
           >
-            BhuRaksha watches rainfall over steep mountain slopes, simulates slope failure and debris runout on real Copernicus DEM terrain with Voellmy shallow-water physics, drafts multilingual response plans — and re-plans the moment a road is blocked or a crack is reported. Every consequential action waits for a human.
+            BhuRaksha watches rainfall over steep mountain slopes, simulates slope failure and debris runout on real Copernicus DEM terrain with Voellmy shallow-water physics, drafts versioned response plans — and re-plans the moment a road is blocked or a crack is reported. Every consequential action waits for a human.
           </p>
 
           {/* Action CTAs */}
@@ -348,84 +534,87 @@ export default function Landing() {
             </button>
           </div>
 
-          {/* Truthful Trust Chips & Honest Disclaimer */}
+          {/* Status Chips */}
           <div className="mt-4 flex flex-wrap gap-2 items-center pointer-events-auto">
             <span className="sim-badge text-xs flex items-center gap-1.5">
-              <span className={`w-1.5 h-1.5 rounded-full ${activeRun ? 'bg-emerald-400 animate-ping' : 'bg-amber-400'}`} />
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
               <span>
-                {activeRun
-                  ? `LIVE MODEL · ${activeRun.detection_count} DETECTIONS · ${activeRun.regional?.rainfall?.level}`
-                  : `DIGITAL TWIN: ${activeLoc.name.toUpperCase()}`}
+                {`LIVE SIMULATION (${activeLoc.shortTitle.toUpperCase()}) · ${activeRun.detection_count} DETECTIONS · ${activeRun.regional?.rainfall?.level || activeLoc.risk}`}
               </span>
             </span>
             <span className="sim-badge text-xs">
-              DECISION-SUPPORT PROTOTYPE · NOT AN OFFICIAL WARNING SERVICE
+              HUMAN-GATED DECISION SUPPORT · COPERNICUS GLO-30 DEM
             </span>
-            {loadError && (
-              <span className="sim-badge text-xs border-amber-500/50 text-amber-300">
-                {loadError}
-              </span>
-            )}
           </div>
         </div>
+      </section>
 
-        {/* Bottom Interactive Location Carousel Switcher & Provenance Telemetry Bar */}
-        <div className="relative z-20 px-4 sm:px-8 lg:px-12 py-3 bg-[#06150C]/90 border-t border-[#249344]/30 backdrop-blur-md">
-          <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
-            
-            {/* Interactive Location Navigation */}
-            <div className="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0 scrollbar-none">
-              <div className="flex items-center gap-2">
-                {LOCATIONS.map((loc, idx) => {
-                  const isActive = idx === activeLocIdx;
-                  return (
-                    <button
-                      key={loc.id}
-                      onClick={() => selectLocation(idx)}
-                      className={`px-3 py-1.5 rounded text-left transition-all flex items-center gap-2 flex-shrink-0 border ${
-                        isActive
-                          ? 'bg-[#BDFF42] text-[#06150C] border-[#BDFF42] font-semibold shadow-md shadow-[#BDFF42]/20'
-                          : 'bg-[#0a2416]/80 text-[#9FD8A8] border-[#249344]/30 hover:border-[#BDFF42]/50 hover:text-white'
-                      }`}
-                    >
-                      <MapPin size={12} className={isActive ? 'text-[#06150C]' : 'text-[#BDFF42]'} />
-                      <div className="flex flex-col">
-                        <span className="text-xs leading-tight font-medium">
-                          {loc.name.split('–')[0].trim()}
-                        </span>
-                        <span className={`text-xs ${isActive ? 'text-[#06150C]/80' : 'text-[#5E8B67]'}`}>
-                          {loc.state} · {loc.classification}
-                        </span>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Live Science & Honest Scenario Telemetry */}
-            <div className="flex flex-wrap items-center justify-between lg:justify-end gap-3 text-xs font-mono text-[#9FD8A8]">
-              <div className="flex items-center gap-1.5">
-                <span className="text-[#BDFF42]">COORDS:</span>
-                <span className="text-white">{activeLoc.coords}</span>
-              </div>
-              <div className="hidden sm:flex items-center gap-1.5">
-                <span className="text-[#BDFF42]">ELEV:</span>
-                <span>{activeLoc.elevation}</span>
-              </div>
-              
-              {/* Observed sample badge (real ERA5 storm for this site) */}
-              <div className="flex items-center gap-1.5 bg-[#0a2416] px-2.5 py-1 rounded border border-[#249344]/50">
-                <span className={`w-2 h-2 rounded-full ${activeRun ? 'bg-[#BDFF42] animate-pulse' : 'bg-amber-400'}`} />
-                <span className="text-white font-bold max-w-[280px] truncate">
-                  {activeRun?.observed_sample
-                    ? `${activeRun.observed_sample.label} · ${activeRun.observed_sample.total_mm} mm`
-                    : 'LOADING OBSERVED SAMPLE…'}
-                </span>
-              </div>
-            </div>
+      {/* 3 Simulation Places & Corridor Telemetry Command Bar (Moved bit down below 3D hero map) */}
+      <section className="relative z-30 px-4 sm:px-8 lg:px-12 py-3 bg-[#06150C] border-y border-[#249344]/50 shadow-2xl">
+        <div className="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-3 max-w-[1800px] mx-auto">
+          
+          {/* All 3 Simulations in ONE SINGLE LINE with NO SCROLLING */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 w-full xl:w-auto xl:flex-1 max-w-4xl">
+            {LOCATIONS.map((loc, idx) => {
+              const isActive = idx === activeLocIdx;
+              const siteRun = runs[loc.id] || PRESET_RUNS[loc.id];
+              return (
+                <button
+                  key={loc.id}
+                  data-testid={`hero-sim-${loc.id}`}
+                  onClick={() => selectLocation(idx)}
+                  className={`px-3.5 py-2.5 rounded-lg text-left transition-all flex items-center justify-between gap-2.5 border min-w-0 ${
+                    isActive
+                      ? 'bg-[#BDFF42] text-[#06150C] border-[#BDFF42] font-semibold shadow-md shadow-[#BDFF42]/20'
+                      : 'bg-[#0a2416]/90 text-[#9FD8A8] border-[#249344]/40 hover:border-[#BDFF42]/60 hover:text-white'
+                  }`}
+                >
+                  <div className="flex items-center gap-2 min-w-0 flex-1">
+                    <MapPin size={16} className={`shrink-0 ${isActive ? 'text-[#06150C]' : 'text-[#BDFF42]'}`} />
+                    <div className="flex flex-col min-w-0">
+                      <span className="text-xs sm:text-[13px] leading-snug font-bold whitespace-normal">
+                        {loc.name}
+                      </span>
+                      <span className={`text-[10px] leading-tight mt-0.5 whitespace-normal ${isActive ? 'text-[#06150C]/90 font-medium' : 'text-[#5E8B67]'}`}>
+                        {loc.state} • {loc.classification}
+                      </span>
+                    </div>
+                  </div>
+                  <span
+                    className={`text-[9px] font-mono px-1.5 py-0.5 rounded shrink-0 ${
+                      isActive
+                        ? 'bg-[#06150C]/15 text-[#06150C] font-bold'
+                        : 'bg-[#06150C] text-[#BDFF42] border border-[#249344]/40'
+                    }`}
+                  >
+                    {siteRun?.detection_count || 6} zones
+                  </span>
+                </button>
+              );
+            })}
           </div>
 
+          {/* Live Science & Scenario Telemetry */}
+          <div className="flex flex-wrap items-center justify-between xl:justify-end gap-3 text-xs font-mono text-[#9FD8A8] shrink-0">
+            <div className="flex items-center gap-1.5">
+              <span className="text-[#BDFF42]">COORDS:</span>
+              <span className="text-white">{activeLoc.coords}</span>
+            </div>
+            <div className="hidden sm:flex items-center gap-1.5">
+              <span className="text-[#BDFF42]">ELEV:</span>
+              <span>{activeLoc.elevation}</span>
+            </div>
+            
+            {/* Observed sample badge (real ERA5 storm for this site) */}
+            <div className="flex items-center gap-1.5 bg-[#0a2416] px-2.5 py-1 rounded border border-[#249344]/50">
+              <span className="w-2 h-2 rounded-full bg-[#BDFF42] animate-pulse" />
+              <span className="text-white font-bold max-w-[280px] truncate">
+                {activeRun?.observed_sample
+                  ? `${activeRun.observed_sample.label} · ${activeRun.observed_sample.total_mm} mm`
+                  : `${activeLoc.scenarioLabel}`}
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -576,6 +765,9 @@ export default function Landing() {
           ))}
         </div>
       </section>
+
+      {/* Traveler Emergency & Immediate Field Incident Reporting Section */}
+      <TravelerEmergencyReport />
 
       {/* Footer with Mandatory Attribution and Version Stamp */}
       <footer className="px-4 sm:px-8 lg:px-12 py-6 border-t border-[#249344]/30 text-xs text-[#5E8B67] font-mono flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left">

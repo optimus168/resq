@@ -91,6 +91,8 @@ export default function SimulationLab() {
       setActiveTab(tab);
     } else if (rawPath.includes('terraguard')) {
       setActiveTab('fos');
+    } else {
+      setActiveTab('physics');
     }
   }, [location?.pathname]);
 

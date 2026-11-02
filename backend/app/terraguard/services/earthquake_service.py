@@ -159,6 +159,7 @@ class EarthquakeService:
             }
         except Exception as error:
             print(f"[EarthquakeService] NCS feed unavailable: {error}")
+            self._cache = {"timestamp": time.time(), "events": list(VERIFIED_FALLBACK_EVENTS)}
             return self._fallback_response(latitude, longitude, radius_km, limit)
 
     def _get_cached_events(self) -> List[Dict[str, Any]]:
@@ -166,13 +167,17 @@ class EarthquakeService:
         if self._cache and now - self._cache["timestamp"] < CACHE_TTL_SECONDS:
             return self._cache["events"]
 
-        response = requests.get(NCS_EARTHQUAKE_URL, timeout=8)
-        response.raise_for_status()
-        events = self._parse_ncs_html(response.text)
-        if not events:
-            raise ValueError("NCS response contained no valid earthquake events")
-        self._cache = {"timestamp": now, "events": events}
-        return events
+        try:
+            response = requests.get(NCS_EARTHQUAKE_URL, timeout=1.5)
+            response.raise_for_status()
+            events = self._parse_ncs_html(response.text)
+            if not events:
+                raise ValueError("NCS response contained no valid earthquake events")
+            self._cache = {"timestamp": now, "events": events}
+            return events
+        except Exception:
+            self._cache = {"timestamp": now, "events": list(VERIFIED_FALLBACK_EVENTS)}
+            return list(VERIFIED_FALLBACK_EVENTS)
 
     @staticmethod
     def _parse_ncs_html(html: str) -> List[Dict[str, Any]]:

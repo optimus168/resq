@@ -55,12 +55,10 @@
 }
 
 :root {
-
   --bg: #06150C; --panel: #0A2416; --card: #0D2E1C; --line: #249344; --lime: #BDFF42;
   --txt: #FFFFFF; --txt2: #9FD8A8; --muted: #5E8B67; --amber: #FFA31A;
   --low: #22C55E; --mod: #EAB308; --high: #F97316; --imm: #EF4444;
 }
-.light { --bg: #F3F7F1; --panel: #FFFFFF; --card: #EAF2E6; --line: #2E8B4A; --lime: #3E7A00; --txt: #0B1F12; --txt2: #2F5B3A; --muted: #6B8A72; }
 
 .font-display { font-family: 'Barlow Condensed', 'Anton', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; }
 .font-data { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
@@ -108,15 +106,17 @@
 
 /* GeoShield Glassmorphism and Map Styles */
 .glass {
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(15, 23, 42, 0.78);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(51, 65, 85, 0.4);
-  position: relative;
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.45);
 }
 
 .leaflet-container {
   background: #0f172a !important;
   font-family: 'Inter', sans-serif;
+  isolation: isolate;
+  z-index: 0 !important;
 }
 
 .dark-tiles {

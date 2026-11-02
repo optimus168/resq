@@ -13,7 +13,9 @@ import AdaptiveSupervisorTrace from '../components/AdaptiveSupervisorTrace';
 import SkepticDebate from '../components/SkepticDebate';
 import RedTeamPanel from '../components/RedTeamPanel';
 import AssumptionLedger from '../components/AssumptionLedger';
+import AskPanel from '../components/AskPanel';
 import { api } from '../api';
+import { useNavigate } from '../router';
 
 const AOI_OPTIONS = [
   { id: 'gangtok', name: 'Gangtok – NH10 Corridor (Sikkim)' },
@@ -25,6 +27,7 @@ const AOI_OPTIONS = [
 ];
 
 export default function AgentConsole() {
+  const navigate = useNavigate();
   const [incidents, setIncidents] = useState([]);
   const [selectedIncidentId, setSelectedIncidentId] = useState('');
   const [incidentData, setIncidentData] = useState(null);
@@ -275,6 +278,24 @@ export default function AgentConsole() {
         </div>
       </div>
 
+      {/* Officer Assistant Dedicated Workspace Banner */}
+      <div className="p-3 rounded-lg bg-[#071D10] border border-[#BDFF42]/40 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+        <div className="flex items-center gap-2.5">
+          <Sparkles size={16} className="text-[#BDFF42] shrink-0" />
+          <span className="text-[#d6f5dc]">
+            <b className="text-white">Main Officer Assistant Agent:</b> Moved to the dedicated high-command page <b className="text-[#BDFF42]">AGENT</b> with live chat, autonomous execution, and human approval gate.
+          </span>
+        </div>
+        <button
+          onClick={() => navigate('/agent')}
+          data-testid="goto-agent-btn"
+          className="btn-lime px-3 py-1.5 rounded text-xs font-mono font-bold flex items-center gap-1.5 shrink-0 self-start sm:self-auto"
+        >
+          <span>Open AGENT Workspace</span>
+          <ChevronRight size={13} />
+        </button>
+      </div>
+
       {/* Navigation Pills (Mobile-Friendly Horizontal Scroll) */}
       <div className="flex gap-2 border-b border-[#249344]/20 pb-2 text-xs font-mono overflow-x-auto scroll-thin flex-nowrap">
         <button
@@ -340,7 +361,7 @@ export default function AgentConsole() {
 
       {/* Main Tab Viewports */}
       <div className="flex-1 overflow-y-auto scroll-thin">
-        
+
         {/* TAB 0: 14 AGENT ROSTER & OPERATIONS MATRIX */}
         {activeTab === 'matrix' && (
           <div className="h-[680px] panel rounded-lg overflow-hidden">

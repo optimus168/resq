@@ -1,25 +1,33 @@
 // API client for RESQ BhuRaksha platform
 const API_BASE = '/api/v1';
 
-let authToken = localStorage.getItem('bhuraksha_token') || '';
+let authToken = (typeof localStorage !== 'undefined' ? (localStorage.getItem('bhuraksha_token') || localStorage.getItem('br_token')) : '') || '';
 
 export function setToken(token) {
-  authToken = token;
-  if (token) {
-    localStorage.setItem('bhuraksha_token', token);
-  } else {
-    localStorage.removeItem('bhuraksha_token');
+  authToken = token || '';
+  if (typeof localStorage !== 'undefined') {
+    if (token) {
+      localStorage.setItem('bhuraksha_token', token);
+      localStorage.setItem('br_token', token);
+    } else {
+      localStorage.removeItem('bhuraksha_token');
+      localStorage.removeItem('br_token');
+    }
   }
 }
 
 export function getToken() {
+  if (typeof localStorage !== 'undefined') {
+    return localStorage.getItem('bhuraksha_token') || localStorage.getItem('br_token') || authToken || '';
+  }
   return authToken;
 }
 
 async function request(endpoint, options = {}) {
+  const currentToken = getToken();
   const headers = {
     'Content-Type': 'application/json',
-    ...(authToken ? { Authorization: `Bearer ${authToken}` } : {}),
+    ...(currentToken ? { Authorization: `Bearer ${currentToken}` } : {}),
     ...(options.headers || {})
   };
 
@@ -333,5 +341,81 @@ export const api = {
 
   getTwinFileUrl(aoiId, filename) {
     return `${API_BASE}/twins/${aoiId}/files/${filename}`;
+  },
+
+  // Main Officer Assistant & Autonomous Agent Dashboard
+  async getOfficerDashboard() {
+    return request('/llm/officer-assistant/dashboard');
+  },
+
+  async createAutonomousPlan(aoi = 'gangtok', scenario = 'heavy_24h', customDirective = '') {
+    return request('/llm/officer-assistant/create-plan', {
+      method: 'POST',
+      body: JSON.stringify({ aoi, scenario, custom_directive: customDirective })
+    });
+  },
+
+  async approveHighImpactTask(taskId, decision, notes = '') {
+    return request('/llm/officer-assistant/approve-task', {
+      method: 'POST',
+      body: JSON.stringify({ task_id: taskId, decision, notes })
+    });
+  },
+
+  async askOfficerAssistant(question, extra = {}) {
+    return request('/llm/officer-assistant', {
+      method: 'POST',
+      body: JSON.stringify({ question, ...extra })
+    });
+  },
+
+  // TextBee.dev SMS Gateway & Officer Phone Profile
+  async getProfile() {
+    return request('/auth/profile');
+  },
+
+  async updateProfile(profileData) {
+    return request('/auth/profile', {
+      method: 'POST',
+      body: JSON.stringify(profileData)
+    });
+  },
+
+  async getSmsStatus() {
+    return request('/sms/status');
+  },
+
+  async updateSmsConfig(configData) {
+    return request('/sms/config', {
+      method: 'POST',
+      body: JSON.stringify(configData)
+    });
+  },
+
+  async sendCriticalSms(payload) {
+    return request('/sms/send', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+  },
+
+  async sendBulkSms(payload) {
+    return request('/sms/send-bulk', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    });
+  },
+
+  async testOfficerSms(phoneOrPayload = '') {
+    if (typeof phoneOrPayload === 'object' && phoneOrPayload !== null) {
+      return request('/sms/test', {
+        method: 'POST',
+        body: JSON.stringify(phoneOrPayload)
+      });
+    }
+    const q = phoneOrPayload ? `?phone=${encodeURIComponent(phoneOrPayload)}` : '';
+    return request(`/sms/test${q}`, {
+      method: 'POST'
+    });
   }
 };

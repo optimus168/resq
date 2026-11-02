@@ -17,7 +17,28 @@ CREATE TABLE IF NOT EXISTS users (
     name TEXT NOT NULL,
     role TEXT NOT NULL,
     password_hash TEXT NOT NULL,
+    phone TEXT NOT NULL DEFAULT '',
+    sms_enabled INTEGER NOT NULL DEFAULT 1,
     created_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS system_settings (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS sms_dispatch_log (
+    id TEXT PRIMARY KEY,
+    ts TEXT NOT NULL,
+    event_type TEXT NOT NULL,
+    recipients_json TEXT NOT NULL,
+    message TEXT NOT NULL,
+    mode TEXT NOT NULL,
+    status TEXT NOT NULL,
+    response_json TEXT NOT NULL,
+    report_id TEXT,
+    triggered_by TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS login_attempts (
@@ -144,6 +165,14 @@ class Database:
             await db.executescript(CREATE_TABLES_SQL)
             try:
                 await db.execute("ALTER TABLE incidents ADD COLUMN state_json TEXT DEFAULT '{}'")
+            except Exception:
+                pass
+            try:
+                await db.execute("ALTER TABLE users ADD COLUMN phone TEXT DEFAULT ''")
+            except Exception:
+                pass
+            try:
+                await db.execute("ALTER TABLE users ADD COLUMN sms_enabled INTEGER DEFAULT 1")
             except Exception:
                 pass
             await db.commit()

@@ -267,7 +267,7 @@ export default function PlanPanel({ incident, compact = false }) {
             <button
               onClick={handleDispatchAlerts}
               disabled={dispatching}
-              title="Broadcast Multilingual CAP Warning Alerts"
+              title="Broadcast CAP 1.2 Warning Alerts"
               className="px-2 py-0.5 rounded bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 text-[10px] flex items-center gap-1 transition-colors font-medium"
             >
               <Radio size={10} className={dispatching ? 'animate-pulse' : ''} />

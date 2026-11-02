@@ -17,6 +17,8 @@ from backend.app.api.alerts import router as alerts_router
 from backend.app.api.chat import router as chat_router
 from backend.app.api.audit import router as audit_router
 from backend.app.api.validation import router as validation_router
+from backend.app.api.llm import router as llm_router
+from backend.app.api.sms import router as sms_router
 
 # GeoShield Comprehensive AI, GIS, IoT Sensors, Flood, Satellite, and ML Engine
 from backend.app.geoshield.database import engine as gs_engine, Base as gs_Base, SessionLocal as gs_SessionLocal, get_db as gs_get_db
@@ -85,6 +87,8 @@ app.add_middleware(
 # Mount API Routers
 app.include_router(auth_router, prefix=settings.API_V1_PREFIX)
 app.include_router(terrain_router, prefix=settings.API_V1_PREFIX)
+app.include_router(terrain_router, prefix="/api")
+app.include_router(terrain_router)
 app.include_router(simulation_router, prefix=settings.API_V1_PREFIX)
 app.include_router(simulation_compat_router, prefix=settings.API_V1_PREFIX)
 app.include_router(simulation_router, prefix="/api")
@@ -97,6 +101,10 @@ app.include_router(alerts_router, prefix=settings.API_V1_PREFIX)
 app.include_router(chat_router, prefix=settings.API_V1_PREFIX)
 app.include_router(audit_router, prefix=settings.API_V1_PREFIX)
 app.include_router(validation_router, prefix=settings.API_V1_PREFIX)
+app.include_router(llm_router, prefix=settings.API_V1_PREFIX)
+app.include_router(llm_router, prefix="/api")
+app.include_router(sms_router, prefix=settings.API_V1_PREFIX)
+app.include_router(sms_router, prefix="/api")
 
 # Mount TerraGuard Routers (Susceptibility, Spatial GIS, Earthquakes, Predict LSTM, ML Pipeline, CAP Alerts, Reports, Chatbot)
 from backend.app.terraguard.database.database import engine as tg_engine, Base as tg_Base
@@ -259,41 +267,41 @@ async def add_security_headers(request: Request, call_next):
     return response
 
 dist_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "dist"))
+
+@app.get("/tiles/terrain/{path:path}")
+async def serve_terrain_tile(path: str):
+    for candidate in [
+        os.path.join(dist_path, "tiles", "terrain", path),
+        os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "terrain", path),
+        os.path.join(os.path.dirname(__file__), "..", "..", "data", "tiles", "terrain", path)
+    ]:
+        if os.path.exists(candidate):
+            return FileResponse(candidate, media_type="image/png")
+    fallback = os.path.join(dist_path, "tiles", "terrain", "fallback.png")
+    if not os.path.exists(fallback):
+        fallback = os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "terrain", "fallback.png")
+    if os.path.exists(fallback):
+        return FileResponse(fallback, media_type="image/png")
+    raise HTTPException(status_code=404, detail="Terrain tile not found")
+
+@app.get("/tiles/satellite/{path:path}")
+async def serve_satellite_tile(path: str):
+    for candidate in [
+        os.path.join(dist_path, "tiles", "satellite", path),
+        os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "satellite", path),
+        os.path.join(os.path.dirname(__file__), "..", "..", "data", "tiles", "satellite", path)
+    ]:
+        if os.path.exists(candidate):
+            return FileResponse(candidate, media_type="image/jpeg")
+    fallback = os.path.join(dist_path, "tiles", "satellite", "fallback.jpg")
+    if not os.path.exists(fallback):
+        fallback = os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "satellite", "fallback.jpg")
+    if os.path.exists(fallback):
+        return FileResponse(fallback, media_type="image/jpeg")
+    raise HTTPException(status_code=404, detail="Satellite tile not found")
+
 if os.path.exists(dist_path) and os.path.isdir(os.path.join(dist_path, "assets")):
     app.mount("/assets", StaticFiles(directory=os.path.join(dist_path, "assets")), name="assets")
-
-    @app.get("/tiles/terrain/{path:path}")
-    async def serve_terrain_tile(path: str):
-        for candidate in [
-            os.path.join(dist_path, "tiles", "terrain", path),
-            os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "terrain", path),
-            os.path.join(os.path.dirname(__file__), "..", "..", "data", "tiles", "terrain", path)
-        ]:
-            if os.path.exists(candidate):
-                return FileResponse(candidate, media_type="image/png")
-        fallback = os.path.join(dist_path, "tiles", "terrain", "fallback.png")
-        if not os.path.exists(fallback):
-            fallback = os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "terrain", "fallback.png")
-        if os.path.exists(fallback):
-            return FileResponse(fallback, media_type="image/png")
-        raise HTTPException(status_code=404, detail="Terrain tile not found")
-
-    @app.get("/tiles/satellite/{path:path}")
-    async def serve_satellite_tile(path: str):
-        for candidate in [
-            os.path.join(dist_path, "tiles", "satellite", path),
-            os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "satellite", path),
-            os.path.join(os.path.dirname(__file__), "..", "..", "data", "tiles", "satellite", path)
-        ]:
-            if os.path.exists(candidate):
-                return FileResponse(candidate, media_type="image/jpeg")
-        fallback = os.path.join(dist_path, "tiles", "satellite", "fallback.jpg")
-        if not os.path.exists(fallback):
-            fallback = os.path.join(os.path.dirname(__file__), "..", "..", "apps", "web", "public", "tiles", "satellite", "fallback.jpg")
-        if os.path.exists(fallback):
-            return FileResponse(fallback, media_type="image/jpeg")
-        raise HTTPException(status_code=404, detail="Satellite tile not found")
-
     if os.path.isdir(os.path.join(dist_path, "tiles")):
         app.mount("/tiles", StaticFiles(directory=os.path.join(dist_path, "tiles")), name="tiles")
 

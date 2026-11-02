@@ -8,10 +8,10 @@ import {
 } from 'lucide-react';
 
 const getDemoSteps = () => [
-  { id: 1, title: t('dashboard'), description: t('initializing'), icon: Activity, route: '/', color: 'from-blue-500 to-cyan-500', tip: t('riskDistribution') },
-  { id: 2, title: t('map'), description: t('riskLegend'), icon: Map, route: '/map', color: 'from-green-500 to-emerald-500', tip: t('roadsLegend') },
-  { id: 3, title: t('riskScore'), description: t('enterLocation'), icon: Target, route: '/map', color: 'from-purple-500 to-violet-500', tip: t('autoSelectHighRisk') },
-  { id: 4, title: t('simulateLandslide'), description: t('simulateLandslideDesc'), icon: Zap, route: '/simulator', color: 'from-red-500 to-orange-500', tip: t('triggerCriticalEvent') },
+  { id: 1, title: t('dashboard'), description: t('initializing'), icon: Activity, route: '/geoshield/dashboard', color: 'from-blue-500 to-cyan-500', tip: t('riskDistribution') },
+  { id: 2, title: t('map'), description: t('riskLegend'), icon: Map, route: '/risk-map', color: 'from-green-500 to-emerald-500', tip: t('roadsLegend') },
+  { id: 3, title: t('riskScore'), description: t('enterLocation'), icon: Target, route: '/risk-map', color: 'from-purple-500 to-violet-500', tip: t('autoSelectHighRisk') },
+  { id: 4, title: t('simulateLandslide'), description: t('simulateLandslideDesc'), icon: Zap, route: '/simulation-lab?tab=network', color: 'from-red-500 to-orange-500', tip: t('triggerCriticalEvent') },
   { id: 5, title: t('earlyWarning'), description: t('earlyWarningSubtitle'), icon: Bell, route: '/alerts', color: 'from-amber-500 to-yellow-500', tip: t('comparativeRisk') },
   { id: 6, title: t('satellite'), description: t('realSatelliteData'), icon: Eye, route: '/satellite', color: 'from-teal-500 to-cyan-500', tip: t('liveFromOpenMeteo') },
   { id: 7, title: t('aiRiskAssessment'), description: t('aiRiskRuns'), icon: Shield, route: '/station/NER-011', color: 'from-indigo-500 to-blue-500', tip: t('recommendation') },

@@ -199,8 +199,9 @@ def get_historical_landslides(limit: int = 500, state: str = None):
 
 @router.get("/rainfall-trend")
 def get_rainfall_trend(db: Session = Depends(get_db)):
-    # Get average rainfall per hour for all stations, last 48 hours
-    since = datetime.utcnow() - timedelta(hours=48)
+    # Get average rainfall per hour for all stations, last 48 hours relative to latest telemetry
+    latest_ts = db.query(func.max(SensorReading.timestamp)).scalar() or datetime.utcnow()
+    since = latest_ts - timedelta(hours=48)
     readings = db.query(SensorReading).filter(
         SensorReading.timestamp >= since
     ).order_by(SensorReading.timestamp).all()
@@ -221,7 +222,8 @@ def get_rainfall_trend(db: Session = Depends(get_db)):
 
 @router.get("/risk-trend")
 def get_risk_trend(db: Session = Depends(get_db)):
-    since = datetime.utcnow() - timedelta(hours=48)
+    latest_ts = db.query(func.max(RiskAssessment.timestamp)).scalar() or datetime.utcnow()
+    since = latest_ts - timedelta(hours=48)
     assessments = db.query(RiskAssessment).filter(
         RiskAssessment.timestamp >= since
     ).order_by(RiskAssessment.timestamp).all()

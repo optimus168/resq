@@ -1,6 +1,6 @@
 # RESQ.AI × BhuRaksha — Physical Simulation Validation Report (Phase S2)
 
-> **Generated:** 2026-10-19T20:40:00.687092+00:00  
+> **Generated:** 2026-10-23T16:27:54.930644+00:00  
 > **Target Platform:** Linux x86_64 / RTX 4070 / NumPy 2.5.4 / SciPy  
 > **Status:** **ALL VERIFICATION GATES PASSED**  
 > **Mandatory Disclaimer:** *Screening-level scenario simulation — not a validated warning service.*
@@ -33,9 +33,9 @@ Measured on host CPU (single core NumPy vectorization):
 
 | Grid Resolution | Total Active Cells | Step Execution Time | Simulation Throughput | Real-Time Factor (at $\Delta t = 0.05$s) |
 |---|---|---|---|---|
-| **128 × 128** | 16,384 | **2.77 ms/step** | **360.6 steps/s** | **18.0× Real-Time** |
-| **256 × 256** | 65,536 | **10.05 ms/step** | **99.5 steps/s** | **5.0× Real-Time** |
-| **512 × 512** | 262,144 | **55.68 ms/step** | **18.0 steps/s** | **0.9× Real-Time** |
+| **128 × 128** | 16,384 | **2.31 ms/step** | **432.3 steps/s** | **21.6× Real-Time** |
+| **256 × 256** | 65,536 | **10.52 ms/step** | **95.1 steps/s** | **4.8× Real-Time** |
+| **512 × 512** | 262,144 | **55.85 ms/step** | **17.9 steps/s** | **0.9× Real-Time** |
 
 ---
 

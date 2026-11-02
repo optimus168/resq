@@ -17,7 +17,17 @@ export function RouterProvider({ children }) {
   }, []);
 
   const navigate = useCallback((to, options = {}) => {
-    const target = to.startsWith('/') ? to : '/' + to;
+    if (typeof to === 'number') {
+      if (window.history.length > 1) {
+        window.history.go(to);
+      } else {
+        window.location.hash = '/stations';
+        setPathname('/stations');
+      }
+      return;
+    }
+    const strTo = String(to || '/');
+    const target = strTo.startsWith('/') ? strTo : '/' + strTo;
     if (options.replace) {
       window.location.replace('#' + target);
     } else {

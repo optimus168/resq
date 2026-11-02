@@ -301,7 +301,7 @@ def predict_landslide(data: LandslidePredictionInput):
             "probability_percentage": round(probability * 100, 1),
             "risk_level": risk_level,
             "action_code": action_code,
-            "input_features": data.dict(),
+            "input_features": data.model_dump(),
             "model": "Terrain + Rainfall Ensemble",
             "model_details": {
                 "terrain_probability": round(terrain_probability, 4) if terrain_probability is not None else None,

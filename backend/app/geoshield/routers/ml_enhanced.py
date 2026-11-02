@@ -65,9 +65,24 @@ async def ml_predict(request: dict):
     if not lat or not lng:
         raise HTTPException(status_code=422, detail="latitude and longitude are required")
 
-    features = {k: v for k, v in request.items() if k not in ("latitude", "longitude", "lat", "lng")}
+    features = {
+        k: v
+        for k, v in request.items()
+        if k not in ("latitude", "longitude", "lat", "lng", "explain_with_llm")
+    }
     predictor = get_enhanced_predictor()
     result = predictor.predict(lat, lng, features)
+    if request.get("explain_with_llm"):
+        from backend.app.ml.qwen_service import get_qwen_service
+
+        qwen = get_qwen_service()
+        result = {
+            **result,
+            "llm_interpretation": qwen.explain_xgboost_prediction(
+                xgb_output=result,
+                location={"latitude": lat, "longitude": lng},
+            ),
+        }
     return result
 
 

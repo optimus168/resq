@@ -129,7 +129,10 @@ def get_station_history(
     hours: int = 24,
     db: Session = Depends(get_db)
 ):
-    since = datetime.utcnow() - timedelta(hours=hours)
+    latest_ts = db.query(func.max(SensorReading.timestamp)).filter(
+        SensorReading.station_id == station_id
+    ).scalar() or datetime.utcnow()
+    since = latest_ts - timedelta(hours=hours)
     readings = db.query(SensorReading).filter(
         SensorReading.station_id == station_id,
         SensorReading.timestamp >= since

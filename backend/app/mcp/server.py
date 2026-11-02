@@ -84,6 +84,80 @@ TOOLS_SCHEMA = [
             "required": ["incident_id", "plan_version", "severity"]
         },
         "permission": "APPROVAL_REQUIRED"
+    },
+    {
+        "name": "get_landslide_prediction",
+        "description": "Runs the validated 9-feature XGBoost landslide prediction pipeline for a location.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "location": {"type": ["string", "object"], "description": "Coordinates or NER station/corridor name"},
+                "timestamp": {"type": "string"},
+                "features": {"type": "object"}
+            },
+            "required": ["location"]
+        },
+        "permission": "READ_ONLY"
+    },
+    {
+        "name": "get_sensor_readings",
+        "description": "Retrieves ground-station telemetry readings near a location within time_window hours.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "location": {"type": ["string", "object"]},
+                "time_window": {"type": "integer", "default": 24}
+            },
+            "required": ["location"]
+        },
+        "permission": "READ_ONLY"
+    },
+    {
+        "name": "get_rainfall_history",
+        "description": "Retrieves 1h, 24h, 7d, and forecast rainfall telemetry for a location.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "location": {"type": ["string", "object"]},
+                "time_window": {"type": "integer", "default": 48}
+            },
+            "required": ["location"]
+        },
+        "permission": "READ_ONLY"
+    },
+    {
+        "name": "search_disaster_documents",
+        "description": "Searches official NDMA/SDMA SOPs and GSI historical landslide catalog records.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "query": {"type": "string"}
+            },
+            "required": ["query"]
+        },
+        "permission": "READ_ONLY"
+    },
+    {
+        "name": "get_official_alerts",
+        "description": "Retrieves active and recent official landslide alerts.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "location": {"type": ["string", "object"]}
+            }
+        },
+        "permission": "READ_ONLY"
+    },
+    {
+        "name": "get_incident_history",
+        "description": "Retrieves citizen/field reports and GSI historical landslide incidents.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "location": {"type": ["string", "object"]}
+            }
+        },
+        "permission": "READ_ONLY"
     }
 ]
 
@@ -181,7 +255,19 @@ def handle_tool_call(name: str, arguments: Dict[str, Any]) -> Dict[str, Any]:
             "screening_level_honesty": "Scenario simulation model; not an official GSI forecast",
             "simulated": True,
         }
-        
+
+    elif name in (
+        "get_landslide_prediction",
+        "get_sensor_readings",
+        "get_rainfall_history",
+        "search_disaster_documents",
+        "get_official_alerts",
+        "get_incident_history",
+    ):
+        from backend.app.agents.disaster_tools import execute_controlled_tool
+
+        return execute_controlled_tool(name, arguments)
+
     return {"error": f"Unknown tool: {name}"}
 
 def process_mcp_message(msg: dict) -> dict:

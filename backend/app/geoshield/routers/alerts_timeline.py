@@ -26,7 +26,8 @@ def get_alert_timeline(
     Get alerts as a chronological timeline for visualization.
     Groups alerts by hour and includes risk assessment context.
     """
-    since = datetime.utcnow() - timedelta(hours=hours)
+    latest_ts = db.query(func.max(Alert.created_at)).scalar() or datetime.utcnow()
+    since = latest_ts - timedelta(hours=hours)
     
     query = db.query(Alert).filter(Alert.created_at >= since)
     if risk_level:
@@ -87,7 +88,8 @@ def get_alert_history(
     """
     Get daily alert counts for trend chart.
     """
-    since = datetime.utcnow() - timedelta(days=days)
+    latest_ts = db.query(func.max(Alert.created_at)).scalar() or datetime.utcnow()
+    since = latest_ts - timedelta(days=days)
     alerts = db.query(Alert).filter(Alert.created_at >= since).all()
     
     daily = {}

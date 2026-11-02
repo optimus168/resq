@@ -1,25 +1,145 @@
-# Python
+# ==============================================================================
+# RESQ.AI · BhuRaksha — Git Ignore Configuration
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Secrets (CRITICAL: NEVER COMMIT CREDENTIALS)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+!.env.example
+
+# ------------------------------------------------------------------------------
+# 2. Python & Virtual Environments
+# ------------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
 .venv/
 venv/
-*.egg-info/
-dist/
-build/
-.pytest_cache/
+ENV/
+env/
+env.bak/
+venv.bak/
 
-# Node
+# Testing, Linting & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 3. Node.js & Web Frontend (apps/web)
+# ------------------------------------------------------------------------------
 node_modules/
+apps/web/node_modules/
+apps/web/dist/
+dist/
+.vite/
+apps/web/.vite/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-apps/web/node_modules/
-apps/web/dist/
 
-# SQLite & local state
+# ------------------------------------------------------------------------------
+# 4. Databases & Local State
+# ------------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
 *.db-shm
 *.db-wal
-.DS_Store
+*.db-journal
+bhuraksha.db
+geoshield.db
+backend/app/terraguard/database/landslide_guard.db
+
+# ------------------------------------------------------------------------------
+# 5. Large ML Weights & Model Adapters (>100MB GitHub Push Limit)
+# ------------------------------------------------------------------------------
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.h5
+*.tflite
+*.ckpt
+data/models/**/*.safetensors
+data/models/**/*.bin
+data/models/qwen3_4b_qlora_adapter/*.safetensors
+
+# ------------------------------------------------------------------------------
+# 6. Simulation Outputs & Uploaded Media
+# ------------------------------------------------------------------------------
+data/simulation_runs/*
+!data/simulation_runs/.gitkeep
+data/uploads/*
+!data/uploads/.gitkeep
+!data/uploads/reports/
+data/uploads/reports/*
+!data/uploads/reports/.gitkeep
+*.npz
+*.npz.tmp*
+
+# ------------------------------------------------------------------------------
+# 7. Local Caches, Scratch & Temporary Files
+# ------------------------------------------------------------------------------
+.cache/
+.freebuff/
+scratch/
+tmp/
+*.tmp
 *.log
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# 8. Operating System & IDE Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

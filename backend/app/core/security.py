@@ -40,9 +40,16 @@ def decode_token(token: str) -> dict:
         raise HTTPException(status_code=401, detail="Invalid token")
 
 def public_user(user_dict: dict) -> dict:
+    phone = (user_dict.get("phone") or "").strip()
+    digits = "".join(ch for ch in phone if ch.isdigit())
+    phone_10digit = digits[-10:] if len(digits) >= 10 else digits
     return {
         "id": user_dict["id"],
         "email": user_dict["email"],
         "name": user_dict["name"],
-        "role": user_dict["role"]
+        "role": user_dict["role"],
+        "phone": f"+91{phone_10digit}" if len(phone_10digit) == 10 else phone,
+        "phone_10digit": phone_10digit,
+        "country_code": "+91",
+        "sms_enabled": bool(user_dict.get("sms_enabled", 1)),
     }

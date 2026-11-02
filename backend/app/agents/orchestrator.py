@@ -40,7 +40,7 @@ AGENTS = [
     {"id": "route", "name": "Route/Access", "role": "Computes evacuation and access routes avoiding blocked & at-risk road segments", "tools": ["route.compute"]},
     {"id": "resource", "name": "Resource & Facility", "role": "Matches emergency teams (NDRF/SDRF/BRO), shelters, and hospitals to tasks", "tools": ["resource.query", "resource.reserve"]},
     {"id": "planner", "name": "Planner", "role": "Constructs versioned plans (V1, V2) with dependency graphs and structural diffs", "tools": ["plan.create", "plan.diff"]},
-    {"id": "dispatcher", "name": "Dispatcher", "role": "Drafts multilingual emergency alerts (EN, HI, AS, BN) with human review flags", "tools": ["alert.draft", "translate.draft"]},
+    {"id": "dispatcher", "name": "Dispatcher", "role": "Drafts CAP 1.2 emergency alerts with human review flags", "tools": ["alert.draft", "translate.draft"]},
     {"id": "assistant", "name": "Ask Mission Control", "role": "Grounded natural language Q&A citing incident records and NDMA SOPs", "tools": ["state.read", "sop.search"]}
 ]
 
@@ -573,8 +573,8 @@ class Runner:
             
         tasks.append({
             "id": "T-ALERT",
-            "title": f"Issue {r['category']} Landslide Warning Advisory (4 Languages)",
-            "detail": "Drafted by Dispatcher; machine translations require human authorization",
+            "title": f"Issue {r['category']} Landslide Warning Advisory (CAP 1.2)",
+            "detail": "Drafted by Dispatcher; CAP 1.2 advisory requires human authorization",
             "owner": "District EOC",
             "priority": 1 if r["category"] in ("HIGH", "IMMINENT") else 3,
             "depends_on": ["A-RAIN", "A-SENSOR"]
@@ -647,7 +647,7 @@ class Runner:
         await self.emit_event("planner", "done", confidence=r["confidence"], message=f"Generated Plan V{version} with {len(new_tasks)} tasks{diff_str}")
 
     async def a_dispatcher(self):
-        await self.emit_event("dispatcher", "start", message="Drafting multilingual emergency alerts (Drafts only)")
+        await self.emit_event("dispatcher", "start", message="Drafting CAP 1.2 emergency alerts (Drafts only)")
         r = self.inc["risk"]
         e = self.inc["exposure"]
         plan = self.inc["plans"][-1]

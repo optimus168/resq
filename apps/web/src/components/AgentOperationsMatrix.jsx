@@ -19,7 +19,7 @@ export const AGENT_SPECS = [
   { id: 'route', name: 'Route & Access', tier: 'response', icon: Compass, role: 'Computes evacuation and access routes avoiding blocked & at-risk road segments', defaultMetric: 'Lifeline Routing', tools: ['route.compute'] },
   { id: 'resource', name: 'Resource Allocator', tier: 'decision', icon: Truck, role: 'Matches emergency teams (NDRF/SDRF/BRO), shelters, and hospitals to tasks', defaultMetric: 'Team & Shelter Staging', tools: ['resource.query', 'resource.reserve'] },
   { id: 'planner', name: 'Response Planner', tier: 'decision', icon: FileText, role: 'Constructs versioned plans (V1, V2) with dependency graphs and structural diffs', defaultMetric: 'Plan Synthesizer', tools: ['plan.create', 'plan.diff'] },
-  { id: 'dispatcher', name: 'Dispatcher', tier: 'dispatch', icon: Send, role: 'Drafts multilingual emergency alerts (EN, HI, AS, BN) with human review flags', defaultMetric: 'CAP / Broadcast', tools: ['alert.draft', 'translate.draft'] },
+  { id: 'dispatcher', name: 'Dispatcher', tier: 'dispatch', icon: Send, role: 'Drafts CAP 1.2 emergency alerts with human review flags', defaultMetric: 'CAP / Broadcast', tools: ['alert.draft', 'cap.format'] },
   { id: 'assistant', name: 'Mission Assistant', tier: 'dispatch', icon: Bot, role: 'Grounded natural language Q&A citing incident records and NDMA SOPs', defaultMetric: 'Grounded SOP Citations', tools: ['state.read', 'sop.search'] },
 ];
 

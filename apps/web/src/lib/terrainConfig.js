@@ -28,12 +28,12 @@ export const AOI_METADATA = {
     name: "Gangtok – NH10 Corridor",
     state: "Sikkim",
     district: "East Sikkim",
-    center: [88.600, 27.305], // [lng, lat]
+    center: [88.596, 27.298], // [lng, lat]
     camera: {
-      center: [88.600, 27.305],
-      zoom: 12.65,
-      pitch: 72,
-      bearing: -22
+      center: [88.596, 27.298],
+      zoom: 13.15,
+      pitch: 69,
+      bearing: 26
     },
     bounds: {
       west: 88.5498046875,
@@ -44,6 +44,12 @@ export const AOI_METADATA = {
     elevationRange: { min: 557.0, max: 2159.0, relief: 1602.0 },
     primaryLifeline: "NH10 Gangtok–Ranipool Lifeline",
     tileOriginZ13: { x: 6111, y: 3449 },
+    landmarks: [
+      { name: "Gangtok Ridge (1,650m)", coordinates: [88.612, 27.322], tag: "CAPITAL RIDGE" },
+      { name: "Tadong · NH-10 Lifeline", coordinates: [88.596, 27.308], tag: "PRIMARY CORRIDOR" },
+      { name: "Ranipool Gorge Confluence", coordinates: [88.587, 27.287], tag: "VALLEY FLOOR" },
+      { name: "Lower Syari Active Scarp", coordinates: [88.614, 27.301], tag: "SLOPE WATCH" }
+    ],
     simulatedIncident: {
       hazard: "Debris Flow & Translational Slide",
       trigger: "SCENARIO (PROTOTYPE): 112 mm / 24h FORCING",
@@ -86,12 +92,12 @@ export const AOI_METADATA = {
     name: "Aizawl Ridge",
     state: "Mizoram",
     district: "Aizawl",
-    center: [92.717, 23.727],
+    center: [92.719, 23.727],
     camera: {
-      center: [92.717, 23.727],
-      zoom: 12.65,
-      pitch: 74,
-      bearing: -30
+      center: [92.719, 23.727],
+      zoom: 13.25,
+      pitch: 71,
+      bearing: 148
     },
     bounds: {
       west: 92.6806640625,
@@ -102,6 +108,12 @@ export const AOI_METADATA = {
     elevationRange: { min: 323.0, max: 1326.0, relief: 1003.0 },
     primaryLifeline: "NH-54 / NH306 Lifeline",
     tileOriginZ13: { x: 6205, y: 3539 },
+    landmarks: [
+      { name: "Aizawl Knife-Edge Crest (1,132m)", coordinates: [92.718, 23.727], tag: "SYNCLINAL RIDGE" },
+      { name: "Hunthar Bypass Slope", coordinates: [92.705, 23.741], tag: "CREEP ZONE" },
+      { name: "Dawrpui · NH-306 Spine", coordinates: [92.719, 23.736], tag: "URBAN LIFELINE" },
+      { name: "Tlawng Gorge Drop-Off", coordinates: [92.698, 23.718], tag: "WEST ESCARPMENT" }
+    ],
     simulatedIncident: {
       hazard: "Crest Instability & Creep",
       trigger: "SCENARIO (PROTOTYPE): 82 mm / 24h FORCING",
@@ -144,12 +156,12 @@ export const AOI_METADATA = {
     name: "Wayanad (Chooralmala–Meppadi)",
     state: "Kerala (Generality Demo)",
     district: "Wayanad",
-    center: [76.155, 11.517],
+    center: [76.156, 11.519],
     camera: {
-      center: [76.155, 11.517],
-      zoom: 12.5,
-      pitch: 71,
-      bearing: -18
+      center: [76.156, 11.519],
+      zoom: 13.12,
+      pitch: 68,
+      bearing: -118
     },
     bounds: {
       west: 76.11328125,
@@ -160,6 +172,12 @@ export const AOI_METADATA = {
     elevationRange: { min: 177.0, max: 1797.0, relief: 1620.0 },
     primaryLifeline: "Chooralmala–Meppadi Lifeline Road",
     tileOriginZ13: { x: 5828, y: 3831 },
+    landmarks: [
+      { name: "Chooralmala Town & Bridge", coordinates: [76.161, 11.516], tag: "IMPACT ZONE" },
+      { name: "Mundakkai Debris Channel", coordinates: [76.144, 11.504], tag: "RUNOUT PATH" },
+      { name: "Vellarimala Headwall (1,797m)", coordinates: [76.132, 11.495], tag: "CROWN SCARP" },
+      { name: "Meppadi Staging Corridor", coordinates: [76.156, 11.545], tag: "RELIEF HUB" }
+    ],
     simulatedIncident: {
       hazard: "Catastrophic Valley Debris Torrent",
       trigger: "SCENARIO (PROTOTYPE): 170 mm / 24h FORCING",

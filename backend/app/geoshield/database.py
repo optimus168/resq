@@ -1,7 +1,6 @@
 import os
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 # Use DATABASE_URL env var if set (e.g. PostgreSQL for production),
 # otherwise fall back to local SQLite for development.

@@ -130,7 +130,7 @@ export default function AskMissionControl({ incidentId = '', onSendQuery }) {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Ask about active risk scores, SOP protocols, or request multilingual drafts..."
+          placeholder="Ask about active risk scores, SOP protocols, or request CAP advisory drafts..."
           className="flex-1 px-3 py-2 rounded bg-[#0A2416] border border-[#249344]/40 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#BDFF42] font-mono"
         />
         <button
